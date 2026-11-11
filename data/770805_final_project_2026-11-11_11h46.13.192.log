@@ -1,0 +1,24 @@
+12.6147 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+12.6401 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+13.2141 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+13.2141 	INFO 	OpenGL version supported by driver is 4..
+13.3281 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B909DF5480>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B909DF5420>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B909D16D10>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.3282 	EXP 	window1: backgroundImage = ''
+13.3282 	EXP 	window1: backgroundFit = 'none'
+13.8068 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8068 	EXP 	final_project: status = STARTED
+0.0222 	EXP 	instructions_text: autoLog = True
+0.0347 	INFO 	Keyboard events cleared
+0.0345 	EXP 	instructions_text: autoDraw = True
+0.0345 	EXP 	instructions_text: autoDraw = False
+0.6388 	DATA 	Mouse: Left button down, pos=(1773,1577)
+0.7718 	DATA 	Mouse:  Left button up, pos=(1773,1577)
+0.8546 	DATA 	Mouse: Left button down, pos=(1773,1577)
+0.9544 	DATA 	Mouse:  Left button up, pos=(1773,1577)
+1.9760 	EXP 	Device response: <KeyPress from None: t=1.9645247000153176, value=space, duration=None>
+1.9780 	DATA 	Keypress: space
+1.9861 	EXP 	instructions_text: autoDraw = False
+1.9863 	EXP 	final_project: status = STOPPED
+1.9948 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\770805_final_project_2026-11-11_11h46.13.192.csv'
+1.9961 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\770805_final_project_2026-11-11_11h46.13.192.psydat
+2.3710 	INFO 	Stopping keyboard key buffers.

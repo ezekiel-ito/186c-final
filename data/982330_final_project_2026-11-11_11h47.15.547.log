@@ -1,0 +1,24 @@
+10.0329 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+10.0626 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+10.6049 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+10.6050 	INFO 	OpenGL version supported by driver is 4..
+10.7121 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002BEAD53E1D0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002BEAD53E170>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002BEA34764D0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.7122 	EXP 	window1: backgroundImage = ''
+10.7122 	EXP 	window1: backgroundFit = 'none'
+11.3669 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.3669 	EXP 	window1: recordFrameIntervals = False
+11.5657 	EXP 	window1: recordFrameIntervals = True
+13.2336 	EXP 	window1: recordFrameIntervals = False
+13.2337 	EXP 	Screen (0) actual frame rate measured at 60.39Hz
+13.7115 	INFO 	keyboard.Keyboard is using ptb backend.
+13.7116 	EXP 	final_project: status = STARTED
+0.0089 	EXP 	instructions_text: autoLog = True
+0.0209 	INFO 	Keyboard events cleared
+0.0208 	EXP 	instructions_text: autoDraw = True
+7.1546 	DATA 	Keypress: space
+7.1733 	EXP 	Device response: <KeyPress from None: t=7.152521100011654, value=space, duration=None>
+7.1838 	EXP 	instructions_text: autoDraw = False
+7.1839 	EXP 	final_project: status = STOPPED
+7.2202 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\982330_final_project_2026-11-11_11h47.15.547.csv'
+7.2213 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\982330_final_project_2026-11-11_11h47.15.547.psydat
+7.6712 	INFO 	Stopping keyboard key buffers.

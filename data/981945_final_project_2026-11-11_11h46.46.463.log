@@ -1,0 +1,25 @@
+10.7251 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+10.7416 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+11.2532 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+11.2533 	INFO 	OpenGL version supported by driver is 4..
+11.3593 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B02E38A4D0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B02E38A650>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002B0241CA260>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.3594 	EXP 	window1: backgroundImage = ''
+11.3594 	EXP 	window1: backgroundFit = 'none'
+12.0381 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.0382 	EXP 	window1: recordFrameIntervals = False
+12.2409 	EXP 	window1: recordFrameIntervals = True
+13.9102 	EXP 	window1: recordFrameIntervals = False
+13.9103 	EXP 	Screen (0) actual frame rate measured at 59.32Hz
+14.3939 	INFO 	keyboard.Keyboard is using ptb backend.
+14.3940 	EXP 	final_project: status = STARTED
+0.0074 	EXP 	instructions_text: autoLog = True
+0.0262 	INFO 	Keyboard events cleared
+0.0261 	EXP 	instructions_text: autoDraw = True
+0.0261 	EXP 	instructions_text: autoDraw = False
+6.2491 	EXP 	Device response: <KeyPress from None: t=6.239738000003854, value=space, duration=None>
+6.2508 	DATA 	Keypress: space
+6.2590 	EXP 	instructions_text: autoDraw = False
+6.2593 	EXP 	final_project: status = STOPPED
+6.2675 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\981945_final_project_2026-11-11_11h46.46.463.csv'
+6.2688 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\981945_final_project_2026-11-11_11h46.46.463.psydat
+6.6690 	INFO 	Stopping keyboard key buffers.

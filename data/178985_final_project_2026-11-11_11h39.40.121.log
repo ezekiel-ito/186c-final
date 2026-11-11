@@ -1,0 +1,16 @@
+8.9695 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+8.9954 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+9.5555 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+9.5555 	INFO 	OpenGL version supported by driver is 4..
+9.6978 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001EAE31D9330>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001EAE31D93F0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001EADF680E50>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.6978 	EXP 	window1: backgroundImage = ''
+9.6979 	EXP 	window1: backgroundFit = 'none'
+10.1144 	INFO 	keyboard.Keyboard is using ptb backend.
+10.1145 	EXP 	final_project: status = STARTED
+0.0243 	EXP 	textbox: autoLog = True
+0.0504 	EXP 	textbox: autoDraw = True
+4.0307 	EXP 	textbox: autoDraw = False
+4.0309 	EXP 	final_project: status = STOPPED
+4.0393 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\178985_final_project_2026-11-11_11h39.40.121.csv'
+4.0402 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\178985_final_project_2026-11-11_11h39.40.121.psydat
+4.3891 	INFO 	Stopping keyboard key buffers.

@@ -1,0 +1,17 @@
+11.1483 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+11.1720 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+11.9989 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+11.9989 	INFO 	OpenGL version supported by driver is 4..
+13.3553 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001855BEAC280>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001855BEAC2E0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001855C04CB80>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.3553 	EXP 	window1: backgroundImage = ''
+13.3553 	EXP 	window1: backgroundFit = 'none'
+14.0144 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+14.0144 	EXP 	window1: recordFrameIntervals = False
+14.2321 	EXP 	window1: recordFrameIntervals = True
+15.8990 	EXP 	window1: recordFrameIntervals = False
+15.8991 	EXP 	Screen (0) actual frame rate measured at 59.93Hz
+16.3748 	INFO 	keyboard.Keyboard is using ptb backend.
+16.3749 	EXP 	final_project: status = STARTED
+16.5874 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\783862_final_project_2026-11-11_13h03.34.114.psydat
+16.5934 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\783862_final_project_2026-11-11_13h03.34.114.csv'
+16.6042 	INFO 	Stopping keyboard key buffers.

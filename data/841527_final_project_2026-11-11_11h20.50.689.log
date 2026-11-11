@@ -1,0 +1,21 @@
+9.3087 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+9.3373 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+9.8663 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+9.8664 	INFO 	OpenGL version supported by driver is 4..
+10.0101 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B2BDB2E8F0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B2BDB2E950>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B2BEE4EFE0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.0102 	EXP 	window1: backgroundImage = ''
+10.0102 	EXP 	window1: backgroundFit = 'none'
+10.6955 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.6956 	EXP 	window1: recordFrameIntervals = False
+10.8947 	EXP 	window1: recordFrameIntervals = True
+12.5609 	EXP 	window1: recordFrameIntervals = False
+12.5610 	EXP 	Screen (0) actual frame rate measured at 60.21Hz
+13.0476 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0477 	EXP 	final_project: status = STARTED
+0.0109 	EXP 	textbox: autoLog = True
+0.0288 	EXP 	textbox: autoDraw = True
+10.0293 	EXP 	textbox: autoDraw = False
+10.0295 	EXP 	final_project: status = STOPPED
+10.0350 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\841527_final_project_2026-11-11_11h20.50.689.csv'
+10.0360 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\841527_final_project_2026-11-11_11h20.50.689.psydat
+10.3813 	INFO 	Stopping keyboard key buffers.
