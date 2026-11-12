@@ -1,0 +1,23 @@
+9.6988 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+9.7297 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+10.2850 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+10.2851 	INFO 	OpenGL version supported by driver is 4..
+10.4087 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000158BAB4FD00>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000158BAB4EA70>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000158BA0E6740>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.4088 	EXP 	window1: backgroundImage = ''
+10.4088 	EXP 	window1: backgroundFit = 'none'
+11.1113 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.1114 	EXP 	window1: recordFrameIntervals = False
+11.3385 	EXP 	window1: recordFrameIntervals = True
+13.0053 	EXP 	window1: recordFrameIntervals = False
+13.0054 	EXP 	Screen (0) actual frame rate measured at 59.92Hz
+13.4299 	INFO 	keyboard.Keyboard is using ptb backend.
+13.4300 	EXP 	final_project: status = STARTED
+0.0119 	EXP 	instructions_text: autoLog = True
+0.0119 	EXP 	sentence_text: autoLog = True
+0.0244 	INFO 	Keyboard events cleared
+0.0243 	EXP 	instructions_text: autoDraw = True
+1.9096 	EXP 	Device response: <KeyPress from None: t=1.8930235000152607, value=space, duration=None>
+1.9102 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+2.0672 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\785850_final_project_2026-11-11_15h58.30.521.psydat
+2.0720 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\785850_final_project_2026-11-11_15h58.30.521.csv'
+2.0890 	INFO 	Stopping keyboard key buffers.

@@ -1,0 +1,52 @@
+10.5628 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+10.5929 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+11.1503 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+11.1503 	INFO 	OpenGL version supported by driver is 4..
+11.2543 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001966DE7D4B0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001966DE7C6A0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001966DE5ED10>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.2544 	EXP 	window1: backgroundImage = ''
+11.2545 	EXP 	window1: backgroundFit = 'none'
+11.9051 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.9051 	EXP 	window1: recordFrameIntervals = False
+12.1119 	EXP 	window1: recordFrameIntervals = True
+13.7791 	EXP 	window1: recordFrameIntervals = False
+13.7792 	EXP 	Screen (0) actual frame rate measured at 59.95Hz
+14.1959 	INFO 	keyboard.Keyboard is using ptb backend.
+14.1960 	EXP 	final_project: status = STARTED
+0.0075 	EXP 	instructions_text: autoLog = True
+0.0075 	EXP 	textbox: autoLog = True
+0.0226 	INFO 	Keyboard events cleared
+0.0225 	EXP 	instructions_text: autoDraw = True
+2.5297 	EXP 	Device response: <KeyPress from None: t=2.5158699000021443, value=space, duration=None>
+2.5304 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+2.5377 	DATA 	Keypress: space
+2.5433 	EXP 	instructions_text: autoDraw = False
+2.5433 	EXP 	textbox: autoDraw = True
+2.5914 	EXP 	Device response: <KeyPress from None: t=2.5158699000021443, value=space, duration=0.060012999980244786>
+6.5428 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+6.5557 	EXP 	textbox: autoDraw = False
+6.5557 	EXP 	textbox: autoDraw = False
+6.5557 	EXP 	textbox: autoDraw = True
+10.5432 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+10.5556 	EXP 	textbox: autoDraw = False
+10.5556 	EXP 	textbox: autoDraw = False
+10.5556 	EXP 	textbox: autoDraw = True
+14.5415 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+14.5562 	EXP 	textbox: autoDraw = False
+14.5562 	EXP 	textbox: autoDraw = False
+14.5562 	EXP 	textbox: autoDraw = True
+18.5415 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+18.5564 	EXP 	textbox: autoDraw = False
+18.5564 	EXP 	textbox: autoDraw = False
+18.5564 	EXP 	textbox: autoDraw = True
+21.0913 	EXP 	Device response: <KeyPress from None: t=21.088400899985572, value=space, duration=None>
+21.0935 	DATA 	Keypress: space
+21.1748 	EXP 	Device response: <KeyPress from None: t=21.088400899985572, value=space, duration=0.0718854000151623>
+22.1913 	EXP 	Device response: <KeyPress from None: t=22.18043839998427, value=escape, duration=None>
+22.1937 	DATA 	Keypress: escape
+22.3582 	EXP 	Device response: <KeyPress from None: t=22.18043839998427, value=escape, duration=0.17188020001049154>
+22.3582 	EXP 	final_project: status = STOPPED
+22.3729 	EXP 	textbox: autoDraw = False
+22.3730 	EXP 	final_project: status = STOPPED
+22.3815 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\843738_final_project_2026-11-11_15h45.35.028.csv'
+22.3825 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\843738_final_project_2026-11-11_15h45.35.028.psydat
+22.8960 	INFO 	Stopping keyboard key buffers.

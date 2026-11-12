@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.2.4),
-    on November 11, 2026, at 14:56
+    on November 11, 2026, at 16:51
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -376,7 +376,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
-    # --- Initialize components for Routine "Instructions" ---
+    # --- Initialize components for Routine "instructions_encoding" ---
     # Run 'Begin Experiment' code from initialization
     import csv
     import glob
@@ -385,8 +385,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     condition=0
     dev_mode=True
+    encode_time=1
+    keyword_color='red'
     
-    stimulus_filename='test_stimulus.csv'
+    stimulus_filename='test_stimulus_color.csv'
     
     #print(glob.glob('*'))
     
@@ -408,6 +410,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     n_sentences=len(sentence_list)
     n_words=len(word_list)
     
+    instructions_reformatted=f'You are about to see a series of sentences. Read each sentence and take note of the {keyword_color} word. You will be asked to recall the {keyword_color} word.\n\nExample: The quick brown fox [color={keyword_color}]jumps[/color] over the lazy dog.\n\nPress the spacebar to continue.'
+    
     if dev_mode:
         print(sentence_list)
         print(word_list)
@@ -418,8 +422,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     r.shuffle(w_order)
     
     
-    instructions_text = visual.TextBox2(
-         win, text='You are about to see a series of sentences. Read each sentence and take note of the italicized word. You will be asked to recall the italicized word. \n\nExample: The quick brown fox *jumps* over the lazy dog. \n\nPress the spacebar to continue. ', placeholder='Type here...', font='Open Sans',
+    instructions_encoding_text = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Open Sans',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.6, 1), borderWidth=2.0,
          color='white', colorSpace='rgb',
@@ -433,14 +437,34 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          languageStyle='LTR',
          formattingSyntax='md',
          editable=False,
-         name='instructions_text',
+         name='instructions_encoding_text',
          depth=-1, autoLog=True,
     )
-    key_resp = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
+    key_resp_encoding = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
-    # --- Initialize components for Routine "Encoding" ---
-    textbox = visual.TextBox2(
-         win, text='', placeholder='Type here...', font='Arial',
+    # --- Initialize components for Routine "encoding" ---
+    sentence_text = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Open Sans',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
+         size=(1.6, 1), borderWidth=2.0,
+         color='white', colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
+         editable=False,
+         name='sentence_text',
+         depth=0, autoLog=True,
+    )
+    
+    # --- Initialize components for Routine "instructions_test" ---
+    instructions_test_text = visual.TextBox2(
+         win, text='You are about to see a series of words. Indicate whether you saw the word in the previous sentence list and your confidence in your response as follows:\n\n1/a: Confident No\n2/f: Unsure No\n3/j: Unsure Yes\n4/;: Confident Yes\n\nPress the spacebar to continue.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
@@ -454,9 +478,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          languageStyle='LTR',
          formattingSyntax='md',
          editable=False,
-         name='textbox',
+         name='instructions_test_text',
          depth=0, autoLog=True,
     )
+    key_resp_test = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # create some handy timers
     
@@ -488,29 +513,29 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
     
-    # --- Prepare to start Routine "Instructions" ---
-    # create an object to store info about Routine Instructions
-    Instructions = data.Routine(
-        name='Instructions',
-        components=[instructions_text, key_resp],
+    # --- Prepare to start Routine "instructions_encoding" ---
+    # create an object to store info about Routine instructions_encoding
+    instructions_encoding = data.Routine(
+        name='instructions_encoding',
+        components=[instructions_encoding_text, key_resp_encoding],
     )
-    Instructions.status = NOT_STARTED
+    instructions_encoding.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    instructions_text.reset()
-    # create starting attributes for key_resp
-    key_resp.keys = []
-    key_resp.rt = []
-    _key_resp_allKeys = []
-    # store start times for Instructions
-    Instructions.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    Instructions.tStart = globalClock.getTime(format='float')
-    Instructions.status = STARTED
-    thisExp.addData('Instructions.started', Instructions.tStart)
-    Instructions.maxDuration = None
+    instructions_encoding_text.reset()
+    # create starting attributes for key_resp_encoding
+    key_resp_encoding.keys = []
+    key_resp_encoding.rt = []
+    _key_resp_encoding_allKeys = []
+    # store start times for instructions_encoding
+    instructions_encoding.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    instructions_encoding.tStart = globalClock.getTime(format='float')
+    instructions_encoding.status = STARTED
+    thisExp.addData('instructions_encoding.started', instructions_encoding.tStart)
+    instructions_encoding.maxDuration = None
     # keep track of which components have finished
-    InstructionsComponents = Instructions.components
-    for thisComponent in Instructions.components:
+    instructions_encodingComponents = instructions_encoding.components
+    for thisComponent in instructions_encoding.components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -522,9 +547,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "Instructions" ---
-    thisExp.currentRoutine = Instructions
-    Instructions.forceEnded = routineForceEnded = not continueRoutine
+    # --- Run Routine "instructions_encoding" ---
+    thisExp.currentRoutine = instructions_encoding
+    instructions_encoding.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -533,51 +558,51 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *instructions_text* updates
+        # *instructions_encoding_text* updates
         
-        # if instructions_text is starting this frame...
-        if instructions_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if instructions_encoding_text is starting this frame...
+        if instructions_encoding_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            instructions_text.frameNStart = frameN  # exact frame index
-            instructions_text.tStart = t  # local t and not account for scr refresh
-            instructions_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(instructions_text, 'tStartRefresh')  # time at next scr refresh
+            instructions_encoding_text.frameNStart = frameN  # exact frame index
+            instructions_encoding_text.tStart = t  # local t and not account for scr refresh
+            instructions_encoding_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instructions_encoding_text, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'instructions_text.started')
+            thisExp.timestampOnFlip(win, 'instructions_encoding_text.started')
             # update status
-            instructions_text.status = STARTED
-            instructions_text.setAutoDraw(True)
+            instructions_encoding_text.status = STARTED
+            instructions_encoding_text.setAutoDraw(True)
         
-        # if instructions_text is active this frame...
-        if instructions_text.status == STARTED:
+        # if instructions_encoding_text is active this frame...
+        if instructions_encoding_text.status == STARTED:
             # update params
-            pass
+            instructions_encoding_text.setText(instructions_reformatted, log=False)
         
-        # *key_resp* updates
+        # *key_resp_encoding* updates
         waitOnFlip = False
         
-        # if key_resp is starting this frame...
-        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if key_resp_encoding is starting this frame...
+        if key_resp_encoding.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            key_resp.frameNStart = frameN  # exact frame index
-            key_resp.tStart = t  # local t and not account for scr refresh
-            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+            key_resp_encoding.frameNStart = frameN  # exact frame index
+            key_resp_encoding.tStart = t  # local t and not account for scr refresh
+            key_resp_encoding.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_encoding, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp.started')
+            thisExp.timestampOnFlip(win, 'key_resp_encoding.started')
             # update status
-            key_resp.status = STARTED
+            key_resp_encoding.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _key_resp_allKeys.extend(theseKeys)
-            if len(_key_resp_allKeys):
-                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
-                key_resp.rt = _key_resp_allKeys[-1].rt
-                key_resp.duration = _key_resp_allKeys[-1].duration
+            win.callOnFlip(key_resp_encoding.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_encoding.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_encoding.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_encoding.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_encoding_allKeys.extend(theseKeys)
+            if len(_key_resp_encoding_allKeys):
+                key_resp_encoding.keys = _key_resp_encoding_allKeys[-1].name  # just the last key pressed
+                key_resp_encoding.rt = _key_resp_encoding_allKeys[-1].rt
+                key_resp_encoding.duration = _key_resp_encoding_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
         
@@ -593,20 +618,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 thisExp=thisExp, 
                 win=win, 
                 timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions,
+                currentRoutine=instructions_encoding,
             )
             # skip the frame we paused on
             continue
         
         # has a Component requested the Routine to end?
         if not continueRoutine:
-            Instructions.forceEnded = routineForceEnded = True
+            instructions_encoding.forceEnded = routineForceEnded = True
         # has the Routine been forcibly ended?
-        if Instructions.forceEnded or routineForceEnded:
+        if instructions_encoding.forceEnded or routineForceEnded:
             break
         # has every Component finished?
         continueRoutine = False
-        for thisComponent in Instructions.components:
+        for thisComponent in instructions_encoding.components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -615,23 +640,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "Instructions" ---
-    for thisComponent in Instructions.components:
+    # --- Ending Routine "instructions_encoding" ---
+    for thisComponent in instructions_encoding.components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    # store stop times for Instructions
-    Instructions.tStop = globalClock.getTime(format='float')
-    Instructions.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('Instructions.stopped', Instructions.tStop)
+    # store stop times for instructions_encoding
+    instructions_encoding.tStop = globalClock.getTime(format='float')
+    instructions_encoding.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('instructions_encoding.stopped', instructions_encoding.tStop)
     # check responses
-    if key_resp.keys in ['', [], None]:  # No response was made
-        key_resp.keys = None
-    thisExp.addData('key_resp.keys',key_resp.keys)
-    if key_resp.keys != None:  # we had a response
-        thisExp.addData('key_resp.rt', key_resp.rt)
-        thisExp.addData('key_resp.duration', key_resp.duration)
+    if key_resp_encoding.keys in ['', [], None]:  # No response was made
+        key_resp_encoding.keys = None
+    thisExp.addData('key_resp_encoding.keys',key_resp_encoding.keys)
+    if key_resp_encoding.keys != None:  # we had a response
+        thisExp.addData('key_resp_encoding.rt', key_resp_encoding.rt)
+        thisExp.addData('key_resp_encoding.duration', key_resp_encoding.duration)
     thisExp.nextEntry()
-    # the Routine "Instructions" was not non-slip safe, so reset the non-slip timer
+    # the Routine "instructions_encoding" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
@@ -663,25 +688,30 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             for paramName in thisEncoding_loop:
                 globals()[paramName] = thisEncoding_loop[paramName]
         
-        # --- Prepare to start Routine "Encoding" ---
-        # create an object to store info about Routine Encoding
-        Encoding = data.Routine(
-            name='Encoding',
-            components=[textbox],
+        # --- Prepare to start Routine "encoding" ---
+        # create an object to store info about Routine encoding
+        encoding = data.Routine(
+            name='encoding',
+            components=[sentence_text],
         )
-        Encoding.status = NOT_STARTED
+        encoding.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        textbox.reset()
-        # store start times for Encoding
-        Encoding.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-        Encoding.tStart = globalClock.getTime(format='float')
-        Encoding.status = STARTED
-        thisExp.addData('Encoding.started', Encoding.tStart)
-        Encoding.maxDuration = None
+        sentence_text.reset()
+        # Run 'Begin Routine' code from encoding_code
+        if dev_mode:
+            print((encoding_loop.thisN,sentence_list[s_order[encoding_loop.thisN]]))
+            
+        sentence_reformatted=sentence_list[s_order[encoding_loop.thisN]].replace('keyword_color',keyword_color)
+        # store start times for encoding
+        encoding.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        encoding.tStart = globalClock.getTime(format='float')
+        encoding.status = STARTED
+        thisExp.addData('encoding.started', encoding.tStart)
+        encoding.maxDuration = None
         # keep track of which components have finished
-        EncodingComponents = Encoding.components
-        for thisComponent in Encoding.components:
+        encodingComponents = encoding.components
+        for thisComponent in encoding.components:
             thisComponent.tStart = None
             thisComponent.tStop = None
             thisComponent.tStartRefresh = None
@@ -693,10 +723,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         frameN = -1
         
-        # --- Run Routine "Encoding" ---
-        thisExp.currentRoutine = Encoding
-        Encoding.forceEnded = routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 4.0:
+        # --- Run Routine "encoding" ---
+        thisExp.currentRoutine = encoding
+        encoding.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine:
             # if trial has changed, end Routine now
             if hasattr(thisEncoding_loop, 'status') and thisEncoding_loop.status == STOPPING:
                 continueRoutine = False
@@ -707,39 +737,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
-            # *textbox* updates
+            # *sentence_text* updates
             
-            # if textbox is starting this frame...
-            if textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # if sentence_text is starting this frame...
+            if sentence_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                textbox.frameNStart = frameN  # exact frame index
-                textbox.tStart = t  # local t and not account for scr refresh
-                textbox.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(textbox, 'tStartRefresh')  # time at next scr refresh
+                sentence_text.frameNStart = frameN  # exact frame index
+                sentence_text.tStart = t  # local t and not account for scr refresh
+                sentence_text.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(sentence_text, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'textbox.started')
+                thisExp.timestampOnFlip(win, 'sentence_text.started')
                 # update status
-                textbox.status = STARTED
-                textbox.setAutoDraw(True)
+                sentence_text.status = STARTED
+                sentence_text.setAutoDraw(True)
             
-            # if textbox is active this frame...
-            if textbox.status == STARTED:
+            # if sentence_text is active this frame...
+            if sentence_text.status == STARTED:
                 # update params
-                textbox.setText(sentence_list[s_order[encoding_loop.thisTrialN]], log=False)
+                sentence_text.setText(sentence_reformatted, log=False)
             
-            # if textbox is stopping this frame...
-            if textbox.status == STARTED:
+            # if sentence_text is stopping this frame...
+            if sentence_text.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > textbox.tStartRefresh + 4-frameTolerance:
+                if tThisFlipGlobal > sentence_text.tStartRefresh + encode_time-frameTolerance:
                     # keep track of stop time/frame for later
-                    textbox.tStop = t  # not accounting for scr refresh
-                    textbox.tStopRefresh = tThisFlipGlobal  # on global time
-                    textbox.frameNStop = frameN  # exact frame index
+                    sentence_text.tStop = t  # not accounting for scr refresh
+                    sentence_text.tStopRefresh = tThisFlipGlobal  # on global time
+                    sentence_text.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'textbox.stopped')
+                    thisExp.timestampOnFlip(win, 'sentence_text.stopped')
                     # update status
-                    textbox.status = FINISHED
-                    textbox.setAutoDraw(False)
+                    sentence_text.status = FINISHED
+                    sentence_text.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -753,20 +783,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     thisExp=thisExp, 
                     win=win, 
                     timers=[routineTimer, globalClock], 
-                    currentRoutine=Encoding,
+                    currentRoutine=encoding,
                 )
                 # skip the frame we paused on
                 continue
             
             # has a Component requested the Routine to end?
             if not continueRoutine:
-                Encoding.forceEnded = routineForceEnded = True
+                encoding.forceEnded = routineForceEnded = True
             # has the Routine been forcibly ended?
-            if Encoding.forceEnded or routineForceEnded:
+            if encoding.forceEnded or routineForceEnded:
                 break
             # has every Component finished?
             continueRoutine = False
-            for thisComponent in Encoding.components:
+            for thisComponent in encoding.components:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
@@ -775,21 +805,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # --- Ending Routine "Encoding" ---
-        for thisComponent in Encoding.components:
+        # --- Ending Routine "encoding" ---
+        for thisComponent in encoding.components:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        # store stop times for Encoding
-        Encoding.tStop = globalClock.getTime(format='float')
-        Encoding.tStopRefresh = tThisFlipGlobal
-        thisExp.addData('Encoding.stopped', Encoding.tStop)
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if Encoding.maxDurationReached:
-            routineTimer.addTime(-Encoding.maxDuration)
-        elif Encoding.forceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-4.000000)
+        # store stop times for encoding
+        encoding.tStop = globalClock.getTime(format='float')
+        encoding.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('encoding.stopped', encoding.tStop)
+        # the Routine "encoding" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         # mark thisEncoding_loop as finished
         if hasattr(thisEncoding_loop, 'status'):
             thisEncoding_loop.status = FINISHED
@@ -806,6 +831,152 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # completed n_sentences repeats of 'encoding_loop'
     encoding_loop.status = FINISHED
     
+    
+    # --- Prepare to start Routine "instructions_test" ---
+    # create an object to store info about Routine instructions_test
+    instructions_test = data.Routine(
+        name='instructions_test',
+        components=[instructions_test_text, key_resp_test],
+    )
+    instructions_test.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    instructions_test_text.reset()
+    # create starting attributes for key_resp_test
+    key_resp_test.keys = []
+    key_resp_test.rt = []
+    _key_resp_test_allKeys = []
+    # store start times for instructions_test
+    instructions_test.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    instructions_test.tStart = globalClock.getTime(format='float')
+    instructions_test.status = STARTED
+    thisExp.addData('instructions_test.started', instructions_test.tStart)
+    instructions_test.maxDuration = None
+    # keep track of which components have finished
+    instructions_testComponents = instructions_test.components
+    for thisComponent in instructions_test.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "instructions_test" ---
+    thisExp.currentRoutine = instructions_test
+    instructions_test.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *instructions_test_text* updates
+        
+        # if instructions_test_text is starting this frame...
+        if instructions_test_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instructions_test_text.frameNStart = frameN  # exact frame index
+            instructions_test_text.tStart = t  # local t and not account for scr refresh
+            instructions_test_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instructions_test_text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'instructions_test_text.started')
+            # update status
+            instructions_test_text.status = STARTED
+            instructions_test_text.setAutoDraw(True)
+        
+        # if instructions_test_text is active this frame...
+        if instructions_test_text.status == STARTED:
+            # update params
+            pass
+        
+        # *key_resp_test* updates
+        waitOnFlip = False
+        
+        # if key_resp_test is starting this frame...
+        if key_resp_test.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp_test.frameNStart = frameN  # exact frame index
+            key_resp_test.tStart = t  # local t and not account for scr refresh
+            key_resp_test.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_test, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'key_resp_test.started')
+            # update status
+            key_resp_test.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp_test.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_test.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_test.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_test.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_test_allKeys.extend(theseKeys)
+            if len(_key_resp_test_allKeys):
+                key_resp_test.keys = _key_resp_test_allKeys[-1].name  # just the last key pressed
+                key_resp_test.rt = _key_resp_test_allKeys[-1].rt
+                key_resp_test.duration = _key_resp_test_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=instructions_test,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # has a Component requested the Routine to end?
+        if not continueRoutine:
+            instructions_test.forceEnded = routineForceEnded = True
+        # has the Routine been forcibly ended?
+        if instructions_test.forceEnded or routineForceEnded:
+            break
+        # has every Component finished?
+        continueRoutine = False
+        for thisComponent in instructions_test.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "instructions_test" ---
+    for thisComponent in instructions_test.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for instructions_test
+    instructions_test.tStop = globalClock.getTime(format='float')
+    instructions_test.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('instructions_test.stopped', instructions_test.tStop)
+    # check responses
+    if key_resp_test.keys in ['', [], None]:  # No response was made
+        key_resp_test.keys = None
+    thisExp.addData('key_resp_test.keys',key_resp_test.keys)
+    if key_resp_test.keys != None:  # we had a response
+        thisExp.addData('key_resp_test.rt', key_resp_test.rt)
+        thisExp.addData('key_resp_test.duration', key_resp_test.duration)
+    thisExp.nextEntry()
+    # the Routine "instructions_test" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # mark experiment as finished
     endExperiment(thisExp, win=win)

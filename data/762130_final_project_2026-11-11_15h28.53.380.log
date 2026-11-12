@@ -1,0 +1,51 @@
+9.9381 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+9.9686 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+10.5457 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+10.5458 	INFO 	OpenGL version supported by driver is 4..
+10.6635 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FBD8562530>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FBD85624D0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001FBCE2A02B0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6636 	EXP 	window1: backgroundImage = ''
+10.6636 	EXP 	window1: backgroundFit = 'none'
+11.3190 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.3190 	EXP 	window1: recordFrameIntervals = False
+11.5087 	EXP 	window1: recordFrameIntervals = True
+13.1759 	EXP 	window1: recordFrameIntervals = False
+13.1760 	EXP 	Screen (0) actual frame rate measured at 59.91Hz
+13.5865 	INFO 	keyboard.Keyboard is using ptb backend.
+13.5866 	EXP 	final_project: status = STARTED
+0.0090 	EXP 	instructions_text: autoLog = True
+0.0090 	EXP 	textbox: autoLog = True
+0.0211 	INFO 	Keyboard events cleared
+0.0209 	EXP 	instructions_text: autoDraw = True
+4.2416 	DATA 	Keypress: space
+4.2585 	EXP 	Device response: <KeyPress from None: t=4.238594699971145, value=space, duration=None>
+4.2590 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+4.2730 	EXP 	instructions_text: autoDraw = False
+4.2730 	EXP 	textbox: autoDraw = True
+4.3714 	EXP 	Device response: <KeyPress from None: t=4.238594699971145, value=space, duration=0.13206040000659414>
+8.2697 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+8.2858 	EXP 	textbox: autoDraw = False
+8.2858 	EXP 	textbox: autoDraw = True
+10.5219 	EXP 	Device response: <KeyPress from None: t=10.518769299989799, value=space, duration=None>
+10.5249 	DATA 	Keypress: space
+10.6376 	EXP 	Device response: <KeyPress from None: t=10.518769299989799, value=space, duration=0.10388139999122359>
+11.4878 	EXP 	Device response: <KeyPress from None: t=11.478696599981049, value=space, duration=None>
+11.4909 	DATA 	Keypress: space
+11.5880 	EXP 	Device response: <KeyPress from None: t=11.478696599981049, value=space, duration=0.09999960000277497>
+11.7220 	EXP 	Device response: <KeyPress from None: t=11.710660699987784, value=space, duration=None>
+11.7250 	DATA 	Keypress: space
+11.8219 	EXP 	Device response: <KeyPress from None: t=11.710660699987784, value=space, duration=0.10407929998473264>
+11.9384 	EXP 	Device response: <KeyPress from None: t=11.926788999990094, value=space, duration=None>
+11.9419 	DATA 	Keypress: space
+12.0548 	EXP 	Device response: <KeyPress from None: t=11.926788999990094, value=space, duration=0.11195600000792183>
+12.2699 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+12.2860 	EXP 	textbox: autoDraw = False
+12.2860 	EXP 	textbox: autoDraw = True
+14.2059 	EXP 	Device response: <KeyPress from None: t=14.202948199992534, value=escape, duration=None>
+14.2092 	DATA 	Keypress: escape
+14.4232 	EXP 	Device response: <KeyPress from None: t=14.202948199992534, value=escape, duration=0.21585929999127984>
+14.4233 	EXP 	final_project: status = STOPPED
+14.4361 	EXP 	textbox: autoDraw = False
+14.4362 	EXP 	final_project: status = STOPPED
+14.4421 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\762130_final_project_2026-11-11_15h28.53.380.csv'
+14.4434 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\762130_final_project_2026-11-11_15h28.53.380.psydat
+14.9100 	INFO 	Stopping keyboard key buffers.

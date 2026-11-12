@@ -1,0 +1,74 @@
+9.4713 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+9.5052 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+10.0919 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+10.0919 	INFO 	OpenGL version supported by driver is 4..
+10.2105 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023B86C67880>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023B86C64700>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000023B88640F10>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.2106 	EXP 	window1: backgroundImage = ''
+10.2106 	EXP 	window1: backgroundFit = 'none'
+10.8691 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.8691 	EXP 	window1: recordFrameIntervals = False
+11.0495 	EXP 	window1: recordFrameIntervals = True
+12.7171 	EXP 	window1: recordFrameIntervals = False
+12.7172 	EXP 	Screen (0) actual frame rate measured at 59.78Hz
+13.2067 	INFO 	keyboard.Keyboard is using ptb backend.
+13.2067 	EXP 	final_project: status = STARTED
+0.0081 	EXP 	instructions_text: autoLog = True
+0.0081 	EXP 	textbox: autoLog = True
+0.0229 	INFO 	Keyboard events cleared
+0.0228 	EXP 	instructions_text: autoDraw = True
+1.0945 	EXP 	Device response: <KeyPress from None: t=1.0836668999982066, value=space, duration=None>
+1.0950 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+1.1012 	DATA 	Keypress: space
+1.1076 	EXP 	instructions_text: autoDraw = False
+1.1076 	EXP 	textbox: autoDraw = True
+1.1742 	EXP 	Device response: <KeyPress from None: t=1.0836668999982066, value=space, duration=0.08380739999120124>
+5.1080 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+5.1226 	EXP 	textbox: autoDraw = False
+5.1226 	EXP 	textbox: autoDraw = False
+5.1226 	EXP 	textbox: autoDraw = True
+9.1085 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+9.1228 	EXP 	textbox: autoDraw = False
+9.1228 	EXP 	textbox: autoDraw = False
+9.1228 	EXP 	textbox: autoDraw = True
+13.1083 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+13.1229 	EXP 	textbox: autoDraw = False
+13.1229 	EXP 	textbox: autoDraw = False
+13.1229 	EXP 	textbox: autoDraw = True
+17.1089 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+17.1226 	EXP 	textbox: autoDraw = False
+17.1226 	EXP 	textbox: autoDraw = False
+17.1226 	EXP 	textbox: autoDraw = True
+21.1096 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+21.1233 	EXP 	textbox: autoDraw = False
+21.1233 	EXP 	textbox: autoDraw = False
+21.1233 	EXP 	textbox: autoDraw = True
+25.1096 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+25.1235 	EXP 	textbox: autoDraw = False
+25.1235 	EXP 	textbox: autoDraw = False
+25.1235 	EXP 	textbox: autoDraw = True
+29.1082 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+29.1230 	EXP 	textbox: autoDraw = False
+29.1230 	EXP 	textbox: autoDraw = False
+29.1230 	EXP 	textbox: autoDraw = True
+33.1088 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+33.1231 	EXP 	textbox: autoDraw = False
+33.1231 	EXP 	textbox: autoDraw = False
+33.1231 	EXP 	textbox: autoDraw = True
+37.1106 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+37.1228 	EXP 	textbox: autoDraw = False
+37.1228 	EXP 	textbox: autoDraw = False
+37.1228 	EXP 	textbox: autoDraw = True
+41.1084 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+41.1231 	EXP 	textbox: autoDraw = False
+41.1231 	EXP 	textbox: autoDraw = False
+41.1231 	EXP 	textbox: autoDraw = True
+45.1081 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+45.1234 	EXP 	textbox: autoDraw = False
+45.1234 	EXP 	textbox: autoDraw = False
+45.1234 	EXP 	textbox: autoDraw = True
+49.1240 	EXP 	textbox: autoDraw = False
+49.1240 	EXP 	textbox: autoDraw = False
+49.1242 	EXP 	final_project: status = STOPPED
+49.1347 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\931040_final_project_2026-11-11_15h36.34.318.csv'
+49.1362 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\931040_final_project_2026-11-11_15h36.34.318.psydat
+49.5282 	INFO 	Stopping keyboard key buffers.

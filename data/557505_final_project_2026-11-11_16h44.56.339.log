@@ -1,0 +1,67 @@
+9.8816 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+9.9027 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+10.5133 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+10.5133 	INFO 	OpenGL version supported by driver is 4..
+10.6455 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023017C55C60>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023017C56F50>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002300E1A6260>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6455 	EXP 	window1: backgroundImage = ''
+10.6455 	EXP 	window1: backgroundFit = 'none'
+11.3587 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.3588 	EXP 	window1: recordFrameIntervals = False
+11.5927 	EXP 	window1: recordFrameIntervals = True
+13.2592 	EXP 	window1: recordFrameIntervals = False
+13.2592 	EXP 	Screen (0) actual frame rate measured at 60.20Hz
+13.6570 	INFO 	keyboard.Keyboard is using ptb backend.
+13.6571 	EXP 	final_project: status = STARTED
+0.0136 	EXP 	instructions_text: autoLog = True
+0.0136 	EXP 	sentence_text: autoLog = True
+0.2820 	INFO 	Keyboard events cleared
+0.2819 	EXP 	instructions_text: autoDraw = True
+6.7552 	DATA 	Keypress: space
+6.7736 	EXP 	Device response: <KeyPress from None: t=6.753812399983872, value=space, duration=None>
+6.7741 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+6.7863 	EXP 	instructions_text: autoDraw = False
+6.7863 	EXP 	sentence_text: autoDraw = True
+6.8507 	EXP 	Device response: <KeyPress from None: t=6.753812399983872, value=space, duration=0.07998340000631288>
+7.6334 	EXP 	Device response: <KeyPress from None: t=7.625530399993295, value=space, duration=None>
+7.6358 	DATA 	Keypress: space
+7.7694 	EXP 	Device response: <KeyPress from None: t=7.625530399993295, value=space, duration=0.1325414000020828>
+7.7872 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+7.7999 	EXP 	sentence_text: autoDraw = False
+7.7999 	EXP 	sentence_text: autoDraw = False
+7.7999 	EXP 	sentence_text: autoDraw = True
+8.2328 	EXP 	Device response: <KeyPress from None: t=8.221499199979007, value=space, duration=None>
+8.2355 	DATA 	Keypress: space
+8.3509 	EXP 	Device response: <KeyPress from None: t=8.221499199979007, value=space, duration=0.12062650002189912>
+8.5534 	EXP 	Device response: <KeyPress from None: t=8.546331599995028, value=space, duration=None>
+8.5586 	DATA 	Keypress: space
+8.6829 	EXP 	Device response: <KeyPress from None: t=8.546331599995028, value=space, duration=0.13170070000342093>
+8.7998 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+8.8133 	EXP 	sentence_text: autoDraw = False
+8.8133 	EXP 	sentence_text: autoDraw = False
+8.8133 	EXP 	sentence_text: autoDraw = True
+8.8342 	EXP 	Device response: <KeyPress from None: t=8.822219099994982, value=space, duration=None>
+8.8368 	DATA 	Keypress: space
+8.9673 	EXP 	Device response: <KeyPress from None: t=8.822219099994982, value=space, duration=0.14427109999815002>
+9.3172 	EXP 	Device response: <KeyPress from None: t=9.305563699977938, value=space, duration=None>
+9.3197 	DATA 	Keypress: space
+9.4334 	EXP 	Device response: <KeyPress from None: t=9.305563699977938, value=space, duration=0.11606749999918975>
+9.7008 	EXP 	Device response: <KeyPress from None: t=9.697807399992598, value=space, duration=None>
+9.7028 	DATA 	Keypress: space
+9.8006 	EXP 	Device response: <KeyPress from None: t=9.697807399992598, value=space, duration=0.10006580001208931>
+9.8007 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+9.8139 	EXP 	sentence_text: autoDraw = False
+9.8139 	EXP 	sentence_text: autoDraw = False
+9.8139 	EXP 	sentence_text: autoDraw = True
+10.8002 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+10.8128 	EXP 	sentence_text: autoDraw = False
+10.8128 	EXP 	sentence_text: autoDraw = False
+10.8128 	EXP 	sentence_text: autoDraw = True
+11.1351 	EXP 	Device response: <KeyPress from None: t=11.129811699996935, value=escape, duration=None>
+11.1376 	DATA 	Keypress: escape
+11.2839 	EXP 	Device response: <KeyPress from None: t=11.129811699996935, value=escape, duration=0.14415989999542944>
+11.2839 	EXP 	final_project: status = STOPPED
+11.2968 	EXP 	sentence_text: autoDraw = False
+11.2970 	EXP 	final_project: status = STOPPED
+11.3045 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\557505_final_project_2026-11-11_16h44.56.339.csv'
+11.3062 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\557505_final_project_2026-11-11_16h44.56.339.psydat
+11.8026 	INFO 	Stopping keyboard key buffers.
