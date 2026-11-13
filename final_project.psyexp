@@ -72,7 +72,7 @@
       <CodeComponent name="initialization" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="import csv&amp;#10;import glob&amp;#10;import random as r&amp;#10;import numpy as np&amp;#10;&amp;#10;condition=0&amp;#10;dev_mode=True&amp;#10;encode_time=1&amp;#10;keyword_color='red'&amp;#10;&amp;#10;stimulus_filename='test_stimulus_color.csv'&amp;#10;&amp;#10;#print(glob.glob('*'))&amp;#10;&amp;#10;with open(stimulus_filename, mode=&quot;r&quot;,newline='',encoding=&quot;utf-8&quot;) as file:&amp;#10;    reader = csv.reader(file)&amp;#10;&amp;#10;    if condition==0:&amp;#10;        sentence_cols=[6,8,9]&amp;#10;    elif condition==1:&amp;#10;        sentence_cols=[7,8,10]&amp;#10;    else:&amp;#10;        raise ValueError(f&quot;Condition is {condition}. Condition must be 0 or 1&quot;)&amp;#10;    &amp;#10;    &amp;#10;    sentence_list=[row[i] for row in reader for i in sentence_cols ]&amp;#10;    file.seek(0)&amp;#10;    word_cols=[0,1,2,3,4,5]&amp;#10;    word_list=[row[i] for row in reader for i in word_cols]&amp;#10;n_sentences=len(sentence_list)&amp;#10;n_words=len(word_list)&amp;#10;&amp;#10;instructions_reformatted=f'You are about to see a series of sentences. Read each sentence and take note of the {keyword_color} word. You will be asked to recall the {keyword_color} word.\n\nExample: The quick brown fox [color={keyword_color}]jumps[/color] over the lazy dog.\n\nPress the spacebar to continue.'&amp;#10;&amp;#10;if dev_mode:&amp;#10;    print(sentence_list)&amp;#10;    print(word_list)&amp;#10;    print(f&quot;s={n_sentences/n_words}&quot;)&amp;#10;s_order=np.arange(n_sentences)&amp;#10;w_order=np.arange(n_words)&amp;#10;r.shuffle(s_order)&amp;#10;r.shuffle(w_order)&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="import csv&amp;#10;import glob&amp;#10;import random as r&amp;#10;import numpy as np&amp;#10;import pandas as pd&amp;#10;&amp;#10;condition=0&amp;#10;dev_mode=True&amp;#10;encode_time=1&amp;#10;keyword_color='red'&amp;#10;&amp;#10;stimulus_filename='test_stimulus_color.csv'&amp;#10;&amp;#10;#print(glob.glob('*'))&amp;#10;&amp;#10;with open(stimulus_filename, mode=&quot;r&quot;,newline='',encoding=&quot;utf-8&quot;) as file:&amp;#10;    reader = csv.reader(file)&amp;#10;    reader = [row for row in reader]&amp;#10;    word_cols=[0,1,2,3,4,5]&amp;#10;    if condition==0:&amp;#10;        sentence_cols=[6,8,9]&amp;#10;        correct_cols=[0,3,4]&amp;#10;    elif condition==1:&amp;#10;        sentence_cols=[7,8,10]&amp;#10;        correct_cols=[0,3,5]&amp;#10;    else:&amp;#10;        raise ValueError(f&quot;Condition is {condition}. Condition must be 0 or 1&quot;)&amp;#10;    &amp;#10;    &amp;#10;    sentence_list=[row[i] for row in reader for i in sentence_cols]&amp;#10;    word_list=[row[i] for row in reader for i in word_cols]&amp;#10;    correct_list=[i in correct_cols for row in reader for i in word_cols]&amp;#10;    &amp;#10;n_sentences=len(sentence_list)&amp;#10;n_words=len(word_list)&amp;#10;&amp;#10;if n_sentences&gt;n_words:&amp;#10;    raise ValueError(f&quot;n_sentences={n_sentences} must be less than or equal to n_words={n_words}&quot;)&amp;#10;&amp;#10;instructions_reformatted=f'You are about to see a series of sentences. Read each sentence and take note of the {keyword_color} word. You will be asked to recall the {keyword_color} word.\n\nExample: The quick brown fox [color={keyword_color}]jumps[/color] over the lazy dog.\n\nPress the spacebar to continue.'&amp;#10;&amp;#10;if dev_mode:&amp;#10;    print(sentence_list)&amp;#10;    print(word_list)&amp;#10;    print(correct_list)&amp;#10;    print(f&quot;s={n_sentences/n_words}&quot;)&amp;#10;    for i in range(n_words):&amp;#10;        print(word_list[i],correct_list[i])&amp;#10;    &amp;#10;s_order=np.arange(n_sentences)&amp;#10;w_order=np.arange(n_words)&amp;#10;r.shuffle(s_order)&amp;#10;r.shuffle(w_order)&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
@@ -324,6 +324,23 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
+      <CodeComponent name="test_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="data_array=[[None,correctness,None,None] for correctness in correct_list]&amp;#10;if dev_mode:&amp;#10;    data_array=[[None,correct_list[i],None,None,word_list[i]] for i in range(n_words)]&amp;#10;&amp;#10;response_type_temp={1:['1','a'],2:['2','f'],3:['3','j'],4:['4',';']}&amp;#10;response_type={value:key for key,value_list in response_type_temp.items() for value in value_list}&amp;#10;valid_keys=[key for key in response_type]" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="session_list = [];&amp;#10;response_type = {[1]: [&quot;1&quot;, &quot;a&quot;], [2]: [&quot;2&quot;, &quot;f&quot;], [3]: [&quot;3&quot;, &quot;j&quot;], [4]: [&quot;4&quot;, &quot;;&quot;]};&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="rt = key_resp_test.rt;&amp;#10;resp = task_kb.keys;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="rt=key_resp_test.rt&amp;#10;resp=key_resp_test.keys&amp;#10;&amp;#10;data_array[w_order[test_loop.thisN]][0]=test_loop.thisN&amp;#10;data_array[w_order[test_loop.thisN]][2]=response_type[resp]&amp;#10;data_array[w_order[test_loop.thisN]][3]=rt" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="test_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <TextboxComponent name="test_text" plugin="None">
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
@@ -336,7 +353,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="False" valType="code" updates="constant" name="draggable"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="3" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="editable"/>
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
@@ -361,31 +378,14 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="encode_time" valType="code" updates="constant" name="stopVal"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$word_list[w_order[test_loop.thisN]]" valType="str" updates="set every frame" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
-      <CodeComponent name="test_code" plugin="None">
-        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="test_code" valType="code" updates="None" name="name"/>
-      </CodeComponent>
       <KeyboardComponent name="key_resp_test" plugin="None">
-        <Param val="'y','n','left','right','space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="valid_keys" valType="list" updates="set every repeat" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
@@ -403,6 +403,41 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+    </Routine>
+    <Routine name="write_data">
+      <RoutineSettingsComponent name="write_data" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="write_data" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="write_data_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if (dev_mode) {&amp;#10;    data_df = new pd.DataFrame(data_array, {&quot;columns&quot;: [&quot;trial number&quot;, &quot;correct&quot;, &quot;resp&quot;, &quot;rt&quot;, &quot;word&quot;]});&amp;#10;} else {&amp;#10;    data_df = new pd.DataFrame(data_array, {&quot;columns&quot;: [&quot;trial number&quot;, &quot;correct&quot;, &quot;resp&quot;, &quot;rt&quot;]});&amp;#10;}&amp;#10;participant = &quot;participant&quot;;&amp;#10;output_filename = `responses/Condition ${condition}/${expInfo[participant]}_data.csv`;&amp;#10;data_df.to_csv(output_filename);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if dev_mode:&amp;#10;    data_df=pd.DataFrame(data_array,columns=[&quot;trial number&quot;,&quot;correct&quot;,&quot;resp&quot;,&quot;rt&quot;,&quot;word&quot;])&amp;#10;else:&amp;#10;        data_df=pd.DataFrame(data_array,columns=[&quot;trial number&quot;, &quot;correct&quot;,&quot;resp&quot;,&quot;rt&quot;])&amp;#10;&amp;#10;participant='participant'&amp;#10;output_filename=f'responses/Condition {condition}/{expInfo[participant]}_data.csv'&amp;#10;&amp;#10;data_df.to_csv(output_filename)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="write_data_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
   </Routines>
   <Flow>
@@ -422,7 +457,7 @@
     <LoopTerminator name="encoding_loop"/>
     <Routine name="instructions_test"/>
     <LoopInitiator loopType="TrialHandler" name="test_loop">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
@@ -434,5 +469,6 @@
     </LoopInitiator>
     <Routine name="test"/>
     <LoopTerminator name="test_loop"/>
+    <Routine name="write_data"/>
   </Flow>
 </PsychoPy2experiment>
