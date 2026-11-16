@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.2.4),
-    on November 11, 2026, at 21:47
+    on Mon 16 Nov 2026 01:41:21 PM PST
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -132,7 +132,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\Ezekiel\\Desktop\\186c-final\\final_project_lastrun.py',
+        originPath='/home/easyito77/186c-final/final_project_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -384,11 +384,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     import numpy as np
     import pandas as pd
     
-    condition=0
+    
+    
     dev_mode=True
     encode_time=1
     keyword_color='red'
     
+    conditions_filename='conditions.csv'
+    with open(conditions_filename,mode="r",newline='', encoding="utf-8") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if row[1]==expInfo['participant']:
+                condition=row[2]
+                break
+        raise ValueError(f"Participant \"{expInfo['participant']}\" not found")
     stimulus_filename='test_stimulus_color.csv'
     
     #print(glob.glob('*'))
