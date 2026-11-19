@@ -1,0 +1,19 @@
+15.9069 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+15.9631 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+17.6794 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+17.6794 	INFO 	OpenGL version supported by driver is 4..
+17.8379 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000159AAB6E080>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000159AAB6C5B0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000159A99BB9A0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+17.8380 	EXP 	window1: backgroundImage = ''
+17.8380 	EXP 	window1: backgroundFit = 'none'
+18.5415 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+18.5415 	EXP 	window1: recordFrameIntervals = False
+18.7340 	DATA 	Mouse: Left button down, pos=(1878,2167)
+18.7478 	EXP 	window1: recordFrameIntervals = True
+19.0191 	DATA 	Mouse:  Left button up, pos=(1878,2167)
+20.4145 	EXP 	window1: recordFrameIntervals = False
+20.4146 	EXP 	Screen (0) actual frame rate measured at 60.09Hz
+20.8435 	INFO 	keyboard.Keyboard is using ptb backend.
+20.8436 	EXP 	final_project: status = STARTED
+21.1194 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\john_final_project_2026-11-19_02h08.43.274.psydat
+21.1236 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\john_final_project_2026-11-19_02h08.43.274.csv'
+21.1458 	INFO 	Stopping keyboard key buffers.

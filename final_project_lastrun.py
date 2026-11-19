@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2025.2.3),
-    on Wed Nov 18 16:34:23 2026
+This experiment was created using PsychoPy3 Experiment Builder (v2026.2.4),
+    on November 19, 2026, at 15:23
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -38,7 +38,7 @@ deviceManager = hardware.DeviceManager()
 # ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
-psychopyVersion = '2025.2.3'
+psychopyVersion = '2026.2.4'
 expName = 'final_project'  # from the Builder filename that created this script
 expVersion = ''
 # a list of functions to run when the experiment ends (starts off blank)
@@ -132,10 +132,12 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/ezekielito/Desktop/186c-final/final_project_lastrun.py',
+        originPath='C:\\Users\\Ezekiel\\Desktop\\186c-final\\final_project_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
+    # store pilot mode in data file
+    thisExp.addData('piloting', PILOTING, priority=priority.LOW)
     thisExp.setPriority('thisRow.t', priority.CRITICAL)
     thisExp.setPriority('expName', priority.LOW)
     # return experiment handler
@@ -376,8 +378,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "new_phase" ---
     new_phase_text = visual.TextBox2(
-         win, text='This is the beginning of phase $block_loop.thisN', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -386,11 +388,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='new_phase_text',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
+    new_phase_kb = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # --- Initialize components for Routine "instructions_encoding" ---
     # Run 'Begin Experiment' code from initialization
@@ -402,7 +407,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     from statistics import NormalDist
     
     
-    dev_mode=False
+    dev_mode=True
     encode_time=1
     keyword_color='black'
     r.seed(expInfo['participant'].lower())
@@ -410,6 +415,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     n_blocks=5
     
     conditions_filename='conditions.csv'
+    stimulus_filename='stimulusdata2.csv'
+    practice_stimulus_filename='practice.csv'
+    
     done=False
     with open(conditions_filename,mode="r",newline='', encoding="utf-8") as file:
         reader = csv.reader(file)
@@ -421,7 +429,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 break
         if not done:
             raise ValueError(f"Participant \"{expInfo['participant']}\" not found")
-    stimulus_filename='stimulus_data2.csv'
+    
     
     #print(glob.glob('*'))
     
@@ -434,26 +442,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             condition=int(condition)
         except:
             raise ValueError(f'Condition is {condition}. Condition must be integer or integer-convertible')
+        correct_cols=[0,3,5]
         if condition==0:
             sentence_cols=[6,8,9]
-            correct_cols=[0,3,4]
         elif condition==1:
             sentence_cols=[7,8,10]
-            correct_cols=[0,3,5]
         else:
             raise ValueError(f"Condition is {condition}. Condition must be 0 or 1")
         if n_rows % n_blocks:
             raise ValueError(f"There are {n_rows} rows and {n_blocks} blocks. The number of rows should be divisible by the number of blocks.")
-        row_list=np.arange(n_rows)
-        r.shuffle(row_list)
-        row_list=row_list.reshape(n_blocks,n_rows//n_blocks)
+        r_order=np.arange(n_rows)
+        r.shuffle(r_order)
+        
     #
     #    sentence_list=[row[i] for row in reader for i in sentence_cols]
     #    word_list=[row[i] for row in reader for i in word_cols]
     #    correct_list=[i in correct_cols for row in reader for i in word_cols]
-        sentence_list=[[reader[i][j] for j in sentence_cols] for block in range(n_blocks) for i in row_list[block]]
-        word_list=[[reader[i][j] for j in word_cols] for block in range(n_blocks) for i in row_list[block]]
-        correct_list=[[j in correct_cols for j in word_cols] for block in range(n_blocks) for i in row_list[block]]
+        sentence_list=[reader[r_order[i]][j] for i in range(n_rows) for j in sentence_cols]
+        word_list=[reader[r_order[i]][j] for i in range(n_rows) for j in word_cols]
+        correct_list=[j in correct_cols for i in range(n_rows) for j in word_cols]
+    
     
     
     n_sentences=len(sentence_list)
@@ -463,24 +471,40 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         raise ValueError(f"n_sentences={n_sentences} must be less than or equal to n_words={n_words}")
     
     #instructions_reformatted=f'You are about to see a series of sentences. Read each sentence and take note of the {keyword_color} word. You will be asked to recall the {keyword_color} word.\n\nExample: The quick brown fox [color={keyword_color}]jumps[/color] over the lazy dog.\n\nPress the spacebar to continue.'
-    
-    if n_words % n_blocks:
+    #
+    if n_words % n_blocks or n_sentences % n_blocks:
         raise ValueError(f"There are {n_words} words and {n_blocks} blocks. The number of words should be divisible by the number of blocks.")
+    s_perblock=n_sentences//n_blocks
+    w_perblock=n_words//n_blocks
     
     
     
     if dev_mode:
-        print(sentence_list)
-        print(word_list)
+        print(n_blocks, s_perblock,w_perblock)
+        print(n_sentences,len(sentence_list),sentence_list)
+        print(n_words,len(word_list),word_list)
         print(correct_list)
         print(f"s={n_sentences/n_words}")
         for i in range(n_words):
-            print(word_list[i],correct_list[i])
+            print(i,word_list[i],correct_list[i])
+      
+    s_order=np.arange(n_sentences)
+    w_order=np.arange(n_words)
+    
+    for i in range(0,n_blocks,s_perblock):
+        np.random.shuffle(s_order[i:i+s_perblock])
+    for i in range(0,n_blocks,w_perblock):
+        np.random.shuffle(w_order[i:i+w_perblock])
         
-    s_order=np.arange(n_sentences[0])
-    w_order=np.arange(n_words[0])
-    r.shuffle(s_order)
-    r.shuffle(w_order)
+    with open(practice_stimulus_filename, mode="r",newline='',encoding="utf-8") as file:
+        reader = csv.reader(file)
+        reader = [row for row in reader]
+        practice_sentences=[row[2] for row in reader]
+        practice_words=[row[i]  for i in range(2) for row in reader]
+        ps_order=np.arange(len(practice_sentences))
+        np.random.shuffle(ps_order)
+        pw_order=np.arange(len(practice_words))
+        np.random.shuffle(pw_order)
     
     
     instructions_encoding_text = visual.TextBox2(
@@ -494,12 +518,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='instructions_encoding_text',
          depth=-1, autoLog=True,
     )
-    key_resp_encoding_instructions = keyboard.Keyboard(deviceName='defaultKeyboard')
+    key_resp_encoding_instructions = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # --- Initialize components for Routine "encoding" ---
     encoding_text = visual.TextBox2(
@@ -513,7 +539,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='encoding_text',
          depth=0, autoLog=True,
@@ -531,22 +559,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='instructions_test_text',
          depth=0, autoLog=True,
     )
-    key_resp_test_instructions = keyboard.Keyboard(deviceName='defaultKeyboard')
+    key_resp_test_instructions = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # --- Initialize components for Routine "test" ---
     # Run 'Begin Experiment' code from test_code
-    data_array=[[None,correctness,None,None] for correctness in correct_list]
+    data_array=[[None,None,None,None] for word in range(n_words)]
     if dev_mode:
-        data_array=[[None,correct_list[i],None,None,word_list[i]] for i in range(n_words)]
-    
+        #i=(block_loop.thisN-1)*w_perblock+encoding_loop.thisN
+        #data_array=[[None,None,None,None,word_list[word_order[i]]] for i in range(n_words)]
+        #deprecated
+        pass
     response_type_temp={1:['1'],2:['2'],3:['3'],4:['4']}
     response_type={value:key for key,value_list in response_type_temp.items() for value in value_list}
     valid_keys=[key for key in response_type]
+    
+    
     test_text = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
@@ -558,12 +592,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='test_text',
          depth=-1, autoLog=True,
     )
-    key_resp_test = keyboard.Keyboard(deviceName='defaultKeyboard')
+    key_resp_test = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     instructions_small = visual.TextBox2(
          win, text="Indicate whether you've seen the above word and your confidence in your response.\n1: Confident No   2: Unsure No   3: Unsure Yes   4: Confident Yes", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.8), draggable=False,      letterHeight=0.05,
@@ -575,10 +611,32 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='instructions_small',
          depth=-3, autoLog=True,
+    )
+    
+    # --- Initialize components for Routine "result" ---
+    result_textbox = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color='white', colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
+         editable=False,
+         name='result_textbox',
+         depth=-1, autoLog=True,
     )
     
     # --- Initialize components for Routine "write_data" ---
@@ -616,13 +674,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # set up handler to look after randomisation of conditions etc
     block_loop = data.TrialHandler2(
         name='block_loop',
-        nReps=n_blocks, 
-        method='random', 
+        nReps=n_blocks+1, 
+        method='sequential', 
         extraInfo=expInfo, 
         originPath=-1, 
         trialList=[None], 
         seed=None, 
-        isTrials=True, 
+        isTrials=False, 
     )
     thisExp.addLoop(block_loop)  # add the loop to the experiment
     thisBlock_loop = block_loop.trialList[0]  # so we can initialise stimuli with some values
@@ -630,9 +688,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if thisBlock_loop != None:
         for paramName in thisBlock_loop:
             globals()[paramName] = thisBlock_loop[paramName]
-    if thisSession is not None:
-        # if running in a Session with a Liaison client, send data up to now
-        thisSession.sendExperimentData()
     
     for thisBlock_loop in block_loop:
         block_loop.status = STARTED
@@ -640,9 +695,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             thisBlock_loop.status = STARTED
         currentLoop = block_loop
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
-        if thisSession is not None:
-            # if running in a Session with a Liaison client, send data up to now
-            thisSession.sendExperimentData()
         # abbreviate parameter names if possible (e.g. rgb = thisBlock_loop.rgb)
         if thisBlock_loop != None:
             for paramName in thisBlock_loop:
@@ -652,12 +704,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine new_phase
         new_phase = data.Routine(
             name='new_phase',
-            components=[new_phase_text],
+            components=[new_phase_text, new_phase_kb],
         )
         new_phase.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from new_phase_code
+        if block_loop.thisN==0:
+            new_phase_str='Welcome to the practice phase. You will begin with a series of practice trials before beginning the actual experiment. Press the spacebar to continue.'
+        else:
+            new_phase_str=f'This is the beginning of phase {block_loop.thisN}. Press the space bar to continue.'
         new_phase_text.reset()
+        new_phase_text.setText(new_phase_str)
+        # create starting attributes for new_phase_kb
+        new_phase_kb.keys = []
+        new_phase_kb.rt = []
+        _new_phase_kb_allKeys = []
         # store start times for new_phase
         new_phase.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         new_phase.tStart = globalClock.getTime(format='float')
@@ -681,7 +743,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # --- Run Routine "new_phase" ---
         thisExp.currentRoutine = new_phase
         new_phase.forceEnded = routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 1.0:
+        while continueRoutine:
             # if trial has changed, end Routine now
             if hasattr(thisBlock_loop, 'status') and thisBlock_loop.status == STOPPING:
                 continueRoutine = False
@@ -712,19 +774,33 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # update params
                 pass
             
-            # if new_phase_text is stopping this frame...
-            if new_phase_text.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > new_phase_text.tStartRefresh + 1.0-frameTolerance:
-                    # keep track of stop time/frame for later
-                    new_phase_text.tStop = t  # not accounting for scr refresh
-                    new_phase_text.tStopRefresh = tThisFlipGlobal  # on global time
-                    new_phase_text.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'new_phase_text.stopped')
-                    # update status
-                    new_phase_text.status = FINISHED
-                    new_phase_text.setAutoDraw(False)
+            # *new_phase_kb* updates
+            waitOnFlip = False
+            
+            # if new_phase_kb is starting this frame...
+            if new_phase_kb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                new_phase_kb.frameNStart = frameN  # exact frame index
+                new_phase_kb.tStart = t  # local t and not account for scr refresh
+                new_phase_kb.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(new_phase_kb, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'new_phase_kb.started')
+                # update status
+                new_phase_kb.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(new_phase_kb.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(new_phase_kb.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if new_phase_kb.status == STARTED and not waitOnFlip:
+                theseKeys = new_phase_kb.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+                _new_phase_kb_allKeys.extend(theseKeys)
+                if len(_new_phase_kb_allKeys):
+                    new_phase_kb.keys = _new_phase_kb_allKeys[-1].name  # just the last key pressed
+                    new_phase_kb.rt = _new_phase_kb_allKeys[-1].rt
+                    new_phase_kb.duration = _new_phase_kb_allKeys[-1].duration
+                    # a response ends the routine
+                    continueRoutine = False
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -768,13 +844,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         new_phase.tStop = globalClock.getTime(format='float')
         new_phase.tStopRefresh = tThisFlipGlobal
         thisExp.addData('new_phase.stopped', new_phase.tStop)
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if new_phase.maxDurationReached:
-            routineTimer.addTime(-new_phase.maxDuration)
-        elif new_phase.forceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-1.000000)
+        # check responses
+        if new_phase_kb.keys in ['', [], None]:  # No response was made
+            new_phase_kb.keys = None
+        block_loop.addData('new_phase_kb.keys',new_phase_kb.keys)
+        if new_phase_kb.keys != None:  # we had a response
+            block_loop.addData('new_phase_kb.rt', new_phase_kb.rt)
+            block_loop.addData('new_phase_kb.duration', new_phase_kb.duration)
+        # the Routine "new_phase" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # --- Prepare to start Routine "instructions_encoding" ---
         # create an object to store info about Routine instructions_encoding
@@ -787,8 +865,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # update component parameters for each repeat
         # Run 'Begin Routine' code from initialization
         instructions_reformatted='You are about to see a series of sentences. You will be asked to recall words in the sentences.\n\nPress the spacebar to continue.'
+        n_repeats=s_perblock
         if block_loop.thisN==0:
             instructions_reformatted+='You will first receive a series of practice trials, in which you will receive feedback.'
+            n_repeats=len(practice_sentences)
+            
         
         instructions_encoding_text.reset()
         # create starting attributes for key_resp_encoding_instructions
@@ -932,7 +1013,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         encoding_loop = data.TrialHandler2(
             name='encoding_loop',
-            nReps=n_sentences/n_blocks, 
+            nReps=n_repeats, 
             method='sequential', 
             extraInfo=expInfo, 
             originPath=-1, 
@@ -971,8 +1052,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # Run 'Begin Routine' code from encoding_code
             if dev_mode:
                 print((encoding_loop.thisN,sentence_list[s_order[encoding_loop.thisN]]))
-                
-            sentence_reformatted=sentence_list[block_loop.thisN][s_order[encoding_loop.thisN]]
+            if block_loop.thisN:
+                i=(block_loop.thisN-1)*s_perblock+encoding_loop.thisN
+                sentence_reformatted=sentence_list[s_order[i]]
+            else:
+                sentence_reformatted=practice_sentences[ps_order[encoding_loop.thisN]]
             # store start times for encoding
             encoding.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
             encoding.tStart = globalClock.getTime(format='float')
@@ -1098,7 +1182,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 )
                 # once done pausing, restore running status
                 encoding_loop.status = STARTED
-        # completed n_sentences/n_blocks repeats of 'encoding_loop'
+        # completed n_repeats repeats of 'encoding_loop'
         encoding_loop.status = FINISHED
         
         
@@ -1117,6 +1201,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         key_resp_test_instructions.keys = []
         key_resp_test_instructions.rt = []
         _key_resp_test_instructions_allKeys = []
+        # Run 'Begin Routine' code from code
+        if block_loop.thisN:
+            n_repeats=w_perblock
+        else:
+            n_repeats=len(practice_words)
         # store start times for instructions_test
         instructions_test.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         instructions_test.tStart = globalClock.getTime(format='float')
@@ -1254,7 +1343,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # set up handler to look after randomisation of conditions etc
         test_loop = data.TrialHandler2(
             name='test_loop',
-            nReps=n_words, 
+            nReps=n_repeats, 
             method='sequential', 
             extraInfo=expInfo, 
             originPath=-1, 
@@ -1295,6 +1384,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             test.status = NOT_STARTED
             continueRoutine = True
             # update component parameters for each repeat
+            # Run 'Begin Routine' code from test_code
+            if block_loop.thisN:
+                i=(block_loop.thisN-1)*w_perblock+test_loop.thisN
+                word=word_list[w_order[i]]
+                n_repeats=w_perblock
+            else:
+                word=practice_words[pw_order[test_loop.thisN]]
+                n_repeats=len(practice_words)
+                
+            doResponse=not block_loop.thisN
             test_text.reset()
             # create starting attributes for key_resp_test
             key_resp_test.keys = []
@@ -1356,8 +1455,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # if test_text is active this frame...
                 if test_text.status == STARTED:
                     # update params
-                    test_text.setText(word_list[block_loop.thisN][w_order[test_loop.thisN]]
-                    
+                    test_text.setText(word
                     , log=False)
                 
                 # *key_resp_test* updates
@@ -1462,9 +1560,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             rt=key_resp_test.rt
             resp=key_resp_test.keys
             
-            data_array[w_order[test_loop.thisN]][0]=test_loop.thisN
-            data_array[w_order[test_loop.thisN]][2]=response_type[resp]
-            data_array[w_order[test_loop.thisN]][3]=rt
+            
+            i=w_perblock*(block_loop.thisN-1)+test_loop.thisN
+            print((i,response_type[resp],correct_list[i],rt))
+            data_array[i]=(i,response_type[resp],correct_list[i],rt)
             # check responses
             if key_resp_test.keys in ['', [], None]:  # No response was made
                 key_resp_test.keys = None
@@ -1474,6 +1573,199 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 test_loop.addData('key_resp_test.duration', key_resp_test.duration)
             # the Routine "test" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
+            
+            # set up handler to look after randomisation of conditions etc
+            result_loop = data.TrialHandler2(
+                name='result_loop',
+                nReps=doResponse, 
+                method='sequential', 
+                extraInfo=expInfo, 
+                originPath=-1, 
+                trialList=[None], 
+                seed=None, 
+                isTrials=True, 
+            )
+            thisExp.addLoop(result_loop)  # add the loop to the experiment
+            thisResult_loop = result_loop.trialList[0]  # so we can initialise stimuli with some values
+            # abbreviate parameter names if possible (e.g. rgb = thisResult_loop.rgb)
+            if thisResult_loop != None:
+                for paramName in thisResult_loop:
+                    globals()[paramName] = thisResult_loop[paramName]
+            if thisSession is not None:
+                # if running in a Session with a Liaison client, send data up to now
+                thisSession.sendExperimentData()
+            
+            for thisResult_loop in result_loop:
+                result_loop.status = STARTED
+                if hasattr(thisResult_loop, 'status'):
+                    thisResult_loop.status = STARTED
+                currentLoop = result_loop
+                thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
+                if thisSession is not None:
+                    # if running in a Session with a Liaison client, send data up to now
+                    thisSession.sendExperimentData()
+                # abbreviate parameter names if possible (e.g. rgb = thisResult_loop.rgb)
+                if thisResult_loop != None:
+                    for paramName in thisResult_loop:
+                        globals()[paramName] = thisResult_loop[paramName]
+                
+                # --- Prepare to start Routine "result" ---
+                # create an object to store info about Routine result
+                result = data.Routine(
+                    name='result',
+                    components=[result_textbox],
+                )
+                result.status = NOT_STARTED
+                continueRoutine = True
+                # update component parameters for each repeat
+                # Run 'Begin Routine' code from result_code
+                
+                
+                if block_loop.thisN==0:
+                    isCorrect=pw_order[test_loop.thisN]<5
+                else:
+                    i=(block_loop.thisN-1)*w_perblock+test_loop.thisN
+                    isCorrect=correct_list[i]
+                if isCorrect:
+                    result_text='It did appear previously.'
+                else:
+                    result_text='It did not appear previously.'
+                result_textbox.reset()
+                result_textbox.setText(result_text
+                )
+                # store start times for result
+                result.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+                result.tStart = globalClock.getTime(format='float')
+                result.status = STARTED
+                thisExp.addData('result.started', result.tStart)
+                result.maxDuration = None
+                # keep track of which components have finished
+                resultComponents = result.components
+                for thisComponent in result.components:
+                    thisComponent.tStart = None
+                    thisComponent.tStop = None
+                    thisComponent.tStartRefresh = None
+                    thisComponent.tStopRefresh = None
+                    if hasattr(thisComponent, 'status'):
+                        thisComponent.status = NOT_STARTED
+                # reset timers
+                t = 0
+                _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+                frameN = -1
+                
+                # --- Run Routine "result" ---
+                thisExp.currentRoutine = result
+                result.forceEnded = routineForceEnded = not continueRoutine
+                while continueRoutine:
+                    # if trial has changed, end Routine now
+                    if hasattr(thisResult_loop, 'status') and thisResult_loop.status == STOPPING:
+                        continueRoutine = False
+                    # get current time
+                    t = routineTimer.getTime()
+                    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                    # update/draw components on each frame
+                    
+                    # *result_textbox* updates
+                    
+                    # if result_textbox is starting this frame...
+                    if result_textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        result_textbox.frameNStart = frameN  # exact frame index
+                        result_textbox.tStart = t  # local t and not account for scr refresh
+                        result_textbox.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(result_textbox, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'result_textbox.started')
+                        # update status
+                        result_textbox.status = STARTED
+                        result_textbox.setAutoDraw(True)
+                    
+                    # if result_textbox is active this frame...
+                    if result_textbox.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if result_textbox is stopping this frame...
+                    if result_textbox.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > result_textbox.tStartRefresh + encode_time-frameTolerance:
+                            # keep track of stop time/frame for later
+                            result_textbox.tStop = t  # not accounting for scr refresh
+                            result_textbox.tStopRefresh = tThisFlipGlobal  # on global time
+                            result_textbox.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'result_textbox.stopped')
+                            # update status
+                            result_textbox.status = FINISHED
+                            result_textbox.setAutoDraw(False)
+                    
+                    # check for quit (typically the Esc key)
+                    if defaultKeyboard.getKeys(keyList=["escape"]):
+                        thisExp.status = FINISHED
+                    if thisExp.status == FINISHED or endExpNow:
+                        endExperiment(thisExp, win=win)
+                        return
+                    # pause experiment here if requested
+                    if thisExp.status == PAUSED:
+                        pauseExperiment(
+                            thisExp=thisExp, 
+                            win=win, 
+                            timers=[routineTimer, globalClock], 
+                            currentRoutine=result,
+                        )
+                        # skip the frame we paused on
+                        continue
+                    
+                    # has a Component requested the Routine to end?
+                    if not continueRoutine:
+                        result.forceEnded = routineForceEnded = True
+                    # has the Routine been forcibly ended?
+                    if result.forceEnded or routineForceEnded:
+                        break
+                    # has every Component finished?
+                    continueRoutine = False
+                    for thisComponent in result.components:
+                        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                            continueRoutine = True
+                            break  # at least one component has not yet finished
+                    
+                    # refresh the screen
+                    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                        win.flip()
+                
+                # --- Ending Routine "result" ---
+                for thisComponent in result.components:
+                    if hasattr(thisComponent, "setAutoDraw"):
+                        thisComponent.setAutoDraw(False)
+                # store stop times for result
+                result.tStop = globalClock.getTime(format='float')
+                result.tStopRefresh = tThisFlipGlobal
+                thisExp.addData('result.stopped', result.tStop)
+                # the Routine "result" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
+                # mark thisResult_loop as finished
+                if hasattr(thisResult_loop, 'status'):
+                    thisResult_loop.status = FINISHED
+                # if awaiting a pause, pause now
+                if result_loop.status == PAUSED:
+                    thisExp.status = PAUSED
+                    pauseExperiment(
+                        thisExp=thisExp, 
+                        win=win, 
+                        timers=[globalClock], 
+                    )
+                    # once done pausing, restore running status
+                    result_loop.status = STARTED
+                thisExp.nextEntry()
+                
+            # completed doResponse repeats of 'result_loop'
+            result_loop.status = FINISHED
+            
+            if thisSession is not None:
+                # if running in a Session with a Liaison client, send data up to now
+                thisSession.sendExperimentData()
             # mark thisTest_loop as finished
             if hasattr(thisTest_loop, 'status'):
                 thisTest_loop.status = FINISHED
@@ -1489,7 +1781,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 test_loop.status = STARTED
             thisExp.nextEntry()
             
-        # completed n_words repeats of 'test_loop'
+        # completed n_repeats repeats of 'test_loop'
         test_loop.status = FINISHED
         
         if thisSession is not None:
@@ -1508,14 +1800,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             )
             # once done pausing, restore running status
             block_loop.status = STARTED
-        thisExp.nextEntry()
-        
-    # completed n_blocks repeats of 'block_loop'
+    # completed n_blocks+1 repeats of 'block_loop'
     block_loop.status = FINISHED
     
-    if thisSession is not None:
-        # if running in a Session with a Liaison client, send data up to now
-        thisSession.sendExperimentData()
     
     # --- Prepare to start Routine "write_data" ---
     # create an object to store info about Routine write_data
@@ -1679,6 +1966,10 @@ def endExperiment(thisExp, win=None):
     win : psychopy.visual.Window
         Window for this experiment.
     """
+    # stop any playback components
+    if thisExp.currentRoutine is not None:
+        for comp in thisExp.currentRoutine.getPlaybackComponents():
+            comp.stop()
     if win is not None:
         # remove autodraw from all current components
         win.clearAutoDraw()
