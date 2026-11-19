@@ -1,0 +1,49 @@
+10.3606 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+10.4092 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+15.0240 	INFO 	Loaded monitor calibration from ['2026_11_18 13:55']
+15.0313 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2240, 1260]. Using actual size
+15.1302 	INFO 	Using renderer 'Apple M4' for graphics
+15.1302 	INFO 	OpenGL version supported by driver is 2..
+15.1491 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x16f903070>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x16f903010>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x16f93a530>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([4480, 2520]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.1491 	EXP 	window1: backgroundImage = ''
+15.1491 	EXP 	window1: backgroundFit = 'none'
+15.3761 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+15.3761 	EXP 	window1: recordFrameIntervals = False
+15.5168 	EXP 	window1: recordFrameIntervals = True
+15.6536 	EXP 	Screen (0) actual frame rate measured at 116.13Hz
+15.6536 	EXP 	window1: recordFrameIntervals = False
+15.9366 	INFO 	keyboard.Keyboard is using ptb backend.
+15.9366 	EXP 	final_project: status = STARTED
+0.0078 	EXP 	instructions_encoding_text: autoLog = True
+0.0078 	EXP 	encoding_text: autoLog = True
+0.0078 	EXP 	instructions_test_text: autoLog = True
+0.0078 	EXP 	test_text: autoLog = True
+0.0078 	EXP 	instructions_small: autoLog = True
+0.0214 	INFO 	Keyboard events cleared
+0.0214 	EXP 	instructions_encoding_text: autoDraw = True
+9.7392 	EXP 	Device response: <KeyPress from None: t=9.659168707999925, value=space, duration=None>
+9.7406 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+9.7508 	DATA 	Keypress: space
+9.7592 	EXP 	instructions_encoding_text: autoDraw = False
+9.7592 	EXP 	encoding_text: autoDraw = True
+9.7599 	EXP 	Device response: <KeyPress from None: t=9.659168707999925, value=space, duration=0.08800733400130412>
+10.7447 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+10.7609 	EXP 	encoding_text: autoDraw = False
+10.7609 	EXP 	encoding_text: autoDraw = False
+10.7609 	EXP 	encoding_text: autoDraw = True
+11.7443 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+11.7570 	EXP 	encoding_text: autoDraw = False
+11.7570 	EXP 	encoding_text: autoDraw = False
+11.7570 	EXP 	encoding_text: autoDraw = True
+12.1053 	EXP 	Device response: <KeyPress from None: t=12.099170166999102, value=space, duration=None>
+12.1123 	DATA 	Keypress: space
+12.2279 	EXP 	Device response: <KeyPress from None: t=12.099170166999102, value=space, duration=0.1279705830020248>
+12.4290 	EXP 	Device response: <KeyPress from None: t=12.4271888330004, value=escape, duration=None>
+12.4307 	DATA 	Keypress: escape
+12.5652 	EXP 	Device response: <KeyPress from None: t=12.4271888330004, value=escape, duration=0.12798349999866332>
+12.5653 	EXP 	final_project: status = STOPPED
+12.5720 	EXP 	encoding_text: autoDraw = False
+12.5720 	EXP 	final_project: status = STOPPED
+12.5731 	INFO 	saved data to '/Users/ezekielito/Desktop/186c-final/data/jOhn_final_project_2026-11-18_14h00.57.770.csv'
+12.5746 	INFO 	saved data to /Users/ezekielito/Desktop/186c-final/data/jOhn_final_project_2026-11-18_14h00.57.770.psydat
+12.6922 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

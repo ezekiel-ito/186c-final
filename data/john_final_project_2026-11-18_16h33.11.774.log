@@ -1,0 +1,19 @@
+10.1872 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+10.2304 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+13.4283 	INFO 	Loaded monitor calibration from ['2026_11_18 13:55']
+13.4353 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2240, 1260]. Using actual size
+13.5396 	INFO 	Using renderer 'Apple M4' for graphics
+13.5396 	INFO 	OpenGL version supported by driver is 2..
+13.5590 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x16c96d7e0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x16c96d780>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x16ce906a0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([4480, 2520]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.5591 	EXP 	window1: backgroundImage = ''
+13.5591 	EXP 	window1: backgroundFit = 'none'
+13.7860 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.7861 	EXP 	window1: recordFrameIntervals = False
+13.9360 	EXP 	window1: recordFrameIntervals = True
+14.0809 	EXP 	Screen (0) actual frame rate measured at 112.46Hz
+14.0809 	EXP 	window1: recordFrameIntervals = False
+14.3692 	INFO 	keyboard.Keyboard is using ptb backend.
+14.3692 	EXP 	final_project: status = STARTED
+14.4022 	INFO 	saved data to /Users/ezekielito/Desktop/186c-final/data/john_final_project_2026-11-18_16h33.11.774.psydat
+14.4023 	INFO 	saved data to '/Users/ezekielito/Desktop/186c-final/data/john_final_project_2026-11-18_16h33.11.774.csv'
+14.4031 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
