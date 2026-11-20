@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2025.2.3),
-    on Thu Nov 19 15:39:49 2026
+This experiment was created using PsychoPy3 Experiment Builder (v2026.2.4),
+    on November 20, 2026, at 02:53
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -38,7 +38,7 @@ deviceManager = hardware.DeviceManager()
 # ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
-psychopyVersion = '2025.2.3'
+psychopyVersion = '2026.2.4'
 expName = 'final_project'  # from the Builder filename that created this script
 expVersion = ''
 # a list of functions to run when the experiment ends (starts off blank)
@@ -132,10 +132,12 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/ezekielito/Desktop/186c-final/final_project_lastrun.py',
+        originPath='C:\\Users\\Ezekiel\\Desktop\\186c-final\\final_project_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
+    # store pilot mode in data file
+    thisExp.addData('piloting', PILOTING, priority=priority.LOW)
     thisExp.setPriority('thisRow.t', priority.CRITICAL)
     thisExp.setPriority('expName', priority.LOW)
     # return experiment handler
@@ -378,7 +380,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     new_phase_text = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.6, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -386,12 +388,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='new_phase_text',
          depth=-1, autoLog=True,
     )
-    new_phase_kb = keyboard.Keyboard(deviceName='defaultKeyboard')
+    new_phase_kb = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # --- Initialize components for Routine "instructions_encoding" ---
     # Run 'Begin Experiment' code from initialization
@@ -403,7 +407,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     from statistics import NormalDist
     
     
-    dev_mode=True
+    dev_mode=False
     encode_time=0.1
     keyword_color='black'
     r.seed(expInfo['participant'].lower())
@@ -420,7 +424,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         for row in reader:
             if row[1]==expInfo['participant'].lower():
                 condition=row[2]
-                print(row[1],row[2])
+                #print(row[1],row[2])
                 done=True
                 break
         if not done:
@@ -487,9 +491,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     s_order=np.arange(n_sentences)
     w_order=np.arange(n_words)
     
-    for i in range(0,n_blocks,s_perblock):
+    for i in range(0,n_sentences,s_perblock):
         np.random.shuffle(s_order[i:i+s_perblock])
-    for i in range(0,n_blocks,w_perblock):
+    for i in range(0,n_words,w_perblock):
         np.random.shuffle(w_order[i:i+w_perblock])
         
     with open(practice_stimulus_filename, mode="r",newline='',encoding="utf-8") as file:
@@ -514,12 +518,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='instructions_encoding_text',
          depth=-1, autoLog=True,
     )
-    key_resp_encoding_instructions = keyboard.Keyboard(deviceName='defaultKeyboard')
+    key_resp_encoding_instructions = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # --- Initialize components for Routine "encoding" ---
     encoding_text = visual.TextBox2(
@@ -533,7 +539,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='encoding_text',
          depth=0, autoLog=True,
@@ -551,12 +559,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='instructions_test_text',
          depth=0, autoLog=True,
     )
-    key_resp_test_instructions = keyboard.Keyboard(deviceName='defaultKeyboard')
+    key_resp_test_instructions = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     
     # --- Initialize components for Routine "test" ---
     # Run 'Begin Experiment' code from test_code
@@ -582,12 +592,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='test_text',
          depth=-1, autoLog=True,
     )
-    key_resp_test = keyboard.Keyboard(deviceName='defaultKeyboard')
+    key_resp_test = keyboard.Keyboard(deviceName='defaultKeyboard', backend='PsychToolbox')
     instructions_small = visual.TextBox2(
          win, text="Indicate whether you've seen the above word and your confidence in your response.\n1: Confident No   2: Unsure No   3: Unsure Yes   4: Confident Yes", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.8), draggable=False,      letterHeight=0.05,
@@ -599,7 +611,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='instructions_small',
          depth=-3, autoLog=True,
@@ -609,7 +623,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     result_textbox = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.6, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -617,7 +631,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         flipHoriz=False, flipVert=False, 
+         languageStyle='LTR',
+         formattingSyntax='md',
          editable=False,
          name='result_textbox',
          depth=-1, autoLog=True,
@@ -697,7 +713,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if block_loop.thisN==0:
             new_phase_str='Welcome to the practice phase. You will begin with a series of practice trials before beginning the actual experiment. Press the spacebar to continue.'
         else:
-            new_phase_str=f'This is the beginning of phase {block_loop.thisN}. Press the space bar to continue.'
+            new_phase_str=f'This is the beginning of phase {block_loop.thisN}. Please take a few seconds to look away from the screen. Press the space bar when you are ready continue.'
         new_phase_text.reset()
         new_phase_text.setText(new_phase_str)
         # create starting attributes for new_phase_kb
@@ -848,13 +864,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         # Run 'Begin Routine' code from initialization
-        instructions_reformatted='You are about to see a series of sentences. You will be asked to recall words in the sentences.\n\nPress the spacebar to continue.'
+        instructions_reformatted='You are about to see a series of sentences. You will be asked to recall words in the sentences.'
         n_repeats=s_perblock
         if block_loop.thisN==0:
-            instructions_reformatted+='You will first receive a series of practice trials, in which you will receive feedback.'
+            instructions_reformatted+='\n\nYou will first receive a series of practice trials, in which you will receive feedback.'
             n_repeats=len(practice_sentences)
-            
-        
+        instructions_reformatted+='\n\nPress the spacebar to continue.'
         instructions_encoding_text.reset()
         # create starting attributes for key_resp_encoding_instructions
         key_resp_encoding_instructions.keys = []
@@ -1547,8 +1562,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             
             
             i=w_perblock*(block_loop.thisN-1)+test_loop.thisN
-            print((i,response_type[resp],correct_list[i],rt))
-            data_array[i]=(i,response_type[resp],correct_list[i],rt)
+            #print((i,response_type[resp],correct_list[i],rt))
+            if block_loop.thisN:
+                data_array[i]=(w_order[i],response_type[resp],correct_list[i],rt)
             # check responses
             if key_resp_test.keys in ['', [], None]:  # No response was made
                 key_resp_test.keys = None
@@ -1615,6 +1631,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     result_text='It did appear previously.'
                 else:
                     result_text='It did not appear previously.'
+                    
+                result_text+='\n\n The screen will refresh momentarily.'
                 result_textbox.reset()
                 result_textbox.setText(result_text
                 )
@@ -1799,11 +1817,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     continueRoutine = True
     # update component parameters for each repeat
     # Run 'Begin Routine' code from write_data_code
-    data_df=pd.DataFrame(data_array,columns=["trial number", "correct","resp","rt"])
+    data_df=pd.DataFrame(data_array,columns=["trial number", "resp","correct","rt"])
     
     participant='participant'
-    output_filename=f'responses/Condition {condition}/{expInfo[participant]}_data.csv'
-    
+    output_filename=f'data/Condition {condition}-{expInfo[participant]}-responses.csv'
     data_df.to_csv(output_filename)
     
     hits,n_signal=np.array([0,0,0]),0
@@ -1821,22 +1838,35 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             if resp>1:
                 false_positives[0:resp-1]+=1
                 
-    print(hits, false_positives)
-    print(n_signal,n_noise)
+    #print(hits, false_positives)
+    #print(n_signal,n_noise)
     h=hits/float(n_signal)
     f=false_positives/float(n_noise)
     Zh=np.array([NormalDist().inv_cdf(x) for x in h])
     Zf=np.array([NormalDist().inv_cdf(x) for x in f])
     d_prime=Zh-Zf
     
-    output_filename=f'responses/Condition {condition}/{expInfo[participant]}_computations.csv'
+    h=[str(_) for _ in h]
+    f=[str(_) for _ in f]
+    Zh=[str(_) for _ in Zh]
+    Zf=[str(_) for _ in Zf]
+    d_prime=[str(_) for _ in d_prime]
+    
+    h=','.join(h)
+    f=','.join(f)
+    Zh=','.join(Zh)
+    Zf=','.join(Zf)
+    d_prime=','.join(d_prime)
+    
+    output_filename=f'data/Condition {condition}-{expInfo[participant]}-computations.csv'
     
     with open(output_filename, "w") as file:
-        print(h, file=file)
-        print(f, file=file)
-        print(Zh, file=file)
-        print(Zf, file=file)
-        print(d_prime, file=file)
+        print(',1/2-4,1-2/3-4,1-3/4',file=file)
+        print(f'h,{h}', file=file)
+        print(f'f,{f}', file=file)
+        print(f'Zh,{Zh}', file=file)
+        print(f'Zf,{Zf}', file=file)
+        print(f'd\',{d_prime}', file=file)
     # store start times for write_data
     write_data.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     write_data.tStart = globalClock.getTime(format='float')
@@ -1948,6 +1978,10 @@ def endExperiment(thisExp, win=None):
     win : psychopy.visual.Window
         Window for this experiment.
     """
+    # stop any playback components
+    if thisExp.currentRoutine is not None:
+        for comp in thisExp.currentRoutine.getPlaybackComponents():
+            comp.stop()
     if win is not None:
         # remove autodraw from all current components
         win.clearAutoDraw()

@@ -1,0 +1,1680 @@
+13.4459 	INFO 	Loaded monitor calibration from ['2026_10_29 22:26']
+13.4759 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2400]. Using actual size
+14.1497 	INFO 	Using renderer 'AMD Radeon(TM) 890M Graphics' for graphics
+14.1497 	INFO 	OpenGL version supported by driver is 4..
+14.2758 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000206B7CF90F0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000206B7CF9150>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000206ADBAC460>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3840, 2400]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+14.2760 	EXP 	window1: backgroundImage = ''
+14.2760 	EXP 	window1: backgroundFit = 'none'
+14.8870 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+14.8871 	EXP 	window1: recordFrameIntervals = False
+15.0780 	EXP 	window1: recordFrameIntervals = True
+16.6470 	WARNING 	t of last frame was 20.36ms (=1/49)
+16.7439 	EXP 	window1: recordFrameIntervals = False
+16.7439 	EXP 	Screen (0) actual frame rate measured at 59.04Hz
+17.2132 	INFO 	keyboard.Keyboard is using ptb backend.
+17.2133 	EXP 	final_project: status = STARTED
+0.0144 	EXP 	new_phase_text: autoLog = True
+0.0144 	EXP 	instructions_encoding_text: autoLog = True
+0.0144 	EXP 	encoding_text: autoLog = True
+0.0144 	EXP 	instructions_test_text: autoLog = True
+0.0144 	EXP 	test_text: autoLog = True
+0.0144 	EXP 	instructions_small: autoLog = True
+0.0144 	EXP 	result_textbox: autoLog = True
+0.0153 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0855 	INFO 	Keyboard events cleared
+0.0854 	EXP 	new_phase_text: autoDraw = True
+36.8496 	DATA 	Keypress: space
+36.8741 	EXP 	Device response: <KeyPress from None: t=36.849050799995894, value=space, duration=None>
+36.8930 	EXP 	Device response: <KeyPress from None: t=36.849050799995894, value=space, duration=0.0402734000235796>
+36.9109 	INFO 	Keyboard events cleared
+36.9107 	EXP 	new_phase_text: autoDraw = False
+36.9107 	EXP 	instructions_encoding_text: autoDraw = True
+45.2350 	EXP 	Device response: <KeyPress from None: t=45.233135200018296, value=space, duration=None>
+45.2354 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+45.2394 	EXP 	Device response: <KeyPress from None: t=45.233135200018296, value=space, duration=0.004610999982105568>
+45.2429 	DATA 	Keypress: space
+45.2509 	EXP 	instructions_encoding_text: autoDraw = False
+45.2509 	EXP 	encoding_text: autoDraw = True
+49.2508 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+49.2833 	EXP 	encoding_text: autoDraw = False
+49.2833 	EXP 	encoding_text: autoDraw = False
+49.2833 	EXP 	encoding_text: autoDraw = True
+53.2833 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+53.3152 	EXP 	encoding_text: autoDraw = False
+53.3152 	EXP 	encoding_text: autoDraw = False
+53.3152 	EXP 	encoding_text: autoDraw = True
+57.3171 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+57.3307 	EXP 	encoding_text: autoDraw = False
+57.3307 	EXP 	encoding_text: autoDraw = False
+57.3307 	EXP 	encoding_text: autoDraw = True
+61.3163 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+61.3307 	EXP 	encoding_text: autoDraw = False
+61.3307 	EXP 	encoding_text: autoDraw = False
+61.3307 	EXP 	encoding_text: autoDraw = True
+65.3383 	INFO 	Keyboard events cleared
+65.3381 	EXP 	encoding_text: autoDraw = False
+65.3381 	EXP 	encoding_text: autoDraw = False
+65.3381 	EXP 	instructions_test_text: autoDraw = True
+67.5352 	DATA 	Keypress: space
+67.5480 	EXP 	Device response: <KeyPress from None: t=67.53395390001242, value=space, duration=None>
+67.5485 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+67.5660 	INFO 	Keyboard events cleared
+67.5659 	EXP 	instructions_test_text: autoDraw = False
+67.5659 	EXP 	test_text: autoDraw = True
+67.5659 	EXP 	instructions_small: autoDraw = True
+67.6383 	EXP 	Device response: <KeyPress from None: t=67.53395390001242, value=space, duration=0.10000819998094812>
+70.4536 	DATA 	Keypress: 2
+70.4662 	EXP 	Device response: <KeyPress from None: t=70.45061540001188, value=2, duration=None>
+70.4666 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+70.4809 	EXP 	test_text: autoDraw = False
+70.4809 	EXP 	instructions_small: autoDraw = False
+70.4809 	EXP 	result_textbox: autoDraw = True
+70.6170 	EXP 	Device response: <KeyPress from None: t=70.45061540001188, value=2, duration=0.15967309998814017>
+74.4675 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+74.4880 	INFO 	Keyboard events cleared
+74.4879 	EXP 	result_textbox: autoDraw = False
+74.4879 	EXP 	result_textbox: autoDraw = False
+74.4879 	EXP 	test_text: autoDraw = True
+74.4879 	EXP 	instructions_small: autoDraw = True
+77.6002 	EXP 	Device response: <KeyPress from None: t=77.59408390001045, value=2, duration=None>
+77.6006 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+77.6092 	DATA 	Keypress: 2
+77.6192 	EXP 	test_text: autoDraw = False
+77.6192 	EXP 	instructions_small: autoDraw = False
+77.6192 	EXP 	result_textbox: autoDraw = True
+77.7319 	EXP 	Device response: <KeyPress from None: t=77.59408390001045, value=2, duration=0.13616729999193922>
+81.6205 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+81.6413 	INFO 	Keyboard events cleared
+81.6412 	EXP 	result_textbox: autoDraw = False
+81.6412 	EXP 	result_textbox: autoDraw = False
+81.6412 	EXP 	test_text: autoDraw = True
+81.6412 	EXP 	instructions_small: autoDraw = True
+82.8498 	EXP 	Device response: <KeyPress from None: t=82.8461792000162, value=2, duration=None>
+82.8504 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+82.8587 	DATA 	Keypress: 2
+82.8652 	EXP 	test_text: autoDraw = False
+82.8652 	EXP 	instructions_small: autoDraw = False
+82.8652 	EXP 	result_textbox: autoDraw = True
+82.9837 	EXP 	Device response: <KeyPress from None: t=82.8461792000162, value=2, duration=0.12402009998913854>
+86.9110 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+86.9624 	INFO 	Keyboard events cleared
+86.9622 	EXP 	result_textbox: autoDraw = False
+86.9622 	EXP 	result_textbox: autoDraw = False
+86.9622 	EXP 	test_text: autoDraw = True
+86.9622 	EXP 	instructions_small: autoDraw = True
+90.5869 	EXP 	Device response: <KeyPress from None: t=90.58302170000388, value=4, duration=None>
+90.5873 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+90.5940 	DATA 	Keypress: 4
+90.6028 	EXP 	test_text: autoDraw = False
+90.6028 	EXP 	instructions_small: autoDraw = False
+90.6028 	EXP 	result_textbox: autoDraw = True
+90.6484 	EXP 	Device response: <KeyPress from None: t=90.58302170000388, value=4, duration=0.06342710001626983>
+94.6016 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+94.6222 	INFO 	Keyboard events cleared
+94.6221 	EXP 	result_textbox: autoDraw = False
+94.6221 	EXP 	result_textbox: autoDraw = False
+94.6221 	EXP 	test_text: autoDraw = True
+94.6221 	EXP 	instructions_small: autoDraw = True
+96.2084 	DATA 	Keypress: 3
+96.2172 	EXP 	Device response: <KeyPress from None: t=96.2068654000177, value=3, duration=None>
+96.2177 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+96.2314 	EXP 	test_text: autoDraw = False
+96.2314 	EXP 	instructions_small: autoDraw = False
+96.2314 	EXP 	result_textbox: autoDraw = True
+96.3329 	EXP 	Device response: <KeyPress from None: t=96.2068654000177, value=3, duration=0.12433389999205247>
+100.2199 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+100.2442 	INFO 	Keyboard events cleared
+100.2440 	EXP 	result_textbox: autoDraw = False
+100.2440 	EXP 	result_textbox: autoDraw = False
+100.2440 	EXP 	test_text: autoDraw = True
+100.2440 	EXP 	instructions_small: autoDraw = True
+104.4683 	EXP 	Device response: <KeyPress from None: t=104.45867409999482, value=2, duration=None>
+104.4688 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+104.4764 	DATA 	Keypress: 2
+104.4836 	EXP 	test_text: autoDraw = False
+104.4836 	EXP 	instructions_small: autoDraw = False
+104.4836 	EXP 	result_textbox: autoDraw = True
+104.5663 	EXP 	Device response: <KeyPress from None: t=104.45867409999482, value=2, duration=0.09224170001107268>
+108.4845 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+108.5017 	INFO 	Keyboard events cleared
+108.5016 	EXP 	result_textbox: autoDraw = False
+108.5016 	EXP 	result_textbox: autoDraw = False
+108.5016 	EXP 	test_text: autoDraw = True
+108.5016 	EXP 	instructions_small: autoDraw = True
+110.3034 	EXP 	Device response: <KeyPress from None: t=110.2950792000047, value=3, duration=None>
+110.3038 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+110.3091 	DATA 	Keypress: 3
+110.3174 	EXP 	test_text: autoDraw = False
+110.3174 	EXP 	instructions_small: autoDraw = False
+110.3174 	EXP 	result_textbox: autoDraw = True
+110.3530 	EXP 	Device response: <KeyPress from None: t=110.2950792000047, value=3, duration=0.05654109999886714>
+114.3029 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+114.3196 	INFO 	Keyboard events cleared
+114.3195 	EXP 	result_textbox: autoDraw = False
+114.3195 	EXP 	result_textbox: autoDraw = False
+114.3195 	EXP 	test_text: autoDraw = True
+114.3195 	EXP 	instructions_small: autoDraw = True
+117.2015 	EXP 	Device response: <KeyPress from None: t=117.19540260001668, value=2, duration=None>
+117.2019 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+117.2069 	DATA 	Keypress: 2
+117.2147 	EXP 	test_text: autoDraw = False
+117.2147 	EXP 	instructions_small: autoDraw = False
+117.2147 	EXP 	result_textbox: autoDraw = True
+117.3344 	EXP 	Device response: <KeyPress from None: t=117.19540260001668, value=2, duration=0.12425049999728799>
+121.2015 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+121.2213 	INFO 	Keyboard events cleared
+121.2212 	EXP 	result_textbox: autoDraw = False
+121.2212 	EXP 	result_textbox: autoDraw = False
+121.2212 	EXP 	test_text: autoDraw = True
+121.2212 	EXP 	instructions_small: autoDraw = True
+122.7847 	EXP 	Device response: <KeyPress from None: t=122.77220180002041, value=1, duration=None>
+122.7852 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+122.7909 	DATA 	Keypress: 1
+122.8037 	EXP 	test_text: autoDraw = False
+122.8037 	EXP 	instructions_small: autoDraw = False
+122.8037 	EXP 	result_textbox: autoDraw = True
+122.8988 	EXP 	Device response: <KeyPress from None: t=122.77220180002041, value=1, duration=0.122895399981644>
+126.8041 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+126.8236 	INFO 	Keyboard events cleared
+126.8233 	EXP 	result_textbox: autoDraw = False
+126.8233 	EXP 	result_textbox: autoDraw = False
+126.8233 	EXP 	test_text: autoDraw = True
+126.8233 	EXP 	instructions_small: autoDraw = True
+131.7067 	EXP 	Device response: <KeyPress from None: t=131.69951589999255, value=2, duration=None>
+131.7070 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+131.7124 	DATA 	Keypress: 2
+131.7209 	EXP 	test_text: autoDraw = False
+131.7209 	EXP 	instructions_small: autoDraw = False
+131.7209 	EXP 	result_textbox: autoDraw = True
+131.8007 	EXP 	Device response: <KeyPress from None: t=131.69951589999255, value=2, duration=0.09029510000254959>
+135.7222 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+135.7390 	INFO 	Keyboard events cleared
+135.7389 	EXP 	result_textbox: autoDraw = False
+135.7389 	EXP 	result_textbox: autoDraw = False
+135.7389 	EXP 	new_phase_text: autoDraw = True
+233.1505 	EXP 	Device response: <KeyPress from None: t=233.14663620002102, value=space, duration=None>
+233.1567 	DATA 	Keypress: space
+233.1672 	INFO 	Keyboard events cleared
+233.1671 	EXP 	new_phase_text: autoDraw = False
+233.1671 	EXP 	instructions_encoding_text: autoDraw = True
+233.2062 	EXP 	Device response: <KeyPress from None: t=233.14663620002102, value=space, duration=0.04798889998346567>
+235.7203 	EXP 	Device response: <KeyPress from None: t=235.71396940000704, value=space, duration=None>
+235.7208 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+235.7268 	DATA 	Keypress: space
+235.7355 	EXP 	instructions_encoding_text: autoDraw = False
+235.7355 	EXP 	encoding_text: autoDraw = True
+235.8867 	EXP 	Device response: <KeyPress from None: t=235.71396940000704, value=space, duration=0.1559420000121463>
+239.7400 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+239.7538 	EXP 	encoding_text: autoDraw = False
+239.7538 	EXP 	encoding_text: autoDraw = False
+239.7538 	EXP 	encoding_text: autoDraw = True
+243.7532 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+243.7670 	EXP 	encoding_text: autoDraw = False
+243.7670 	EXP 	encoding_text: autoDraw = False
+243.7670 	EXP 	encoding_text: autoDraw = True
+247.7540 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+247.7857 	EXP 	encoding_text: autoDraw = False
+247.7857 	EXP 	encoding_text: autoDraw = False
+247.7857 	EXP 	encoding_text: autoDraw = True
+251.7872 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+251.8131 	EXP 	encoding_text: autoDraw = False
+251.8131 	EXP 	encoding_text: autoDraw = False
+251.8131 	EXP 	encoding_text: autoDraw = True
+255.8044 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+255.8192 	EXP 	encoding_text: autoDraw = False
+255.8192 	EXP 	encoding_text: autoDraw = False
+255.8192 	EXP 	encoding_text: autoDraw = True
+259.8206 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+259.8382 	EXP 	encoding_text: autoDraw = False
+259.8382 	EXP 	encoding_text: autoDraw = False
+259.8382 	EXP 	encoding_text: autoDraw = True
+263.8261 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+263.8417 	EXP 	encoding_text: autoDraw = False
+263.8417 	EXP 	encoding_text: autoDraw = False
+263.8417 	EXP 	encoding_text: autoDraw = True
+267.8378 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+267.8519 	EXP 	encoding_text: autoDraw = False
+267.8519 	EXP 	encoding_text: autoDraw = False
+267.8519 	EXP 	encoding_text: autoDraw = True
+271.8374 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+271.8515 	EXP 	encoding_text: autoDraw = False
+271.8515 	EXP 	encoding_text: autoDraw = False
+271.8515 	EXP 	encoding_text: autoDraw = True
+275.8401 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+275.8753 	EXP 	encoding_text: autoDraw = False
+275.8753 	EXP 	encoding_text: autoDraw = False
+275.8753 	EXP 	encoding_text: autoDraw = True
+279.8709 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+279.8858 	EXP 	encoding_text: autoDraw = False
+279.8858 	EXP 	encoding_text: autoDraw = False
+279.8858 	EXP 	encoding_text: autoDraw = True
+283.8978 	INFO 	Keyboard events cleared
+283.8977 	EXP 	encoding_text: autoDraw = False
+283.8977 	EXP 	encoding_text: autoDraw = False
+283.8977 	EXP 	instructions_test_text: autoDraw = True
+287.6063 	DATA 	Keypress: space
+287.6184 	EXP 	Device response: <KeyPress from None: t=287.60325310000917, value=space, duration=None>
+287.6190 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+287.6391 	INFO 	Keyboard events cleared
+287.6389 	EXP 	instructions_test_text: autoDraw = False
+287.6389 	EXP 	test_text: autoDraw = True
+287.6389 	EXP 	instructions_small: autoDraw = True
+287.6869 	EXP 	Device response: <KeyPress from None: t=287.60325310000917, value=space, duration=0.07236419999389909>
+290.1212 	EXP 	Device response: <KeyPress from None: t=290.11927690001903, value=1, duration=None>
+290.1236 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+290.1308 	DATA 	Keypress: 1
+290.1413 	INFO 	Keyboard events cleared
+290.1412 	EXP 	test_text: autoDraw = False
+290.1412 	EXP 	instructions_small: autoDraw = False
+290.1412 	EXP 	test_text: autoDraw = True
+290.1412 	EXP 	instructions_small: autoDraw = True
+290.2536 	EXP 	Device response: <KeyPress from None: t=290.11927690001903, value=1, duration=0.12023599998792633>
+291.7904 	DATA 	Keypress: 1
+291.8050 	EXP 	Device response: <KeyPress from None: t=291.78722980001476, value=1, duration=None>
+291.8088 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+291.8335 	INFO 	Keyboard events cleared
+291.8334 	EXP 	test_text: autoDraw = False
+291.8334 	EXP 	instructions_small: autoDraw = False
+291.8334 	EXP 	test_text: autoDraw = True
+291.8334 	EXP 	instructions_small: autoDraw = True
+291.9207 	EXP 	Device response: <KeyPress from None: t=291.78722980001476, value=1, duration=0.12798629997996613>
+293.5375 	EXP 	Device response: <KeyPress from None: t=293.52814440001384, value=2, duration=None>
+293.5402 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+293.5472 	DATA 	Keypress: 2
+293.5565 	INFO 	Keyboard events cleared
+293.5564 	EXP 	test_text: autoDraw = False
+293.5564 	EXP 	instructions_small: autoDraw = False
+293.5564 	EXP 	test_text: autoDraw = True
+293.5564 	EXP 	instructions_small: autoDraw = True
+293.6545 	EXP 	Device response: <KeyPress from None: t=293.52814440001384, value=2, duration=0.12375090000568889>
+294.7543 	EXP 	Device response: <KeyPress from None: t=294.75172070000554, value=4, duration=None>
+294.7574 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+294.7682 	DATA 	Keypress: 4
+294.7800 	INFO 	Keyboard events cleared
+294.7798 	EXP 	test_text: autoDraw = False
+294.7798 	EXP 	instructions_small: autoDraw = False
+294.7798 	EXP 	test_text: autoDraw = True
+294.7798 	EXP 	instructions_small: autoDraw = True
+294.8587 	EXP 	Device response: <KeyPress from None: t=294.75172070000554, value=4, duration=0.10362340000574477>
+296.1035 	EXP 	Device response: <KeyPress from None: t=296.09951820000424, value=4, duration=None>
+296.1059 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+296.1152 	DATA 	Keypress: 4
+296.1277 	INFO 	Keyboard events cleared
+296.1276 	EXP 	test_text: autoDraw = False
+296.1276 	EXP 	instructions_small: autoDraw = False
+296.1276 	EXP 	test_text: autoDraw = True
+296.1276 	EXP 	instructions_small: autoDraw = True
+296.1718 	EXP 	Device response: <KeyPress from None: t=296.09951820000424, value=4, duration=0.07183890001033433>
+297.4364 	EXP 	Device response: <KeyPress from None: t=297.4277962000051, value=2, duration=None>
+297.4388 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+297.4455 	DATA 	Keypress: 2
+297.4564 	INFO 	Keyboard events cleared
+297.4563 	EXP 	test_text: autoDraw = False
+297.4563 	EXP 	instructions_small: autoDraw = False
+297.4563 	EXP 	test_text: autoDraw = True
+297.4563 	EXP 	instructions_small: autoDraw = True
+297.5717 	EXP 	Device response: <KeyPress from None: t=297.4277962000051, value=2, duration=0.12768939998932183>
+302.1547 	EXP 	Device response: <KeyPress from None: t=302.14752590001444, value=4, duration=None>
+302.1575 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+302.1642 	DATA 	Keypress: 4
+302.1751 	INFO 	Keyboard events cleared
+302.1750 	EXP 	test_text: autoDraw = False
+302.1750 	EXP 	instructions_small: autoDraw = False
+302.1750 	EXP 	test_text: autoDraw = True
+302.1750 	EXP 	instructions_small: autoDraw = True
+302.2552 	EXP 	Device response: <KeyPress from None: t=302.14752590001444, value=4, duration=0.09651810000650585>
+304.2039 	EXP 	Device response: <KeyPress from None: t=304.1960728999984, value=2, duration=None>
+304.2067 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+304.2176 	DATA 	Keypress: 2
+304.2293 	INFO 	Keyboard events cleared
+304.2291 	EXP 	test_text: autoDraw = False
+304.2291 	EXP 	instructions_small: autoDraw = False
+304.2291 	EXP 	test_text: autoDraw = True
+304.2291 	EXP 	instructions_small: autoDraw = True
+304.3708 	EXP 	Device response: <KeyPress from None: t=304.1960728999984, value=2, duration=0.16390090002096258>
+305.3205 	EXP 	Device response: <KeyPress from None: t=305.31154470000183, value=1, duration=None>
+305.3233 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+305.3305 	DATA 	Keypress: 1
+305.3420 	INFO 	Keyboard events cleared
+305.3419 	EXP 	test_text: autoDraw = False
+305.3419 	EXP 	instructions_small: autoDraw = False
+305.3419 	EXP 	test_text: autoDraw = True
+305.3419 	EXP 	instructions_small: autoDraw = True
+305.4533 	EXP 	Device response: <KeyPress from None: t=305.31154470000183, value=1, duration=0.12824900000123307>
+306.3755 	EXP 	Device response: <KeyPress from None: t=306.37254949999624, value=1, duration=None>
+306.3784 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+306.3890 	DATA 	Keypress: 1
+306.4008 	INFO 	Keyboard events cleared
+306.4007 	EXP 	test_text: autoDraw = False
+306.4007 	EXP 	instructions_small: autoDraw = False
+306.4007 	EXP 	test_text: autoDraw = True
+306.4007 	EXP 	instructions_small: autoDraw = True
+306.4867 	EXP 	Device response: <KeyPress from None: t=306.37254949999624, value=1, duration=0.1110546000127215>
+309.2544 	EXP 	Device response: <KeyPress from None: t=309.24948910000967, value=2, duration=None>
+309.2566 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+309.2640 	DATA 	Keypress: 2
+309.2750 	INFO 	Keyboard events cleared
+309.2749 	EXP 	test_text: autoDraw = False
+309.2749 	EXP 	instructions_small: autoDraw = False
+309.2749 	EXP 	test_text: autoDraw = True
+309.2749 	EXP 	instructions_small: autoDraw = True
+309.3706 	EXP 	Device response: <KeyPress from None: t=309.24948910000967, value=2, duration=0.11555049999151379>
+311.8576 	DATA 	Keypress: 3
+311.8713 	EXP 	Device response: <KeyPress from None: t=311.8558364000055, value=3, duration=None>
+311.8742 	EXP 	New trial (rep=12, index=0): <Trial 12 (0 in rep 12) data={'thisN': 12, 'thisTrialN': 0, 'thisRepN': 12}>
+311.8922 	INFO 	Keyboard events cleared
+311.8920 	EXP 	test_text: autoDraw = False
+311.8920 	EXP 	instructions_small: autoDraw = False
+311.8920 	EXP 	test_text: autoDraw = True
+311.8920 	EXP 	instructions_small: autoDraw = True
+311.9723 	EXP 	Device response: <KeyPress from None: t=311.8558364000055, value=3, duration=0.11607799999183044>
+314.4106 	DATA 	Keypress: 1
+314.4225 	EXP 	Device response: <KeyPress from None: t=314.4078803000157, value=1, duration=None>
+314.4250 	EXP 	New trial (rep=13, index=0): <Trial 13 (0 in rep 13) data={'thisN': 13, 'thisTrialN': 0, 'thisRepN': 13}>
+314.4444 	INFO 	Keyboard events cleared
+314.4443 	EXP 	test_text: autoDraw = False
+314.4443 	EXP 	instructions_small: autoDraw = False
+314.4443 	EXP 	test_text: autoDraw = True
+314.4443 	EXP 	instructions_small: autoDraw = True
+314.5425 	EXP 	Device response: <KeyPress from None: t=314.4078803000157, value=1, duration=0.11997679999331012>
+317.5213 	EXP 	Device response: <KeyPress from None: t=317.5162309000152, value=2, duration=None>
+317.5244 	EXP 	New trial (rep=14, index=0): <Trial 14 (0 in rep 14) data={'thisN': 14, 'thisTrialN': 0, 'thisRepN': 14}>
+317.5324 	DATA 	Keypress: 2
+317.5407 	INFO 	Keyboard events cleared
+317.5406 	EXP 	test_text: autoDraw = False
+317.5406 	EXP 	instructions_small: autoDraw = False
+317.5406 	EXP 	test_text: autoDraw = True
+317.5406 	EXP 	instructions_small: autoDraw = True
+317.6544 	EXP 	Device response: <KeyPress from None: t=317.5162309000152, value=2, duration=0.12773539999034256>
+318.8433 	DATA 	Keypress: 1
+318.8572 	EXP 	Device response: <KeyPress from None: t=318.8401125000091, value=1, duration=None>
+318.8595 	EXP 	New trial (rep=15, index=0): <Trial 15 (0 in rep 15) data={'thisN': 15, 'thisTrialN': 0, 'thisRepN': 15}>
+318.8808 	INFO 	Keyboard events cleared
+318.8807 	EXP 	test_text: autoDraw = False
+318.8807 	EXP 	instructions_small: autoDraw = False
+318.8807 	EXP 	test_text: autoDraw = True
+318.8807 	EXP 	instructions_small: autoDraw = True
+319.0024 	EXP 	Device response: <KeyPress from None: t=318.8401125000091, value=1, duration=0.1600998000067193>
+321.1880 	EXP 	Device response: <KeyPress from None: t=321.18407069999375, value=1, duration=None>
+321.1903 	EXP 	New trial (rep=16, index=0): <Trial 16 (0 in rep 16) data={'thisN': 16, 'thisTrialN': 0, 'thisRepN': 16}>
+321.1967 	DATA 	Keypress: 1
+321.2054 	INFO 	Keyboard events cleared
+321.2053 	EXP 	test_text: autoDraw = False
+321.2053 	EXP 	instructions_small: autoDraw = False
+321.2053 	EXP 	test_text: autoDraw = True
+321.2053 	EXP 	instructions_small: autoDraw = True
+321.3377 	EXP 	Device response: <KeyPress from None: t=321.18407069999375, value=1, duration=0.14465240002027713>
+324.7406 	DATA 	Keypress: 4
+324.7543 	EXP 	Device response: <KeyPress from None: t=324.74010930000804, value=4, duration=None>
+324.7601 	EXP 	New trial (rep=17, index=0): <Trial 17 (0 in rep 17) data={'thisN': 17, 'thisTrialN': 0, 'thisRepN': 17}>
+324.7820 	INFO 	Keyboard events cleared
+324.7817 	EXP 	test_text: autoDraw = False
+324.7817 	EXP 	instructions_small: autoDraw = False
+324.7817 	EXP 	test_text: autoDraw = True
+324.7817 	EXP 	instructions_small: autoDraw = True
+324.9099 	EXP 	Device response: <KeyPress from None: t=324.74010930000804, value=4, duration=0.15675190000911243>
+326.4919 	DATA 	Keypress: 4
+326.5051 	EXP 	Device response: <KeyPress from None: t=326.48815020002075, value=4, duration=None>
+326.5077 	EXP 	New trial (rep=18, index=0): <Trial 18 (0 in rep 18) data={'thisN': 18, 'thisTrialN': 0, 'thisRepN': 18}>
+326.5269 	INFO 	Keyboard events cleared
+326.5267 	EXP 	test_text: autoDraw = False
+326.5267 	EXP 	instructions_small: autoDraw = False
+326.5267 	EXP 	test_text: autoDraw = True
+326.5267 	EXP 	instructions_small: autoDraw = True
+326.6080 	EXP 	Device response: <KeyPress from None: t=326.48815020002075, value=4, duration=0.11611719999928027>
+327.7886 	EXP 	Device response: <KeyPress from None: t=327.7766835000075, value=2, duration=None>
+327.7916 	EXP 	New trial (rep=19, index=0): <Trial 19 (0 in rep 19) data={'thisN': 19, 'thisTrialN': 0, 'thisRepN': 19}>
+327.7992 	DATA 	Keypress: 2
+327.8096 	INFO 	Keyboard events cleared
+327.8095 	EXP 	test_text: autoDraw = False
+327.8095 	EXP 	instructions_small: autoDraw = False
+327.8095 	EXP 	test_text: autoDraw = True
+327.8095 	EXP 	instructions_small: autoDraw = True
+327.9213 	EXP 	Device response: <KeyPress from None: t=327.7766835000075, value=2, duration=0.1436585999908857>
+333.3214 	EXP 	Device response: <KeyPress from None: t=333.31641960001434, value=2, duration=None>
+333.3242 	EXP 	New trial (rep=20, index=0): <Trial 20 (0 in rep 20) data={'thisN': 20, 'thisTrialN': 0, 'thisRepN': 20}>
+333.3317 	DATA 	Keypress: 2
+333.3424 	INFO 	Keyboard events cleared
+333.3423 	EXP 	test_text: autoDraw = False
+333.3423 	EXP 	instructions_small: autoDraw = False
+333.3423 	EXP 	test_text: autoDraw = True
+333.3423 	EXP 	instructions_small: autoDraw = True
+333.4743 	EXP 	Device response: <KeyPress from None: t=333.31641960001434, value=2, duration=0.15277499999501742>
+334.2736 	EXP 	Device response: <KeyPress from None: t=334.2723554999975, value=1, duration=None>
+334.2764 	EXP 	New trial (rep=21, index=0): <Trial 21 (0 in rep 21) data={'thisN': 21, 'thisTrialN': 0, 'thisRepN': 21}>
+334.2862 	DATA 	Keypress: 1
+334.2978 	INFO 	Keyboard events cleared
+334.2976 	EXP 	test_text: autoDraw = False
+334.2976 	EXP 	instructions_small: autoDraw = False
+334.2976 	EXP 	test_text: autoDraw = True
+334.2976 	EXP 	instructions_small: autoDraw = True
+334.3962 	EXP 	Device response: <KeyPress from None: t=334.2723554999975, value=1, duration=0.1043249000213109>
+335.8278 	DATA 	Keypress: 4
+335.8410 	EXP 	Device response: <KeyPress from None: t=335.8244164000207, value=4, duration=None>
+335.8442 	EXP 	New trial (rep=22, index=0): <Trial 22 (0 in rep 22) data={'thisN': 22, 'thisTrialN': 0, 'thisRepN': 22}>
+335.8654 	INFO 	Keyboard events cleared
+335.8652 	EXP 	test_text: autoDraw = False
+335.8652 	EXP 	instructions_small: autoDraw = False
+335.8652 	EXP 	test_text: autoDraw = True
+335.8652 	EXP 	instructions_small: autoDraw = True
+335.9567 	EXP 	Device response: <KeyPress from None: t=335.8244164000207, value=4, duration=0.12608729998464696>
+338.2946 	DATA 	Keypress: 1
+338.3099 	EXP 	Device response: <KeyPress from None: t=338.29287619999377, value=1, duration=None>
+338.3129 	EXP 	New trial (rep=23, index=0): <Trial 23 (0 in rep 23) data={'thisN': 23, 'thisTrialN': 0, 'thisRepN': 23}>
+338.3328 	INFO 	Keyboard events cleared
+338.3326 	EXP 	test_text: autoDraw = False
+338.3326 	EXP 	instructions_small: autoDraw = False
+338.3326 	EXP 	test_text: autoDraw = True
+338.3326 	EXP 	instructions_small: autoDraw = True
+338.4555 	EXP 	Device response: <KeyPress from None: t=338.29287619999377, value=1, duration=0.14751340000657365>
+339.4064 	EXP 	Device response: <KeyPress from None: t=339.3969178000116, value=2, duration=None>
+339.4104 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+339.4182 	DATA 	Keypress: 2
+339.4274 	INFO 	Keyboard events cleared
+339.4273 	EXP 	test_text: autoDraw = False
+339.4273 	EXP 	instructions_small: autoDraw = False
+339.4273 	EXP 	new_phase_text: autoDraw = True
+339.5385 	EXP 	Device response: <KeyPress from None: t=339.3969178000116, value=2, duration=0.12808609998319298>
+340.7363 	EXP 	Device response: <KeyPress from None: t=340.7285254000162, value=space, duration=None>
+340.7440 	DATA 	Keypress: space
+340.7549 	INFO 	Keyboard events cleared
+340.7548 	EXP 	new_phase_text: autoDraw = False
+340.7548 	EXP 	instructions_encoding_text: autoDraw = True
+340.8559 	EXP 	Device response: <KeyPress from None: t=340.7285254000162, value=space, duration=0.11742480000248179>
+346.0586 	DATA 	Keypress: space
+346.0719 	EXP 	Device response: <KeyPress from None: t=346.05684210002073, value=space, duration=None>
+346.0724 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+346.0932 	EXP 	instructions_encoding_text: autoDraw = False
+346.0932 	EXP 	encoding_text: autoDraw = True
+346.1555 	EXP 	Device response: <KeyPress from None: t=346.05684210002073, value=space, duration=0.08848549998947419>
+350.0902 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+350.1058 	EXP 	encoding_text: autoDraw = False
+350.1058 	EXP 	encoding_text: autoDraw = False
+350.1058 	EXP 	encoding_text: autoDraw = True
+354.0923 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+354.1079 	EXP 	encoding_text: autoDraw = False
+354.1079 	EXP 	encoding_text: autoDraw = False
+354.1079 	EXP 	encoding_text: autoDraw = True
+358.1054 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+358.1213 	EXP 	encoding_text: autoDraw = False
+358.1213 	EXP 	encoding_text: autoDraw = False
+358.1213 	EXP 	encoding_text: autoDraw = True
+362.1218 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+362.1363 	EXP 	encoding_text: autoDraw = False
+362.1363 	EXP 	encoding_text: autoDraw = False
+362.1363 	EXP 	encoding_text: autoDraw = True
+366.1219 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+366.1379 	EXP 	encoding_text: autoDraw = False
+366.1379 	EXP 	encoding_text: autoDraw = False
+366.1379 	EXP 	encoding_text: autoDraw = True
+370.1399 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+370.1527 	EXP 	encoding_text: autoDraw = False
+370.1527 	EXP 	encoding_text: autoDraw = False
+370.1527 	EXP 	encoding_text: autoDraw = True
+374.1392 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+374.1753 	EXP 	encoding_text: autoDraw = False
+374.1753 	EXP 	encoding_text: autoDraw = False
+374.1753 	EXP 	encoding_text: autoDraw = True
+378.1718 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+378.1862 	EXP 	encoding_text: autoDraw = False
+378.1862 	EXP 	encoding_text: autoDraw = False
+378.1862 	EXP 	encoding_text: autoDraw = True
+382.1732 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+382.1892 	EXP 	encoding_text: autoDraw = False
+382.1892 	EXP 	encoding_text: autoDraw = False
+382.1892 	EXP 	encoding_text: autoDraw = True
+386.1899 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+386.2193 	EXP 	encoding_text: autoDraw = False
+386.2193 	EXP 	encoding_text: autoDraw = False
+386.2193 	EXP 	encoding_text: autoDraw = True
+390.2067 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+390.2217 	EXP 	encoding_text: autoDraw = False
+390.2217 	EXP 	encoding_text: autoDraw = False
+390.2217 	EXP 	encoding_text: autoDraw = True
+394.2457 	INFO 	Keyboard events cleared
+394.2455 	EXP 	encoding_text: autoDraw = False
+394.2455 	EXP 	encoding_text: autoDraw = False
+394.2455 	EXP 	instructions_test_text: autoDraw = True
+396.1041 	EXP 	Device response: <KeyPress from None: t=396.10192919999827, value=space, duration=None>
+396.1047 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+396.1155 	DATA 	Keypress: space
+396.1249 	INFO 	Keyboard events cleared
+396.1248 	EXP 	instructions_test_text: autoDraw = False
+396.1248 	EXP 	test_text: autoDraw = True
+396.1248 	EXP 	instructions_small: autoDraw = True
+396.1553 	EXP 	Device response: <KeyPress from None: t=396.10192919999827, value=space, duration=0.04778590000933036>
+401.1558 	EXP 	Device response: <KeyPress from None: t=401.1542376000143, value=3, duration=None>
+401.1583 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+401.1682 	DATA 	Keypress: 3
+401.1803 	INFO 	Keyboard events cleared
+401.1802 	EXP 	test_text: autoDraw = False
+401.1802 	EXP 	instructions_small: autoDraw = False
+401.1802 	EXP 	test_text: autoDraw = True
+401.1802 	EXP 	instructions_small: autoDraw = True
+401.3088 	EXP 	Device response: <KeyPress from None: t=401.1542376000143, value=3, duration=0.14368549999198876>
+403.1925 	DATA 	Keypress: 2
+403.2053 	EXP 	Device response: <KeyPress from None: t=403.18992960001924, value=2, duration=None>
+403.2091 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+403.2338 	INFO 	Keyboard events cleared
+403.2336 	EXP 	test_text: autoDraw = False
+403.2336 	EXP 	instructions_small: autoDraw = False
+403.2336 	EXP 	test_text: autoDraw = True
+403.2336 	EXP 	instructions_small: autoDraw = True
+403.3567 	EXP 	Device response: <KeyPress from None: t=403.18992960001924, value=2, duration=0.1573080999951344>
+405.3925 	DATA 	Keypress: 1
+405.4069 	EXP 	Device response: <KeyPress from None: t=405.39005950000137, value=1, duration=None>
+405.4094 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+405.4304 	INFO 	Keyboard events cleared
+405.4302 	EXP 	test_text: autoDraw = False
+405.4302 	EXP 	instructions_small: autoDraw = False
+405.4302 	EXP 	test_text: autoDraw = True
+405.4302 	EXP 	instructions_small: autoDraw = True
+405.4910 	EXP 	Device response: <KeyPress from None: t=405.39005950000137, value=1, duration=0.1000705000187736>
+408.5762 	DATA 	Keypress: 2
+408.5883 	EXP 	Device response: <KeyPress from None: t=408.57412110001314, value=2, duration=None>
+408.5907 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+408.6069 	INFO 	Keyboard events cleared
+408.6068 	EXP 	test_text: autoDraw = False
+408.6068 	EXP 	instructions_small: autoDraw = False
+408.6068 	EXP 	test_text: autoDraw = True
+408.6068 	EXP 	instructions_small: autoDraw = True
+408.7057 	EXP 	Device response: <KeyPress from None: t=408.57412110001314, value=2, duration=0.1204174000013154>
+409.6386 	EXP 	Device response: <KeyPress from None: t=409.6300609000027, value=2, duration=None>
+409.6412 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+409.6484 	DATA 	Keypress: 2
+409.6578 	INFO 	Keyboard events cleared
+409.6577 	EXP 	test_text: autoDraw = False
+409.6577 	EXP 	instructions_small: autoDraw = False
+409.6577 	EXP 	test_text: autoDraw = True
+409.6577 	EXP 	instructions_small: autoDraw = True
+409.7391 	EXP 	Device response: <KeyPress from None: t=409.6300609000027, value=2, duration=0.10826460001408122>
+410.5891 	EXP 	Device response: <KeyPress from None: t=410.5780059999961, value=1, duration=None>
+410.5916 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+410.5990 	DATA 	Keypress: 1
+410.6076 	INFO 	Keyboard events cleared
+410.6075 	EXP 	test_text: autoDraw = False
+410.6075 	EXP 	instructions_small: autoDraw = False
+410.6075 	EXP 	test_text: autoDraw = True
+410.6075 	EXP 	instructions_small: autoDraw = True
+410.7389 	EXP 	Device response: <KeyPress from None: t=410.5780059999961, value=1, duration=0.16018470001290552>
+411.6397 	EXP 	Device response: <KeyPress from None: t=411.6390356000047, value=2, duration=None>
+411.6425 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+411.6501 	DATA 	Keypress: 2
+411.6622 	INFO 	Keyboard events cleared
+411.6621 	EXP 	test_text: autoDraw = False
+411.6621 	EXP 	instructions_small: autoDraw = False
+411.6621 	EXP 	test_text: autoDraw = True
+411.6621 	EXP 	instructions_small: autoDraw = True
+411.7561 	EXP 	Device response: <KeyPress from None: t=411.6390356000047, value=2, duration=0.11611880001146346>
+412.7081 	EXP 	Device response: <KeyPress from None: t=412.7028264999972, value=2, duration=None>
+412.7115 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+412.7220 	DATA 	Keypress: 2
+412.7349 	INFO 	Keyboard events cleared
+412.7347 	EXP 	test_text: autoDraw = False
+412.7347 	EXP 	instructions_small: autoDraw = False
+412.7347 	EXP 	test_text: autoDraw = True
+412.7347 	EXP 	instructions_small: autoDraw = True
+412.8230 	EXP 	Device response: <KeyPress from None: t=412.7028264999972, value=2, duration=0.10336660000029951>
+415.8914 	DATA 	Keypress: 2
+415.9059 	EXP 	Device response: <KeyPress from None: t=415.8902946000162, value=2, duration=None>
+415.9090 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+415.9294 	INFO 	Keyboard events cleared
+415.9292 	EXP 	test_text: autoDraw = False
+415.9292 	EXP 	instructions_small: autoDraw = False
+415.9292 	EXP 	test_text: autoDraw = True
+415.9292 	EXP 	instructions_small: autoDraw = True
+416.0236 	EXP 	Device response: <KeyPress from None: t=415.8902946000162, value=2, duration=0.11594509999849834>
+417.4434 	DATA 	Keypress: 1
+417.4557 	EXP 	Device response: <KeyPress from None: t=417.4427594000008, value=1, duration=None>
+417.4581 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+417.4741 	INFO 	Keyboard events cleared
+417.4740 	EXP 	test_text: autoDraw = False
+417.4740 	EXP 	instructions_small: autoDraw = False
+417.4740 	EXP 	test_text: autoDraw = True
+417.4740 	EXP 	instructions_small: autoDraw = True
+417.6054 	EXP 	Device response: <KeyPress from None: t=417.4427594000008, value=1, duration=0.15982550001353957>
+418.7611 	DATA 	Keypress: 2
+418.7721 	EXP 	Device response: <KeyPress from None: t=418.7584044999967, value=2, duration=None>
+418.7743 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+418.7935 	INFO 	Keyboard events cleared
+418.7935 	EXP 	test_text: autoDraw = False
+418.7935 	EXP 	instructions_small: autoDraw = False
+418.7935 	EXP 	test_text: autoDraw = True
+418.7935 	EXP 	instructions_small: autoDraw = True
+418.8904 	EXP 	Device response: <KeyPress from None: t=418.7584044999967, value=2, duration=0.12439290000475012>
+421.0092 	EXP 	Device response: <KeyPress from None: t=421.00043270000606, value=2, duration=None>
+421.0137 	EXP 	New trial (rep=12, index=0): <Trial 12 (0 in rep 12) data={'thisN': 12, 'thisTrialN': 0, 'thisRepN': 12}>
+421.0259 	DATA 	Keypress: 2
+421.0393 	INFO 	Keyboard events cleared
+421.0390 	EXP 	test_text: autoDraw = False
+421.0390 	EXP 	instructions_small: autoDraw = False
+421.0390 	EXP 	test_text: autoDraw = True
+421.0390 	EXP 	instructions_small: autoDraw = True
+421.1599 	EXP 	Device response: <KeyPress from None: t=421.00043270000606, value=2, duration=0.1506220999872312>
+422.3925 	EXP 	Device response: <KeyPress from None: t=422.3867050000117, value=4, duration=None>
+422.3947 	EXP 	New trial (rep=13, index=0): <Trial 13 (0 in rep 13) data={'thisN': 13, 'thisTrialN': 0, 'thisRepN': 13}>
+422.4065 	DATA 	Keypress: 4
+422.4184 	INFO 	Keyboard events cleared
+422.4182 	EXP 	test_text: autoDraw = False
+422.4182 	EXP 	instructions_small: autoDraw = False
+422.4182 	EXP 	test_text: autoDraw = True
+422.4182 	EXP 	instructions_small: autoDraw = True
+422.5477 	EXP 	Device response: <KeyPress from None: t=422.3867050000117, value=4, duration=0.14030060000368394>
+424.1414 	EXP 	Device response: <KeyPress from None: t=424.13505840001744, value=2, duration=None>
+424.1451 	EXP 	New trial (rep=14, index=0): <Trial 14 (0 in rep 14) data={'thisN': 14, 'thisTrialN': 0, 'thisRepN': 14}>
+424.1571 	DATA 	Keypress: 2
+424.1704 	INFO 	Keyboard events cleared
+424.1702 	EXP 	test_text: autoDraw = False
+424.1702 	EXP 	instructions_small: autoDraw = False
+424.1702 	EXP 	test_text: autoDraw = True
+424.1702 	EXP 	instructions_small: autoDraw = True
+424.2918 	EXP 	Device response: <KeyPress from None: t=424.13505840001744, value=2, duration=0.15183889999752864>
+425.3581 	EXP 	Device response: <KeyPress from None: t=425.35461400001077, value=2, duration=None>
+425.3616 	EXP 	New trial (rep=15, index=0): <Trial 15 (0 in rep 15) data={'thisN': 15, 'thisTrialN': 0, 'thisRepN': 15}>
+425.3699 	DATA 	Keypress: 2
+425.3777 	INFO 	Keyboard events cleared
+425.3776 	EXP 	test_text: autoDraw = False
+425.3776 	EXP 	instructions_small: autoDraw = False
+425.3776 	EXP 	test_text: autoDraw = True
+425.3776 	EXP 	instructions_small: autoDraw = True
+425.4913 	EXP 	Device response: <KeyPress from None: t=425.35461400001077, value=2, duration=0.13239569999859668>
+427.2923 	EXP 	Device response: <KeyPress from None: t=427.2787495999946, value=2, duration=None>
+427.2952 	EXP 	New trial (rep=16, index=0): <Trial 16 (0 in rep 16) data={'thisN': 16, 'thisTrialN': 0, 'thisRepN': 16}>
+427.3043 	DATA 	Keypress: 2
+427.3160 	INFO 	Keyboard events cleared
+427.3159 	EXP 	test_text: autoDraw = False
+427.3159 	EXP 	instructions_small: autoDraw = False
+427.3159 	EXP 	test_text: autoDraw = True
+427.3159 	EXP 	instructions_small: autoDraw = True
+427.4397 	EXP 	Device response: <KeyPress from None: t=427.2787495999946, value=2, duration=0.1559564000053797>
+429.5217 	EXP 	Device response: <KeyPress from None: t=429.5124968000164, value=2, duration=None>
+429.5244 	EXP 	New trial (rep=17, index=0): <Trial 17 (0 in rep 17) data={'thisN': 17, 'thisTrialN': 0, 'thisRepN': 17}>
+429.5322 	DATA 	Keypress: 2
+429.5409 	INFO 	Keyboard events cleared
+429.5408 	EXP 	test_text: autoDraw = False
+429.5408 	EXP 	instructions_small: autoDraw = False
+429.5408 	EXP 	test_text: autoDraw = True
+429.5408 	EXP 	instructions_small: autoDraw = True
+429.6559 	EXP 	Device response: <KeyPress from None: t=429.5124968000164, value=2, duration=0.13817609997931868>
+432.9079 	EXP 	Device response: <KeyPress from None: t=432.8991091999924, value=1, duration=None>
+432.9110 	EXP 	New trial (rep=18, index=0): <Trial 18 (0 in rep 18) data={'thisN': 18, 'thisTrialN': 0, 'thisRepN': 18}>
+432.9192 	DATA 	Keypress: 1
+432.9275 	INFO 	Keyboard events cleared
+432.9274 	EXP 	test_text: autoDraw = False
+432.9274 	EXP 	instructions_small: autoDraw = False
+432.9274 	EXP 	test_text: autoDraw = True
+432.9274 	EXP 	instructions_small: autoDraw = True
+433.0388 	EXP 	Device response: <KeyPress from None: t=432.8991091999924, value=1, duration=0.12375790000078268>
+434.3601 	DATA 	Keypress: 1
+434.3731 	EXP 	Device response: <KeyPress from None: t=434.35872000001837, value=1, duration=None>
+434.3763 	EXP 	New trial (rep=19, index=0): <Trial 19 (0 in rep 19) data={'thisN': 19, 'thisTrialN': 0, 'thisRepN': 19}>
+434.3974 	INFO 	Keyboard events cleared
+434.3973 	EXP 	test_text: autoDraw = False
+434.3973 	EXP 	instructions_small: autoDraw = False
+434.3973 	EXP 	test_text: autoDraw = True
+434.3973 	EXP 	instructions_small: autoDraw = True
+434.5559 	EXP 	Device response: <KeyPress from None: t=434.35872000001837, value=1, duration=0.19596669997554272>
+435.3054 	EXP 	Device response: <KeyPress from None: t=435.3027199000062, value=3, duration=None>
+435.3084 	EXP 	New trial (rep=20, index=0): <Trial 20 (0 in rep 20) data={'thisN': 20, 'thisTrialN': 0, 'thisRepN': 20}>
+435.3164 	DATA 	Keypress: 3
+435.3292 	INFO 	Keyboard events cleared
+435.3290 	EXP 	test_text: autoDraw = False
+435.3290 	EXP 	instructions_small: autoDraw = False
+435.3290 	EXP 	test_text: autoDraw = True
+435.3290 	EXP 	instructions_small: autoDraw = True
+435.4231 	EXP 	Device response: <KeyPress from None: t=435.3027199000062, value=3, duration=0.11613159999251366>
+436.2451 	DATA 	Keypress: 2
+436.2576 	EXP 	Device response: <KeyPress from None: t=436.2427927000099, value=2, duration=None>
+436.2602 	EXP 	New trial (rep=21, index=0): <Trial 21 (0 in rep 21) data={'thisN': 21, 'thisTrialN': 0, 'thisRepN': 21}>
+436.2816 	INFO 	Keyboard events cleared
+436.2815 	EXP 	test_text: autoDraw = False
+436.2815 	EXP 	instructions_small: autoDraw = False
+436.2815 	EXP 	test_text: autoDraw = True
+436.2815 	EXP 	instructions_small: autoDraw = True
+436.3942 	EXP 	Device response: <KeyPress from None: t=436.2427927000099, value=2, duration=0.1364659999962896>
+437.6394 	EXP 	Device response: <KeyPress from None: t=437.6275721999991, value=2, duration=None>
+437.6438 	EXP 	New trial (rep=22, index=0): <Trial 22 (0 in rep 22) data={'thisN': 22, 'thisTrialN': 0, 'thisRepN': 22}>
+437.6554 	DATA 	Keypress: 2
+437.6649 	INFO 	Keyboard events cleared
+437.6648 	EXP 	test_text: autoDraw = False
+437.6648 	EXP 	instructions_small: autoDraw = False
+437.6648 	EXP 	test_text: autoDraw = True
+437.6648 	EXP 	instructions_small: autoDraw = True
+437.7566 	EXP 	Device response: <KeyPress from None: t=437.6275721999991, value=2, duration=0.11947320000035688>
+438.8397 	EXP 	Device response: <KeyPress from None: t=438.8324971999973, value=2, duration=None>
+438.8431 	EXP 	New trial (rep=23, index=0): <Trial 23 (0 in rep 23) data={'thisN': 23, 'thisTrialN': 0, 'thisRepN': 23}>
+438.8536 	DATA 	Keypress: 2
+438.8667 	INFO 	Keyboard events cleared
+438.8665 	EXP 	test_text: autoDraw = False
+438.8665 	EXP 	instructions_small: autoDraw = False
+438.8665 	EXP 	test_text: autoDraw = True
+438.8665 	EXP 	instructions_small: autoDraw = True
+439.0058 	EXP 	Device response: <KeyPress from None: t=438.8324971999973, value=2, duration=0.16354740000679158>
+439.3277 	DATA 	Keypress: 2
+439.3397 	EXP 	Device response: <KeyPress from None: t=439.3229525000206, value=2, duration=None>
+439.3439 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+439.3586 	INFO 	Keyboard events cleared
+439.3586 	EXP 	test_text: autoDraw = False
+439.3586 	EXP 	instructions_small: autoDraw = False
+439.3586 	EXP 	new_phase_text: autoDraw = True
+439.4714 	EXP 	Device response: <KeyPress from None: t=439.3229525000206, value=2, duration=0.1438956999918446>
+440.1108 	DATA 	Keypress: space
+440.1208 	EXP 	Device response: <KeyPress from None: t=440.10750270000426, value=space, duration=None>
+440.1381 	INFO 	Keyboard events cleared
+440.1379 	EXP 	new_phase_text: autoDraw = False
+440.1379 	EXP 	instructions_encoding_text: autoDraw = True
+440.2962 	EXP 	Device response: <KeyPress from None: t=440.10750270000426, value=space, duration=0.17157840001164004>
+440.8242 	EXP 	Device response: <KeyPress from None: t=440.8229425000027, value=space, duration=None>
+440.8247 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+440.8327 	DATA 	Keypress: space
+440.8419 	EXP 	instructions_encoding_text: autoDraw = False
+440.8419 	EXP 	encoding_text: autoDraw = True
+440.9391 	EXP 	Device response: <KeyPress from None: t=440.8229425000027, value=space, duration=0.11195029999362305>
+444.8404 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+444.8573 	EXP 	encoding_text: autoDraw = False
+444.8573 	EXP 	encoding_text: autoDraw = False
+444.8573 	EXP 	encoding_text: autoDraw = True
+448.8589 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+448.8744 	EXP 	encoding_text: autoDraw = False
+448.8744 	EXP 	encoding_text: autoDraw = False
+448.8744 	EXP 	encoding_text: autoDraw = True
+452.8736 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+452.8884 	EXP 	encoding_text: autoDraw = False
+452.8884 	EXP 	encoding_text: autoDraw = False
+452.8884 	EXP 	encoding_text: autoDraw = True
+456.8735 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+456.9029 	EXP 	encoding_text: autoDraw = False
+456.9029 	EXP 	encoding_text: autoDraw = False
+456.9029 	EXP 	encoding_text: autoDraw = True
+460.8903 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+460.9269 	EXP 	encoding_text: autoDraw = False
+460.9269 	EXP 	encoding_text: autoDraw = False
+460.9269 	EXP 	encoding_text: autoDraw = True
+464.9263 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+464.9409 	EXP 	encoding_text: autoDraw = False
+464.9409 	EXP 	encoding_text: autoDraw = False
+464.9409 	EXP 	encoding_text: autoDraw = True
+468.9416 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+468.9571 	EXP 	encoding_text: autoDraw = False
+468.9571 	EXP 	encoding_text: autoDraw = False
+468.9571 	EXP 	encoding_text: autoDraw = True
+472.9451 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+472.9591 	EXP 	encoding_text: autoDraw = False
+472.9591 	EXP 	encoding_text: autoDraw = False
+472.9591 	EXP 	encoding_text: autoDraw = True
+476.9569 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+476.9710 	EXP 	encoding_text: autoDraw = False
+476.9710 	EXP 	encoding_text: autoDraw = False
+476.9710 	EXP 	encoding_text: autoDraw = True
+480.9578 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+480.9747 	EXP 	encoding_text: autoDraw = False
+480.9747 	EXP 	encoding_text: autoDraw = False
+480.9747 	EXP 	encoding_text: autoDraw = True
+484.9743 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+484.9889 	EXP 	encoding_text: autoDraw = False
+484.9889 	EXP 	encoding_text: autoDraw = False
+484.9889 	EXP 	encoding_text: autoDraw = True
+488.9922 	INFO 	Keyboard events cleared
+488.9920 	EXP 	encoding_text: autoDraw = False
+488.9920 	EXP 	encoding_text: autoDraw = False
+488.9920 	EXP 	instructions_test_text: autoDraw = True
+495.3589 	EXP 	Device response: <KeyPress from None: t=495.3481380000012, value=space, duration=None>
+495.3598 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+495.3690 	DATA 	Keypress: space
+495.3799 	INFO 	Keyboard events cleared
+495.3797 	EXP 	instructions_test_text: autoDraw = False
+495.3797 	EXP 	test_text: autoDraw = True
+495.3797 	EXP 	instructions_small: autoDraw = True
+495.4116 	EXP 	Device response: <KeyPress from None: t=495.3481380000012, value=space, duration=0.05290559999411926>
+496.6904 	EXP 	Device response: <KeyPress from None: t=496.6814742000133, value=4, duration=None>
+496.6938 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+496.7032 	DATA 	Keypress: 4
+496.7152 	INFO 	Keyboard events cleared
+496.7151 	EXP 	test_text: autoDraw = False
+496.7151 	EXP 	instructions_small: autoDraw = False
+496.7151 	EXP 	test_text: autoDraw = True
+496.7151 	EXP 	instructions_small: autoDraw = True
+496.8082 	EXP 	Device response: <KeyPress from None: t=496.6814742000133, value=4, duration=0.11507919998257421>
+497.8393 	EXP 	Device response: <KeyPress from None: t=497.83636839999235, value=2, duration=None>
+497.8418 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+497.8502 	DATA 	Keypress: 2
+497.8626 	INFO 	Keyboard events cleared
+497.8625 	EXP 	test_text: autoDraw = False
+497.8625 	EXP 	instructions_small: autoDraw = False
+497.8625 	EXP 	test_text: autoDraw = True
+497.8625 	EXP 	instructions_small: autoDraw = True
+497.9578 	EXP 	Device response: <KeyPress from None: t=497.83636839999235, value=2, duration=0.10792020001099445>
+500.1747 	EXP 	Device response: <KeyPress from None: t=500.1726669000054, value=2, duration=None>
+500.1774 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+500.1882 	DATA 	Keypress: 2
+500.2007 	INFO 	Keyboard events cleared
+500.2006 	EXP 	test_text: autoDraw = False
+500.2006 	EXP 	instructions_small: autoDraw = False
+500.2006 	EXP 	test_text: autoDraw = True
+500.2006 	EXP 	instructions_small: autoDraw = True
+500.3081 	EXP 	Device response: <KeyPress from None: t=500.1726669000054, value=2, duration=0.1277811999898404>
+503.6783 	EXP 	Device response: <KeyPress from None: t=503.67248680000193, value=1, duration=None>
+503.6829 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+503.6938 	DATA 	Keypress: 1
+503.7038 	INFO 	Keyboard events cleared
+503.7037 	EXP 	test_text: autoDraw = False
+503.7037 	EXP 	instructions_small: autoDraw = False
+503.7037 	EXP 	test_text: autoDraw = True
+503.7037 	EXP 	instructions_small: autoDraw = True
+503.8228 	EXP 	Device response: <KeyPress from None: t=503.67248680000193, value=1, duration=0.14523819999885745>
+505.3240 	EXP 	Device response: <KeyPress from None: t=505.3142960999976, value=1, duration=None>
+505.3265 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+505.3352 	DATA 	Keypress: 1
+505.3481 	INFO 	Keyboard events cleared
+505.3480 	EXP 	test_text: autoDraw = False
+505.3480 	EXP 	instructions_small: autoDraw = False
+505.3480 	EXP 	test_text: autoDraw = True
+505.3480 	EXP 	instructions_small: autoDraw = True
+505.4588 	EXP 	Device response: <KeyPress from None: t=505.3142960999976, value=1, duration=0.13849090001895092>
+507.3408 	EXP 	Device response: <KeyPress from None: t=507.33429450000403, value=1, duration=None>
+507.3440 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+507.3527 	DATA 	Keypress: 1
+507.3672 	INFO 	Keyboard events cleared
+507.3671 	EXP 	test_text: autoDraw = False
+507.3671 	EXP 	instructions_small: autoDraw = False
+507.3671 	EXP 	test_text: autoDraw = True
+507.3671 	EXP 	instructions_small: autoDraw = True
+507.4803 	EXP 	Device response: <KeyPress from None: t=507.33429450000403, value=1, duration=0.13036229999852367>
+508.4408 	EXP 	Device response: <KeyPress from None: t=508.42902480001794, value=2, duration=None>
+508.4437 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+508.4527 	DATA 	Keypress: 2
+508.4661 	INFO 	Keyboard events cleared
+508.4659 	EXP 	test_text: autoDraw = False
+508.4659 	EXP 	instructions_small: autoDraw = False
+508.4659 	EXP 	test_text: autoDraw = True
+508.4659 	EXP 	instructions_small: autoDraw = True
+508.5909 	EXP 	Device response: <KeyPress from None: t=508.42902480001794, value=2, duration=0.15158909998717718>
+509.7907 	EXP 	Device response: <KeyPress from None: t=509.780531299999, value=3, duration=None>
+509.7933 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+509.8041 	DATA 	Keypress: 3
+509.8159 	INFO 	Keyboard events cleared
+509.8158 	EXP 	test_text: autoDraw = False
+509.8158 	EXP 	instructions_small: autoDraw = False
+509.8158 	EXP 	test_text: autoDraw = True
+509.8158 	EXP 	instructions_small: autoDraw = True
+509.9068 	EXP 	Device response: <KeyPress from None: t=509.780531299999, value=3, duration=0.11638039999525063>
+510.2752 	EXP 	Device response: <KeyPress from None: t=510.27304590001586, value=3, duration=None>
+510.2777 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+510.2848 	DATA 	Keypress: 3
+510.2998 	INFO 	Keyboard events cleared
+510.2998 	EXP 	test_text: autoDraw = False
+510.2998 	EXP 	instructions_small: autoDraw = False
+510.2998 	EXP 	test_text: autoDraw = True
+510.2998 	EXP 	instructions_small: autoDraw = True
+510.3987 	EXP 	Device response: <KeyPress from None: t=510.27304590001586, value=3, duration=0.12354849997791462>
+515.5297 	EXP 	Device response: <KeyPress from None: t=515.5288988999964, value=2, duration=None>
+515.5326 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+515.5410 	DATA 	Keypress: 2
+515.5524 	INFO 	Keyboard events cleared
+515.5523 	EXP 	test_text: autoDraw = False
+515.5523 	EXP 	instructions_small: autoDraw = False
+515.5523 	EXP 	test_text: autoDraw = True
+515.5523 	EXP 	instructions_small: autoDraw = True
+515.6245 	EXP 	Device response: <KeyPress from None: t=515.5288988999964, value=2, duration=0.08419230001163669>
+516.2102 	DATA 	Keypress: 2
+516.2272 	EXP 	Device response: <KeyPress from None: t=516.2087840000167, value=2, duration=None>
+516.2294 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+516.2470 	INFO 	Keyboard events cleared
+516.2469 	EXP 	test_text: autoDraw = False
+516.2469 	EXP 	instructions_small: autoDraw = False
+516.2469 	EXP 	test_text: autoDraw = True
+516.2469 	EXP 	instructions_small: autoDraw = True
+516.3411 	EXP 	Device response: <KeyPress from None: t=516.2087840000167, value=2, duration=0.1248067999840714>
+517.3127 	DATA 	Keypress: 2
+517.3258 	EXP 	Device response: <KeyPress from None: t=517.3093436000054, value=2, duration=None>
+517.3284 	EXP 	New trial (rep=12, index=0): <Trial 12 (0 in rep 12) data={'thisN': 12, 'thisTrialN': 0, 'thisRepN': 12}>
+517.3477 	INFO 	Keyboard events cleared
+517.3476 	EXP 	test_text: autoDraw = False
+517.3476 	EXP 	instructions_small: autoDraw = False
+517.3476 	EXP 	test_text: autoDraw = True
+517.3476 	EXP 	instructions_small: autoDraw = True
+517.4405 	EXP 	Device response: <KeyPress from None: t=517.3093436000054, value=2, duration=0.1153745999909006>
+517.7309 	DATA 	Keypress: 2
+517.7430 	EXP 	Device response: <KeyPress from None: t=517.7287851000146, value=2, duration=None>
+517.7455 	EXP 	New trial (rep=13, index=0): <Trial 13 (0 in rep 13) data={'thisN': 13, 'thisTrialN': 0, 'thisRepN': 13}>
+517.7674 	INFO 	Keyboard events cleared
+517.7672 	EXP 	test_text: autoDraw = False
+517.7672 	EXP 	instructions_small: autoDraw = False
+517.7672 	EXP 	test_text: autoDraw = True
+517.7672 	EXP 	instructions_small: autoDraw = True
+517.8585 	EXP 	Device response: <KeyPress from None: t=517.7287851000146, value=2, duration=0.1162008999963291>
+518.3402 	EXP 	Device response: <KeyPress from None: t=518.3298465000116, value=2, duration=None>
+518.3425 	EXP 	New trial (rep=14, index=0): <Trial 14 (0 in rep 14) data={'thisN': 14, 'thisTrialN': 0, 'thisRepN': 14}>
+518.3495 	DATA 	Keypress: 2
+518.3603 	INFO 	Keyboard events cleared
+518.3602 	EXP 	test_text: autoDraw = False
+518.3602 	EXP 	instructions_small: autoDraw = False
+518.3602 	EXP 	test_text: autoDraw = True
+518.3602 	EXP 	instructions_small: autoDraw = True
+518.4907 	EXP 	Device response: <KeyPress from None: t=518.3298465000116, value=2, duration=0.1589834000042174>
+519.0577 	EXP 	Device response: <KeyPress from None: t=519.0529269000108, value=2, duration=None>
+519.0603 	EXP 	New trial (rep=15, index=0): <Trial 15 (0 in rep 15) data={'thisN': 15, 'thisTrialN': 0, 'thisRepN': 15}>
+519.0696 	DATA 	Keypress: 2
+519.0809 	INFO 	Keyboard events cleared
+519.0808 	EXP 	test_text: autoDraw = False
+519.0808 	EXP 	instructions_small: autoDraw = False
+519.0808 	EXP 	test_text: autoDraw = True
+519.0808 	EXP 	instructions_small: autoDraw = True
+519.1948 	EXP 	Device response: <KeyPress from None: t=519.0529269000108, value=2, duration=0.1403281000093557>
+519.3910 	EXP 	Device response: <KeyPress from None: t=519.3826531000086, value=2, duration=None>
+519.3933 	EXP 	New trial (rep=16, index=0): <Trial 16 (0 in rep 16) data={'thisN': 16, 'thisTrialN': 0, 'thisRepN': 16}>
+519.4030 	DATA 	Keypress: 2
+519.4130 	INFO 	Keyboard events cleared
+519.4129 	EXP 	test_text: autoDraw = False
+519.4129 	EXP 	instructions_small: autoDraw = False
+519.4129 	EXP 	test_text: autoDraw = True
+519.4129 	EXP 	instructions_small: autoDraw = True
+519.5094 	EXP 	Device response: <KeyPress from None: t=519.3826531000086, value=2, duration=0.11500399999204092>
+519.6098 	DATA 	Keypress: 2
+519.6237 	EXP 	Device response: <KeyPress from None: t=519.6088656999927, value=2, duration=None>
+519.6266 	EXP 	New trial (rep=17, index=0): <Trial 17 (0 in rep 17) data={'thisN': 17, 'thisTrialN': 0, 'thisRepN': 17}>
+519.6440 	INFO 	Keyboard events cleared
+519.6439 	EXP 	test_text: autoDraw = False
+519.6439 	EXP 	instructions_small: autoDraw = False
+519.6439 	EXP 	test_text: autoDraw = True
+519.6439 	EXP 	instructions_small: autoDraw = True
+519.7088 	EXP 	Device response: <KeyPress from None: t=519.6088656999927, value=2, duration=0.08842260000528768>
+519.7949 	DATA 	Keypress: 2
+519.8078 	EXP 	Device response: <KeyPress from None: t=519.792760100012, value=2, duration=None>
+519.8101 	EXP 	New trial (rep=18, index=0): <Trial 18 (0 in rep 18) data={'thisN': 18, 'thisTrialN': 0, 'thisRepN': 18}>
+519.8254 	INFO 	Keyboard events cleared
+519.8253 	EXP 	test_text: autoDraw = False
+519.8253 	EXP 	instructions_small: autoDraw = False
+519.8253 	EXP 	test_text: autoDraw = True
+519.8253 	EXP 	instructions_small: autoDraw = True
+519.8745 	EXP 	Device response: <KeyPress from None: t=519.792760100012, value=2, duration=0.08007850000285544>
+520.0075 	EXP 	Device response: <KeyPress from None: t=520.0009370000043, value=2, duration=None>
+520.0101 	EXP 	New trial (rep=19, index=0): <Trial 19 (0 in rep 19) data={'thisN': 19, 'thisTrialN': 0, 'thisRepN': 19}>
+520.0215 	DATA 	Keypress: 2
+520.0378 	INFO 	Keyboard events cleared
+520.0376 	EXP 	test_text: autoDraw = False
+520.0376 	EXP 	instructions_small: autoDraw = False
+520.0376 	EXP 	test_text: autoDraw = True
+520.0376 	EXP 	instructions_small: autoDraw = True
+520.0815 	EXP 	Device response: <KeyPress from None: t=520.0009370000043, value=2, duration=0.07994220001273789>
+522.5252 	EXP 	Device response: <KeyPress from None: t=522.5173469000147, value=2, duration=None>
+522.5303 	EXP 	New trial (rep=20, index=0): <Trial 20 (0 in rep 20) data={'thisN': 20, 'thisTrialN': 0, 'thisRepN': 20}>
+522.5437 	DATA 	Keypress: 2
+522.5555 	INFO 	Keyboard events cleared
+522.5554 	EXP 	test_text: autoDraw = False
+522.5554 	EXP 	instructions_small: autoDraw = False
+522.5554 	EXP 	test_text: autoDraw = True
+522.5554 	EXP 	instructions_small: autoDraw = True
+522.7246 	EXP 	Device response: <KeyPress from None: t=522.7169944000198, value=3, duration=None>
+522.7273 	EXP 	New trial (rep=21, index=0): <Trial 21 (0 in rep 21) data={'thisN': 21, 'thisTrialN': 0, 'thisRepN': 21}>
+522.7348 	DATA 	Keypress: 3
+522.7454 	INFO 	Keyboard events cleared
+522.7453 	EXP 	test_text: autoDraw = False
+522.7453 	EXP 	instructions_small: autoDraw = False
+522.7453 	EXP 	test_text: autoDraw = True
+522.7453 	EXP 	instructions_small: autoDraw = True
+522.7588 	EXP 	Device response: <KeyPress from None: t=522.5173469000147, value=2, duration=0.23951729998225346>
+522.7906 	EXP 	Device response: <KeyPress from None: t=522.7888620000158, value=4, duration=None>
+522.7933 	EXP 	New trial (rep=22, index=0): <Trial 22 (0 in rep 22) data={'thisN': 22, 'thisTrialN': 0, 'thisRepN': 22}>
+522.8041 	DATA 	Keypress: 4
+522.8168 	INFO 	Keyboard events cleared
+522.8166 	EXP 	test_text: autoDraw = False
+522.8166 	EXP 	instructions_small: autoDraw = False
+522.8166 	EXP 	test_text: autoDraw = True
+522.8166 	EXP 	instructions_small: autoDraw = True
+522.8335 	EXP 	Device response: <KeyPress from None: t=522.7169944000198, value=3, duration=0.11589919999823906>
+522.9296 	DATA 	Keypress: 1
+522.9414 	EXP 	Device response: <KeyPress from None: t=522.928857299994, value=1, duration=None>
+522.9438 	EXP 	New trial (rep=23, index=0): <Trial 23 (0 in rep 23) data={'thisN': 23, 'thisTrialN': 0, 'thisRepN': 23}>
+522.9627 	INFO 	Keyboard events cleared
+522.9626 	EXP 	test_text: autoDraw = False
+522.9626 	EXP 	instructions_small: autoDraw = False
+522.9626 	EXP 	test_text: autoDraw = True
+522.9626 	EXP 	instructions_small: autoDraw = True
+522.9792 	EXP 	Device response: <KeyPress from None: t=522.7888620000158, value=4, duration=0.18042509999941103>
+522.9792 	EXP 	Device response: <KeyPress from None: t=522.9739993000112, value=2, duration=None>
+522.9842 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+522.9911 	DATA 	Keypress: 2
+522.9967 	INFO 	Keyboard events cleared
+522.9966 	EXP 	test_text: autoDraw = False
+522.9966 	EXP 	instructions_small: autoDraw = False
+522.9966 	EXP 	new_phase_text: autoDraw = True
+523.0588 	EXP 	Device response: <KeyPress from None: t=522.928857299994, value=1, duration=0.12894049999886192>
+523.0627 	DATA 	Keypress: 3
+523.0722 	EXP 	Device response: <KeyPress from None: t=523.0606000999978, value=3, duration=None>
+523.1222 	EXP 	Device response: <KeyPress from None: t=522.9739993000112, value=2, duration=0.1392614000069443>
+523.1401 	EXP 	Device response: <KeyPress from None: t=523.137201000005, value=4, duration=None>
+523.1424 	DATA 	Keypress: 4
+523.1721 	EXP 	Device response: <KeyPress from None: t=523.0606000999978, value=3, duration=0.10821810000925325>
+523.2891 	EXP 	Device response: <KeyPress from None: t=523.137201000005, value=4, duration=0.13993699999991804>
+523.4720 	EXP 	Device response: <KeyPress from None: t=523.4608431000088, value=space, duration=None>
+523.4801 	DATA 	Keypress: space
+523.4884 	INFO 	Keyboard events cleared
+523.4883 	EXP 	new_phase_text: autoDraw = False
+523.4883 	EXP 	instructions_encoding_text: autoDraw = True
+523.5911 	EXP 	Device response: <KeyPress from None: t=523.4608431000088, value=space, duration=0.12396090000402182>
+523.8597 	EXP 	Device response: <KeyPress from None: t=523.8570876000158, value=space, duration=None>
+523.8602 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+523.8675 	DATA 	Keypress: space
+523.8739 	EXP 	instructions_encoding_text: autoDraw = False
+523.8739 	EXP 	encoding_text: autoDraw = True
+524.0083 	EXP 	Device response: <KeyPress from None: t=523.8570876000158, value=space, duration=0.14410949999000877>
+524.2739 	EXP 	Device response: <KeyPress from None: t=524.2690767000022, value=1, duration=None>
+524.2771 	DATA 	Keypress: 1
+524.3404 	EXP 	Device response: <KeyPress from None: t=524.3369436000066, value=2, duration=None>
+524.3426 	DATA 	Keypress: 2
+524.3912 	EXP 	Device response: <KeyPress from None: t=524.2690767000022, value=1, duration=0.11578369999187998>
+524.4414 	EXP 	Device response: <KeyPress from None: t=524.4408987000061, value=3, duration=None>
+524.4441 	DATA 	Keypress: 3
+524.4747 	EXP 	Device response: <KeyPress from None: t=524.3369436000066, value=2, duration=0.1280550000083167>
+524.5414 	EXP 	Device response: <KeyPress from None: t=524.5328965999943, value=space, duration=None>
+524.5452 	DATA 	Keypress: space
+524.5581 	EXP 	Device response: <KeyPress from None: t=524.5530431999941, value=4, duration=None>
+524.5615 	DATA 	Keypress: 4
+524.5743 	EXP 	Device response: <KeyPress from None: t=524.4408987000061, value=3, duration=0.11989110001013614>
+524.6418 	EXP 	Device response: <KeyPress from None: t=524.5530431999941, value=4, duration=0.0840262999990955>
+524.6755 	EXP 	Device response: <KeyPress from None: t=524.5328965999943, value=space, duration=0.14027740000165068>
+524.8078 	EXP 	Device response: <KeyPress from None: t=524.8009403000178, value=space, duration=None>
+524.8114 	DATA 	Keypress: space
+524.9081 	EXP 	Device response: <KeyPress from None: t=524.8009403000178, value=space, duration=0.10086499998578802>
+525.7787 	DATA 	Keypress: space
+525.7916 	EXP 	Device response: <KeyPress from None: t=525.7769283000089, value=space, duration=None>
+525.8913 	EXP 	Device response: <KeyPress from None: t=525.7769283000089, value=space, duration=0.11228800000390038>
+526.1282 	EXP 	Device response: <KeyPress from None: t=526.1259998000169, value=space, duration=None>
+526.1325 	DATA 	Keypress: space
+526.2283 	EXP 	Device response: <KeyPress from None: t=526.1259998000169, value=space, duration=0.09144930000184104>
+527.8740 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+527.8915 	EXP 	encoding_text: autoDraw = False
+527.8915 	EXP 	encoding_text: autoDraw = False
+527.8915 	EXP 	encoding_text: autoDraw = True
+531.8919 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+531.9304 	EXP 	encoding_text: autoDraw = False
+531.9304 	EXP 	encoding_text: autoDraw = False
+531.9304 	EXP 	encoding_text: autoDraw = True
+535.9298 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+535.9452 	EXP 	encoding_text: autoDraw = False
+535.9452 	EXP 	encoding_text: autoDraw = False
+535.9452 	EXP 	encoding_text: autoDraw = True
+539.9422 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+539.9583 	EXP 	encoding_text: autoDraw = False
+539.9583 	EXP 	encoding_text: autoDraw = False
+539.9583 	EXP 	encoding_text: autoDraw = True
+543.9449 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+543.9584 	EXP 	encoding_text: autoDraw = False
+543.9584 	EXP 	encoding_text: autoDraw = False
+543.9584 	EXP 	encoding_text: autoDraw = True
+547.9583 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+547.9720 	EXP 	encoding_text: autoDraw = False
+547.9720 	EXP 	encoding_text: autoDraw = False
+547.9720 	EXP 	encoding_text: autoDraw = True
+551.9583 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+551.9732 	EXP 	encoding_text: autoDraw = False
+551.9732 	EXP 	encoding_text: autoDraw = False
+551.9732 	EXP 	encoding_text: autoDraw = True
+555.9639 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+555.9775 	EXP 	encoding_text: autoDraw = False
+555.9775 	EXP 	encoding_text: autoDraw = False
+555.9775 	EXP 	encoding_text: autoDraw = True
+559.9743 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+559.9900 	EXP 	encoding_text: autoDraw = False
+559.9900 	EXP 	encoding_text: autoDraw = False
+559.9900 	EXP 	encoding_text: autoDraw = True
+563.9747 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+563.9897 	EXP 	encoding_text: autoDraw = False
+563.9897 	EXP 	encoding_text: autoDraw = False
+563.9897 	EXP 	encoding_text: autoDraw = True
+567.9744 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+567.9898 	EXP 	encoding_text: autoDraw = False
+567.9898 	EXP 	encoding_text: autoDraw = False
+567.9898 	EXP 	encoding_text: autoDraw = True
+571.9993 	INFO 	Keyboard events cleared
+571.9992 	EXP 	encoding_text: autoDraw = False
+571.9992 	EXP 	encoding_text: autoDraw = False
+571.9992 	EXP 	instructions_test_text: autoDraw = True
+578.5246 	EXP 	Device response: <KeyPress from None: t=578.5143997000123, value=space, duration=None>
+578.5252 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+578.5332 	DATA 	Keypress: space
+578.5427 	INFO 	Keyboard events cleared
+578.5426 	EXP 	instructions_test_text: autoDraw = False
+578.5426 	EXP 	test_text: autoDraw = True
+578.5426 	EXP 	instructions_small: autoDraw = True
+578.5577 	EXP 	Device response: <KeyPress from None: t=578.5143997000123, value=space, duration=0.039959599991561845>
+604.3807 	DATA 	Keypress: 4
+604.3924 	EXP 	Device response: <KeyPress from None: t=604.3788685000036, value=4, duration=None>
+604.3954 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+604.4121 	INFO 	Keyboard events cleared
+604.4120 	EXP 	test_text: autoDraw = False
+604.4120 	EXP 	instructions_small: autoDraw = False
+604.4120 	EXP 	test_text: autoDraw = True
+604.4120 	EXP 	instructions_small: autoDraw = True
+604.4752 	EXP 	Device response: <KeyPress from None: t=604.3788685000036, value=4, duration=0.09591189998900518>
+608.1620 	EXP 	Device response: <KeyPress from None: t=608.159888299997, value=2, duration=None>
+608.1647 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+608.1734 	DATA 	Keypress: 2
+608.1881 	INFO 	Keyboard events cleared
+608.1879 	EXP 	test_text: autoDraw = False
+608.1879 	EXP 	instructions_small: autoDraw = False
+608.1879 	EXP 	test_text: autoDraw = True
+608.1879 	EXP 	instructions_small: autoDraw = True
+608.2925 	EXP 	Device response: <KeyPress from None: t=608.159888299997, value=2, duration=0.12744010001188144>
+609.4849 	DATA 	Keypress: 1
+609.4959 	EXP 	Device response: <KeyPress from None: t=609.4835010000097, value=1, duration=None>
+609.4984 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+609.5148 	INFO 	Keyboard events cleared
+609.5147 	EXP 	test_text: autoDraw = False
+609.5147 	EXP 	instructions_small: autoDraw = False
+609.5147 	EXP 	test_text: autoDraw = True
+609.5147 	EXP 	instructions_small: autoDraw = True
+609.6593 	EXP 	Device response: <KeyPress from None: t=609.4835010000097, value=1, duration=0.16390700000920333>
+610.9097 	EXP 	Device response: <KeyPress from None: t=610.9031231999979, value=2, duration=None>
+610.9124 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+610.9233 	DATA 	Keypress: 2
+610.9362 	INFO 	Keyboard events cleared
+610.9361 	EXP 	test_text: autoDraw = False
+610.9361 	EXP 	instructions_small: autoDraw = False
+610.9361 	EXP 	test_text: autoDraw = True
+610.9361 	EXP 	instructions_small: autoDraw = True
+611.0748 	EXP 	Device response: <KeyPress from None: t=610.9031231999979, value=2, duration=0.16378880001138896>
+612.9773 	EXP 	Device response: <KeyPress from None: t=612.9754180000164, value=3, duration=None>
+612.9824 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+612.9951 	DATA 	Keypress: 3
+613.0076 	INFO 	Keyboard events cleared
+613.0075 	EXP 	test_text: autoDraw = False
+613.0075 	EXP 	instructions_small: autoDraw = False
+613.0075 	EXP 	test_text: autoDraw = True
+613.0075 	EXP 	instructions_small: autoDraw = True
+613.1106 	EXP 	Device response: <KeyPress from None: t=612.9754180000164, value=3, duration=0.13221029998385347>
+613.4422 	EXP 	Device response: <KeyPress from None: t=613.439133900014, value=2, duration=None>
+613.4451 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+613.4543 	DATA 	Keypress: 2
+613.4672 	INFO 	Keyboard events cleared
+613.4669 	EXP 	test_text: autoDraw = False
+613.4669 	EXP 	instructions_small: autoDraw = False
+613.4669 	EXP 	test_text: autoDraw = True
+613.4669 	EXP 	instructions_small: autoDraw = True
+613.6112 	EXP 	Device response: <KeyPress from None: t=613.439133900014, value=2, duration=0.1558870000008028>
+618.1761 	EXP 	Device response: <KeyPress from None: t=618.1712369000015, value=2, duration=None>
+618.1787 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+618.1902 	DATA 	Keypress: 2
+618.2060 	INFO 	Keyboard events cleared
+618.2039 	EXP 	test_text: autoDraw = False
+618.2039 	EXP 	instructions_small: autoDraw = False
+618.2039 	EXP 	test_text: autoDraw = True
+618.2039 	EXP 	instructions_small: autoDraw = True
+618.3756 	EXP 	Device response: <KeyPress from None: t=618.1712369000015, value=2, duration=0.19248920000973158>
+618.4422 	EXP 	Device response: <KeyPress from None: t=618.4397016000003, value=3, duration=None>
+618.4469 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+618.4549 	DATA 	Keypress: 3
+618.4672 	INFO 	Keyboard events cleared
+618.4671 	EXP 	test_text: autoDraw = False
+618.4671 	EXP 	instructions_small: autoDraw = False
+618.4671 	EXP 	test_text: autoDraw = True
+618.4671 	EXP 	instructions_small: autoDraw = True
+618.6283 	EXP 	Device response: <KeyPress from None: t=618.4397016000003, value=3, duration=0.1755571000103373>
+621.6422 	EXP 	Device response: <KeyPress from None: t=621.6318054000149, value=2, duration=None>
+621.6451 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+621.6540 	DATA 	Keypress: 2
+621.6673 	INFO 	Keyboard events cleared
+621.6671 	EXP 	test_text: autoDraw = False
+621.6671 	EXP 	instructions_small: autoDraw = False
+621.6671 	EXP 	test_text: autoDraw = True
+621.6671 	EXP 	instructions_small: autoDraw = True
+621.7599 	EXP 	Device response: <KeyPress from None: t=621.759292200004, value=3, duration=None>
+621.7629 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+621.7723 	DATA 	Keypress: 3
+621.7837 	INFO 	Keyboard events cleared
+621.7836 	EXP 	test_text: autoDraw = False
+621.7836 	EXP 	instructions_small: autoDraw = False
+621.7836 	EXP 	test_text: autoDraw = True
+621.7836 	EXP 	instructions_small: autoDraw = True
+621.8426 	EXP 	Device response: <KeyPress from None: t=621.6318054000149, value=2, duration=0.20137070000055246>
+621.8426 	EXP 	Device response: <KeyPress from None: t=621.8348767000134, value=4, duration=None>
+621.8455 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+621.8563 	DATA 	Keypress: 4
+621.8677 	INFO 	Keyboard events cleared
+621.8676 	EXP 	test_text: autoDraw = False
+621.8676 	EXP 	instructions_small: autoDraw = False
+621.8676 	EXP 	test_text: autoDraw = True
+621.8676 	EXP 	instructions_small: autoDraw = True
+621.9018 	EXP 	Device response: <KeyPress from None: t=621.759292200004, value=3, duration=0.12805259999004193>
+621.9556 	DATA 	Keypress: 1
+621.9673 	EXP 	Device response: <KeyPress from None: t=621.9516933000123, value=1, duration=None>
+621.9706 	EXP 	New trial (rep=12, index=0): <Trial 12 (0 in rep 12) data={'thisN': 12, 'thisTrialN': 0, 'thisRepN': 12}>
+621.9902 	INFO 	Keyboard events cleared
+621.9900 	EXP 	test_text: autoDraw = False
+621.9900 	EXP 	instructions_small: autoDraw = False
+621.9900 	EXP 	test_text: autoDraw = True
+621.9900 	EXP 	instructions_small: autoDraw = True
+621.9926 	EXP 	Device response: <KeyPress from None: t=621.8348767000134, value=4, duration=0.15630800000508316>
+621.9955 	DATA 	Keypress: 2
+622.0804 	EXP 	Device response: <KeyPress from None: t=621.9516933000123, value=1, duration=0.12391299998853356>
+622.0838 	DATA 	Keypress: 3
+622.0943 	EXP 	Device response: <KeyPress from None: t=622.0831465999945, value=3, duration=None>
+622.0969 	EXP 	New trial (rep=13, index=0): <Trial 13 (0 in rep 13) data={'thisN': 13, 'thisTrialN': 0, 'thisRepN': 13}>
+622.1134 	INFO 	Keyboard events cleared
+622.1133 	EXP 	test_text: autoDraw = False
+622.1133 	EXP 	instructions_small: autoDraw = False
+622.1133 	EXP 	test_text: autoDraw = True
+622.1133 	EXP 	instructions_small: autoDraw = True
+622.1607 	DATA 	Keypress: 4
+622.1770 	EXP 	Device response: <KeyPress from None: t=622.1590912000102, value=4, duration=None>
+622.1795 	EXP 	New trial (rep=14, index=0): <Trial 14 (0 in rep 14) data={'thisN': 14, 'thisTrialN': 0, 'thisRepN': 14}>
+622.1995 	INFO 	Keyboard events cleared
+622.1992 	EXP 	test_text: autoDraw = False
+622.1992 	EXP 	instructions_small: autoDraw = False
+622.1992 	EXP 	test_text: autoDraw = True
+622.1992 	EXP 	instructions_small: autoDraw = True
+622.2219 	EXP 	Device response: <KeyPress from None: t=622.0831465999945, value=3, duration=0.12056330000632443>
+622.2937 	EXP 	Device response: <KeyPress from None: t=622.2887483999948, value=2, duration=None>
+622.2972 	EXP 	New trial (rep=15, index=0): <Trial 15 (0 in rep 15) data={'thisN': 15, 'thisTrialN': 0, 'thisRepN': 15}>
+622.3017 	EXP 	Device response: <KeyPress from None: t=622.2952796000172, value=3, duration=None>
+622.3043 	DATA 	Keypress: 2
+622.3046 	DATA 	Keypress: 3
+622.3176 	INFO 	Keyboard events cleared
+622.3175 	EXP 	test_text: autoDraw = False
+622.3175 	EXP 	instructions_small: autoDraw = False
+622.3175 	EXP 	test_text: autoDraw = True
+622.3175 	EXP 	instructions_small: autoDraw = True
+622.3423 	EXP 	Device response: <KeyPress from None: t=622.2952796000172, value=3, duration=0.03964169998653233>
+622.3465 	DATA 	Keypress: 1
+622.3583 	EXP 	Device response: <KeyPress from None: t=622.3434712000017, value=1, duration=None>
+622.3605 	EXP 	New trial (rep=16, index=0): <Trial 16 (0 in rep 16) data={'thisN': 16, 'thisTrialN': 0, 'thisRepN': 16}>
+622.3781 	INFO 	Keyboard events cleared
+622.3780 	EXP 	test_text: autoDraw = False
+622.3780 	EXP 	instructions_small: autoDraw = False
+622.3780 	EXP 	test_text: autoDraw = True
+622.3780 	EXP 	instructions_small: autoDraw = True
+622.4089 	EXP 	Device response: <KeyPress from None: t=622.3434712000017, value=1, duration=0.05975590000161901>
+622.4440 	EXP 	Device response: <KeyPress from None: t=622.438868600002, value=3, duration=None>
+622.4491 	EXP 	New trial (rep=17, index=0): <Trial 17 (0 in rep 17) data={'thisN': 17, 'thisTrialN': 0, 'thisRepN': 17}>
+622.4596 	DATA 	Keypress: 3
+622.4708 	INFO 	Keyboard events cleared
+622.4707 	EXP 	test_text: autoDraw = False
+622.4707 	EXP 	instructions_small: autoDraw = False
+622.4707 	EXP 	test_text: autoDraw = True
+622.4707 	EXP 	instructions_small: autoDraw = True
+622.5298 	EXP 	Device response: <KeyPress from None: t=622.5157254000078, value=4, duration=None>
+622.5329 	EXP 	New trial (rep=18, index=0): <Trial 18 (0 in rep 18) data={'thisN': 18, 'thisTrialN': 0, 'thisRepN': 18}>
+622.5415 	DATA 	Keypress: 4
+622.5553 	INFO 	Keyboard events cleared
+622.5551 	EXP 	test_text: autoDraw = False
+622.5551 	EXP 	instructions_small: autoDraw = False
+622.5551 	EXP 	test_text: autoDraw = True
+622.5551 	EXP 	instructions_small: autoDraw = True
+622.5723 	EXP 	Device response: <KeyPress from None: t=622.438868600002, value=3, duration=0.132385200005956>
+622.6364 	DATA 	Keypress: 2
+622.6459 	EXP 	Device response: <KeyPress from None: t=622.6353901000111, value=2, duration=None>
+622.6509 	EXP 	New trial (rep=19, index=0): <Trial 19 (0 in rep 19) data={'thisN': 19, 'thisTrialN': 0, 'thisRepN': 19}>
+622.6712 	INFO 	Keyboard events cleared
+622.6710 	EXP 	test_text: autoDraw = False
+622.6710 	EXP 	instructions_small: autoDraw = False
+622.6710 	EXP 	test_text: autoDraw = True
+622.6710 	EXP 	instructions_small: autoDraw = True
+622.7751 	EXP 	Device response: <KeyPress from None: t=622.7714374999923, value=3, duration=None>
+622.7778 	EXP 	New trial (rep=20, index=0): <Trial 20 (0 in rep 20) data={'thisN': 20, 'thisTrialN': 0, 'thisRepN': 20}>
+622.7859 	DATA 	Keypress: 3
+622.7861 	DATA 	Keypress: 4
+622.7948 	INFO 	Keyboard events cleared
+622.7946 	EXP 	test_text: autoDraw = False
+622.7946 	EXP 	instructions_small: autoDraw = False
+622.7946 	EXP 	test_text: autoDraw = True
+622.7946 	EXP 	instructions_small: autoDraw = True
+622.8089 	EXP 	Device response: <KeyPress from None: t=622.2887483999948, value=2, duration=0.514613500010455>
+622.8610 	EXP 	Device response: <KeyPress from None: t=622.7714374999923, value=3, duration=0.07982410001568496>
+622.9130 	DATA 	Keypress: 1
+622.9253 	EXP 	Device response: <KeyPress from None: t=622.9111747000134, value=1, duration=None>
+622.9277 	EXP 	New trial (rep=21, index=0): <Trial 21 (0 in rep 21) data={'thisN': 21, 'thisTrialN': 0, 'thisRepN': 21}>
+622.9373 	DATA 	Keypress: 2
+622.9458 	INFO 	Keyboard events cleared
+622.9457 	EXP 	test_text: autoDraw = False
+622.9457 	EXP 	instructions_small: autoDraw = False
+622.9457 	EXP 	test_text: autoDraw = True
+622.9457 	EXP 	instructions_small: autoDraw = True
+623.0130 	EXP 	Device response: <KeyPress from None: t=623.0113711000013, value=3, duration=None>
+623.0166 	EXP 	New trial (rep=22, index=0): <Trial 22 (0 in rep 22) data={'thisN': 22, 'thisTrialN': 0, 'thisRepN': 22}>
+623.0243 	EXP 	Device response: <KeyPress from None: t=622.9111747000134, value=1, duration=0.10823929999605753>
+623.0308 	DATA 	Keypress: 3
+623.0448 	INFO 	Keyboard events cleared
+623.0445 	EXP 	test_text: autoDraw = False
+623.0445 	EXP 	instructions_small: autoDraw = False
+623.0445 	EXP 	test_text: autoDraw = True
+623.0445 	EXP 	instructions_small: autoDraw = True
+623.0754 	EXP 	Device response: <KeyPress from None: t=622.6353901000111, value=2, duration=0.42820140000549145>
+623.1295 	DATA 	Keypress: 4
+623.1422 	EXP 	Device response: <KeyPress from None: t=623.1272231000185, value=4, duration=None>
+623.1423 	EXP 	Device response: <KeyPress from None: t=623.0113711000013, value=3, duration=0.1282569000031799>
+623.1450 	EXP 	New trial (rep=23, index=0): <Trial 23 (0 in rep 23) data={'thisN': 23, 'thisTrialN': 0, 'thisRepN': 23}>
+623.1666 	INFO 	Keyboard events cleared
+623.1665 	EXP 	test_text: autoDraw = False
+623.1665 	EXP 	instructions_small: autoDraw = False
+623.1665 	EXP 	test_text: autoDraw = True
+623.1665 	EXP 	instructions_small: autoDraw = True
+623.2302 	EXP 	Device response: <KeyPress from None: t=623.2274879000033, value=2, duration=None>
+623.2365 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+623.2528 	EXP 	Device response: <KeyPress from None: t=622.1590912000102, value=4, duration=1.0927393999882042>
+623.2569 	DATA 	Keypress: 2
+623.2690 	INFO 	Keyboard events cleared
+623.2689 	EXP 	test_text: autoDraw = False
+623.2689 	EXP 	instructions_small: autoDraw = False
+623.2689 	EXP 	new_phase_text: autoDraw = True
+623.3578 	EXP 	Device response: <KeyPress from None: t=623.35564970001, value=3, duration=None>
+623.3614 	DATA 	Keypress: 3
+623.3745 	EXP 	Device response: <KeyPress from None: t=623.2274879000033, value=2, duration=0.14435230000526644>
+623.3784 	DATA 	Keypress: 4
+623.3916 	EXP 	Device response: <KeyPress from None: t=623.3749542000005, value=4, duration=None>
+623.4081 	EXP 	Device response: <KeyPress from None: t=623.35564970001, value=3, duration=0.04906029999256134>
+623.4970 	DATA 	Keypress: 2
+623.5069 	EXP 	Device response: <KeyPress from None: t=623.4959669999953, value=2, duration=None>
+623.5271 	EXP 	Device response: <KeyPress from None: t=622.5157254000078, value=4, duration=0.9960027000051923>
+623.6074 	EXP 	Device response: <KeyPress from None: t=623.6002397999982, value=3, duration=None>
+623.6117 	DATA 	Keypress: 3
+623.6407 	EXP 	Device response: <KeyPress from None: t=623.4959669999953, value=2, duration=0.14337279999745078>
+623.7073 	EXP 	Device response: <KeyPress from None: t=623.7014400000044, value=4, duration=None>
+623.7097 	DATA 	Keypress: 4
+623.7411 	EXP 	Device response: <KeyPress from None: t=623.6002397999982, value=3, duration=0.13933790000737645>
+623.8072 	EXP 	Device response: <KeyPress from None: t=623.1272231000185, value=4, duration=0.6647350999992341>
+637.9252 	EXP 	Device response: <KeyPress from None: t=637.9155552000157, value=space, duration=None>
+637.9323 	DATA 	Keypress: space
+637.9404 	INFO 	Keyboard events cleared
+637.9402 	EXP 	new_phase_text: autoDraw = False
+637.9402 	EXP 	instructions_encoding_text: autoDraw = True
+637.9793 	EXP 	Device response: <KeyPress from None: t=637.9155552000157, value=space, duration=0.05197149998275563>
+638.5802 	EXP 	Device response: <KeyPress from None: t=638.5677347000164, value=space, duration=None>
+638.5807 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+638.5862 	DATA 	Keypress: space
+638.5954 	EXP 	instructions_encoding_text: autoDraw = False
+638.5954 	EXP 	encoding_text: autoDraw = True
+638.6777 	EXP 	Device response: <KeyPress from None: t=638.5677347000164, value=space, duration=0.09871329998713918>
+642.5966 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+642.6093 	EXP 	encoding_text: autoDraw = False
+642.6093 	EXP 	encoding_text: autoDraw = False
+642.6093 	EXP 	encoding_text: autoDraw = True
+646.6101 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+646.6246 	EXP 	encoding_text: autoDraw = False
+646.6246 	EXP 	encoding_text: autoDraw = False
+646.6246 	EXP 	encoding_text: autoDraw = True
+650.6128 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+650.6262 	EXP 	encoding_text: autoDraw = False
+650.6262 	EXP 	encoding_text: autoDraw = False
+650.6262 	EXP 	encoding_text: autoDraw = True
+654.6272 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+654.6418 	EXP 	encoding_text: autoDraw = False
+654.6418 	EXP 	encoding_text: autoDraw = False
+654.6418 	EXP 	encoding_text: autoDraw = True
+658.6274 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+658.6409 	EXP 	encoding_text: autoDraw = False
+658.6409 	EXP 	encoding_text: autoDraw = False
+658.6409 	EXP 	encoding_text: autoDraw = True
+662.6263 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+662.6407 	EXP 	encoding_text: autoDraw = False
+662.6407 	EXP 	encoding_text: autoDraw = False
+662.6407 	EXP 	encoding_text: autoDraw = True
+665.7107 	EXP 	Device response: <KeyPress from None: t=665.7045635000104, value=f, duration=None>
+665.7107 	EXP 	Device response: <KeyPress from None: t=665.7045635000104, value=f, duration=0.003587699990021065>
+665.7146 	DATA 	Keypress: f
+666.6278 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+666.6404 	EXP 	encoding_text: autoDraw = False
+666.6404 	EXP 	encoding_text: autoDraw = False
+666.6404 	EXP 	encoding_text: autoDraw = True
+670.6287 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+670.6411 	EXP 	encoding_text: autoDraw = False
+670.6411 	EXP 	encoding_text: autoDraw = False
+670.6411 	EXP 	encoding_text: autoDraw = True
+674.6264 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+674.6418 	EXP 	encoding_text: autoDraw = False
+674.6418 	EXP 	encoding_text: autoDraw = False
+674.6418 	EXP 	encoding_text: autoDraw = True
+678.6270 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+678.6438 	EXP 	encoding_text: autoDraw = False
+678.6438 	EXP 	encoding_text: autoDraw = False
+678.6438 	EXP 	encoding_text: autoDraw = True
+682.6433 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+682.6581 	EXP 	encoding_text: autoDraw = False
+682.6581 	EXP 	encoding_text: autoDraw = False
+682.6581 	EXP 	encoding_text: autoDraw = True
+686.6685 	INFO 	Keyboard events cleared
+686.6683 	EXP 	encoding_text: autoDraw = False
+686.6683 	EXP 	encoding_text: autoDraw = False
+686.6683 	EXP 	instructions_test_text: autoDraw = True
+687.2299 	DATA 	Keypress: space
+687.2425 	EXP 	Device response: <KeyPress from None: t=687.2267128000094, value=space, duration=None>
+687.2430 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+687.2598 	INFO 	Keyboard events cleared
+687.2597 	EXP 	instructions_test_text: autoDraw = False
+687.2597 	EXP 	test_text: autoDraw = True
+687.2597 	EXP 	instructions_small: autoDraw = True
+687.2932 	EXP 	Device response: <KeyPress from None: t=687.2267128000094, value=space, duration=0.04999559998395853>
+687.7485 	EXP 	Device response: <KeyPress from None: t=687.7374620000191, value=1, duration=None>
+687.7508 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+687.7597 	DATA 	Keypress: 1
+687.7719 	INFO 	Keyboard events cleared
+687.7718 	EXP 	test_text: autoDraw = False
+687.7718 	EXP 	instructions_small: autoDraw = False
+687.7718 	EXP 	test_text: autoDraw = True
+687.7718 	EXP 	instructions_small: autoDraw = True
+687.8427 	EXP 	Device response: <KeyPress from None: t=687.7374620000191, value=1, duration=0.0964990999782458>
+703.8674 	DATA 	Keypress: space
+703.8783 	EXP 	Device response: <KeyPress from None: t=703.8657550000062, value=space, duration=None>
+703.9777 	EXP 	Device response: <KeyPress from None: t=703.8657550000062, value=space, duration=0.10485740000149235>
+704.6599 	EXP 	Device response: <KeyPress from None: t=704.6533919000067, value=2, duration=None>
+704.6624 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+704.6727 	DATA 	Keypress: 2
+704.6847 	INFO 	Keyboard events cleared
+704.6846 	EXP 	test_text: autoDraw = False
+704.6846 	EXP 	instructions_small: autoDraw = False
+704.6846 	EXP 	test_text: autoDraw = True
+704.6846 	EXP 	instructions_small: autoDraw = True
+704.6977 	EXP 	Device response: <KeyPress from None: t=704.693159699993, value=3, duration=None>
+704.7000 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+704.7075 	DATA 	Keypress: 3
+704.7191 	INFO 	Keyboard events cleared
+704.7190 	EXP 	test_text: autoDraw = False
+704.7190 	EXP 	instructions_small: autoDraw = False
+704.7190 	EXP 	test_text: autoDraw = True
+704.7190 	EXP 	instructions_small: autoDraw = True
+704.7437 	EXP 	Device response: <KeyPress from None: t=704.6533919000067, value=2, duration=0.08776190000935458>
+704.9276 	EXP 	Device response: <KeyPress from None: t=704.693159699993, value=3, duration=0.22083689999999478>
+705.1283 	EXP 	Device response: <KeyPress from None: t=705.1230476000055, value=3, duration=None>
+705.1313 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+705.1425 	DATA 	Keypress: 3
+705.1568 	INFO 	Keyboard events cleared
+705.1567 	EXP 	test_text: autoDraw = False
+705.1567 	EXP 	instructions_small: autoDraw = False
+705.1567 	EXP 	test_text: autoDraw = True
+705.1567 	EXP 	instructions_small: autoDraw = True
+705.2468 	EXP 	Device response: <KeyPress from None: t=705.1230476000055, value=3, duration=0.11046220001298934>
+705.2986 	DATA 	Keypress: 2
+705.3102 	EXP 	Device response: <KeyPress from None: t=705.2978174000164, value=2, duration=None>
+705.3130 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+705.3321 	INFO 	Keyboard events cleared
+705.3320 	EXP 	test_text: autoDraw = False
+705.3320 	EXP 	instructions_small: autoDraw = False
+705.3320 	EXP 	test_text: autoDraw = True
+705.3320 	EXP 	instructions_small: autoDraw = True
+705.5101 	EXP 	Device response: <KeyPress from None: t=705.2978174000164, value=2, duration=0.21139759998186491>
+705.5263 	EXP 	Device response: <KeyPress from None: t=705.5209833999979, value=4, duration=None>
+705.5285 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+705.5360 	DATA 	Keypress: 4
+705.5469 	INFO 	Keyboard events cleared
+705.5468 	EXP 	test_text: autoDraw = False
+705.5468 	EXP 	instructions_small: autoDraw = False
+705.5468 	EXP 	test_text: autoDraw = True
+705.5468 	EXP 	instructions_small: autoDraw = True
+705.6639 	DATA 	Keypress: 3
+705.6793 	EXP 	Device response: <KeyPress from None: t=705.6618149999995, value=3, duration=None>
+705.6817 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+705.7027 	INFO 	Keyboard events cleared
+705.7025 	EXP 	test_text: autoDraw = False
+705.7025 	EXP 	instructions_small: autoDraw = False
+705.7025 	EXP 	test_text: autoDraw = True
+705.7025 	EXP 	instructions_small: autoDraw = True
+705.8544 	DATA 	Keypress: 1
+705.8672 	EXP 	Device response: <KeyPress from None: t=705.8493254999921, value=1, duration=None>
+705.8673 	EXP 	Device response: <KeyPress from None: t=705.8578752000176, value=4, duration=None>
+705.8695 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+705.8761 	EXP 	Device response: <KeyPress from None: t=705.6618149999995, value=3, duration=0.20754890001262538>
+705.8815 	DATA 	Keypress: 4
+705.8944 	INFO 	Keyboard events cleared
+705.8943 	EXP 	test_text: autoDraw = False
+705.8943 	EXP 	instructions_small: autoDraw = False
+705.8943 	EXP 	test_text: autoDraw = True
+705.8943 	EXP 	instructions_small: autoDraw = True
+705.9765 	EXP 	Device response: <KeyPress from None: t=705.9735041999957, value=2, duration=None>
+705.9791 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+705.9866 	DATA 	Keypress: 2
+705.9986 	INFO 	Keyboard events cleared
+705.9985 	EXP 	test_text: autoDraw = False
+705.9985 	EXP 	instructions_small: autoDraw = False
+705.9985 	EXP 	test_text: autoDraw = True
+705.9985 	EXP 	instructions_small: autoDraw = True
+706.0277 	EXP 	Device response: <KeyPress from None: t=623.3749542000005, value=4, duration=82.64259740000125>
+706.0278 	EXP 	Device response: <KeyPress from None: t=705.8493254999921, value=1, duration=0.17574380000587553>
+706.0461 	EXP 	Device response: <KeyPress from None: t=706.0412026999984, value=3, duration=None>
+706.0489 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+706.0601 	DATA 	Keypress: 3
+706.0697 	INFO 	Keyboard events cleared
+706.0695 	EXP 	test_text: autoDraw = False
+706.0695 	EXP 	instructions_small: autoDraw = False
+706.0695 	EXP 	test_text: autoDraw = True
+706.0695 	EXP 	instructions_small: autoDraw = True
+706.1189 	EXP 	Device response: <KeyPress from None: t=705.9735041999957, value=2, duration=0.1360160000040196>
+706.1611 	EXP 	Device response: <KeyPress from None: t=706.1534641000035, value=4, duration=None>
+706.1660 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+706.1741 	EXP 	Device response: <KeyPress from None: t=706.0412026999984, value=3, duration=0.12415260000852868>
+706.1779 	DATA 	Keypress: 4
+706.1906 	INFO 	Keyboard events cleared
+706.1904 	EXP 	test_text: autoDraw = False
+706.1904 	EXP 	instructions_small: autoDraw = False
+706.1904 	EXP 	test_text: autoDraw = True
+706.1904 	EXP 	instructions_small: autoDraw = True
+706.2770 	EXP 	Device response: <KeyPress from None: t=706.2700803000189, value=2, duration=None>
+706.2798 	EXP 	New trial (rep=12, index=0): <Trial 12 (0 in rep 12) data={'thisN': 12, 'thisTrialN': 0, 'thisRepN': 12}>
+706.2855 	EXP 	Device response: <KeyPress from None: t=706.2771919000079, value=3, duration=None>
+706.2898 	DATA 	Keypress: 2
+706.2902 	DATA 	Keypress: 3
+706.3013 	INFO 	Keyboard events cleared
+706.3012 	EXP 	test_text: autoDraw = False
+706.3012 	EXP 	instructions_small: autoDraw = False
+706.3012 	EXP 	test_text: autoDraw = True
+706.3012 	EXP 	instructions_small: autoDraw = True
+706.3958 	DATA 	Keypress: 4
+706.4129 	EXP 	Device response: <KeyPress from None: t=706.393679300003, value=4, duration=None>
+706.4130 	EXP 	Device response: <KeyPress from None: t=706.2700803000189, value=2, duration=0.1404340000008233>
+706.4155 	EXP 	New trial (rep=13, index=0): <Trial 13 (0 in rep 13) data={'thisN': 13, 'thisTrialN': 0, 'thisRepN': 13}>
+706.4203 	EXP 	Device response: <KeyPress from None: t=706.2771919000079, value=3, duration=0.14045740000437945>
+706.4348 	INFO 	Keyboard events cleared
+706.4348 	EXP 	test_text: autoDraw = False
+706.4348 	EXP 	instructions_small: autoDraw = False
+706.4348 	EXP 	test_text: autoDraw = True
+706.4348 	EXP 	instructions_small: autoDraw = True
+706.5441 	EXP 	Device response: <KeyPress from None: t=706.5384323000035, value=3, duration=None>
+706.5468 	EXP 	New trial (rep=14, index=0): <Trial 14 (0 in rep 14) data={'thisN': 14, 'thisTrialN': 0, 'thisRepN': 14}>
+706.5564 	DATA 	Keypress: 3
+706.5692 	INFO 	Keyboard events cleared
+706.5691 	EXP 	test_text: autoDraw = False
+706.5691 	EXP 	instructions_small: autoDraw = False
+706.5691 	EXP 	test_text: autoDraw = True
+706.5691 	EXP 	instructions_small: autoDraw = True
+706.5741 	DATA 	Keypress: 2
+706.5858 	EXP 	Device response: <KeyPress from None: t=706.5812345000159, value=1, duration=None>
+706.5890 	EXP 	New trial (rep=15, index=0): <Trial 15 (0 in rep 15) data={'thisN': 15, 'thisTrialN': 0, 'thisRepN': 15}>
+706.5969 	DATA 	Keypress: 1
+706.6080 	INFO 	Keyboard events cleared
+706.6079 	EXP 	test_text: autoDraw = False
+706.6079 	EXP 	instructions_small: autoDraw = False
+706.6079 	EXP 	test_text: autoDraw = True
+706.6079 	EXP 	instructions_small: autoDraw = True
+706.7304 	EXP 	Device response: <KeyPress from None: t=706.7224067000207, value=4, duration=None>
+706.7330 	EXP 	New trial (rep=16, index=0): <Trial 16 (0 in rep 16) data={'thisN': 16, 'thisTrialN': 0, 'thisRepN': 16}>
+706.7419 	DATA 	Keypress: 4
+706.7534 	INFO 	Keyboard events cleared
+706.7533 	EXP 	test_text: autoDraw = False
+706.7533 	EXP 	instructions_small: autoDraw = False
+706.7533 	EXP 	test_text: autoDraw = True
+706.7533 	EXP 	instructions_small: autoDraw = True
+706.7691 	EXP 	Device response: <KeyPress from None: t=706.5384323000035, value=3, duration=0.21878570000990294>
+706.8102 	EXP 	Device response: <KeyPress from None: t=706.8014009000035, value=3, duration=None>
+706.8126 	EXP 	New trial (rep=17, index=0): <Trial 17 (0 in rep 17) data={'thisN': 17, 'thisTrialN': 0, 'thisRepN': 17}>
+706.8210 	DATA 	Keypress: 3
+706.8293 	INFO 	Keyboard events cleared
+706.8292 	EXP 	test_text: autoDraw = False
+706.8292 	EXP 	instructions_small: autoDraw = False
+706.8292 	EXP 	test_text: autoDraw = True
+706.8292 	EXP 	instructions_small: autoDraw = True
+706.8615 	EXP 	Device response: <KeyPress from None: t=706.8492444000149, value=2, duration=None>
+706.8650 	EXP 	New trial (rep=18, index=0): <Trial 18 (0 in rep 18) data={'thisN': 18, 'thisTrialN': 0, 'thisRepN': 18}>
+706.8714 	EXP 	Device response: <KeyPress from None: t=623.7014400000044, value=4, duration=83.16385519999312>
+706.8752 	DATA 	Keypress: 2
+706.8845 	INFO 	Keyboard events cleared
+706.8844 	EXP 	test_text: autoDraw = False
+706.8844 	EXP 	instructions_small: autoDraw = False
+706.8844 	EXP 	test_text: autoDraw = True
+706.8844 	EXP 	instructions_small: autoDraw = True
+706.8965 	EXP 	Device response: <KeyPress from None: t=706.8014009000035, value=3, duration=0.09190649999072775>
+707.0100 	EXP 	Device response: <KeyPress from None: t=706.9976228000014, value=4, duration=None>
+707.0125 	EXP 	New trial (rep=19, index=0): <Trial 19 (0 in rep 19) data={'thisN': 19, 'thisTrialN': 0, 'thisRepN': 19}>
+707.0191 	EXP 	Device response: <KeyPress from None: t=706.8492444000149, value=2, duration=0.1639556000009179>
+707.0191 	EXP 	Device response: <KeyPress from None: t=707.0170344999933, value=3, duration=None>
+707.0220 	DATA 	Keypress: 4
+707.0227 	DATA 	Keypress: 3
+707.0305 	INFO 	Keyboard events cleared
+707.0304 	EXP 	test_text: autoDraw = False
+707.0304 	EXP 	instructions_small: autoDraw = False
+707.0304 	EXP 	test_text: autoDraw = True
+707.0304 	EXP 	instructions_small: autoDraw = True
+707.0767 	EXP 	Device response: <KeyPress from None: t=707.0170344999933, value=3, duration=0.05235800001537427>
+707.1104 	EXP 	Device response: <KeyPress from None: t=707.1011346000014, value=3, duration=None>
+707.1137 	EXP 	New trial (rep=20, index=0): <Trial 20 (0 in rep 20) data={'thisN': 20, 'thisTrialN': 0, 'thisRepN': 20}>
+707.1235 	DATA 	Keypress: 3
+707.1322 	INFO 	Keyboard events cleared
+707.1321 	EXP 	test_text: autoDraw = False
+707.1321 	EXP 	instructions_small: autoDraw = False
+707.1321 	EXP 	test_text: autoDraw = True
+707.1321 	EXP 	instructions_small: autoDraw = True
+707.1598 	EXP 	Device response: <KeyPress from None: t=705.5209833999979, value=4, duration=1.6243342999950983>
+707.1599 	EXP 	Device response: <KeyPress from None: t=707.1489691000024, value=1, duration=None>
+707.1599 	EXP 	Device response: <KeyPress from None: t=707.1529168999987, value=2, duration=None>
+707.1625 	EXP 	New trial (rep=21, index=0): <Trial 21 (0 in rep 21) data={'thisN': 21, 'thisTrialN': 0, 'thisRepN': 21}>
+707.1699 	DATA 	Keypress: 1
+707.1703 	DATA 	Keypress: 2
+707.1800 	INFO 	Keyboard events cleared
+707.1799 	EXP 	test_text: autoDraw = False
+707.1799 	EXP 	instructions_small: autoDraw = False
+707.1799 	EXP 	test_text: autoDraw = True
+707.1799 	EXP 	instructions_small: autoDraw = True
+707.2766 	EXP 	Device response: <KeyPress from None: t=706.5812345000159, value=1, duration=0.6922096999769565>
+707.2815 	DATA 	Keypress: 3
+707.2940 	EXP 	Device response: <KeyPress from None: t=707.2811420999933, value=3, duration=None>
+707.2941 	EXP 	Device response: <KeyPress from None: t=707.1529168999987, value=2, duration=0.13621230001444928>
+707.2980 	EXP 	New trial (rep=22, index=0): <Trial 22 (0 in rep 22) data={'thisN': 22, 'thisTrialN': 0, 'thisRepN': 22}>
+707.3026 	EXP 	Device response: <KeyPress from None: t=707.2970496000198, value=4, duration=None>
+707.3054 	DATA 	Keypress: 4
+707.3146 	INFO 	Keyboard events cleared
+707.3145 	EXP 	test_text: autoDraw = False
+707.3145 	EXP 	instructions_small: autoDraw = False
+707.3145 	EXP 	test_text: autoDraw = True
+707.3145 	EXP 	instructions_small: autoDraw = True
+707.3602 	EXP 	Device response: <KeyPress from None: t=707.1011346000014, value=3, duration=0.24415010001393966>
+707.4142 	DATA 	Keypress: 1
+707.4278 	EXP 	Device response: <KeyPress from None: t=707.4133246999991, value=1, duration=None>
+707.4278 	EXP 	Device response: <KeyPress from None: t=705.8578752000176, value=4, duration=1.5633833999745548>
+707.4314 	EXP 	New trial (rep=23, index=0): <Trial 23 (0 in rep 23) data={'thisN': 23, 'thisTrialN': 0, 'thisRepN': 23}>
+707.4372 	EXP 	Device response: <KeyPress from None: t=707.429083199997, value=2, duration=None>
+707.4414 	DATA 	Keypress: 2
+707.4508 	INFO 	Keyboard events cleared
+707.4507 	EXP 	test_text: autoDraw = False
+707.4507 	EXP 	instructions_small: autoDraw = False
+707.4507 	EXP 	test_text: autoDraw = True
+707.4507 	EXP 	instructions_small: autoDraw = True
+707.5450 	EXP 	Device response: <KeyPress from None: t=707.1489691000024, value=1, duration=0.3845044999907259>
+707.5451 	EXP 	Device response: <KeyPress from None: t=707.5371279999963, value=3, duration=None>
+707.5451 	EXP 	Device response: <KeyPress from None: t=707.5412009000138, value=4, duration=None>
+707.5695 	EXP 	Device response: <KeyPress from None: t=707.429083199997, value=2, duration=0.12010460000601597>
+707.5703 	DATA 	Keypress: 3
+707.5706 	DATA 	Keypress: 4
+707.5768 	EXP 	test_text: autoDraw = False
+707.5768 	EXP 	instructions_small: autoDraw = False
+707.5770 	EXP 	final_project: status = STOPPED
+707.6561 	INFO 	saved data to 'C:\\Users\\Ezekiel\\Desktop\\186c-final\\data\\hannah_final_project_2026-11-20_02h22.22.015.csv'
+707.6629 	INFO 	saved data to C:\Users\Ezekiel\Desktop\186c-final\data\hannah_final_project_2026-11-20_02h22.22.015.psydat
+708.2236 	INFO 	Stopping keyboard key buffers.
