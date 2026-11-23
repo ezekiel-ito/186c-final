@@ -1,0 +1,21 @@
+10.4578 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+10.5120 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+24.8063 	INFO 	Loaded monitor calibration from ['2026_11_18 14:07']
+24.8135 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2240, 1260]. Using actual size
+24.9341 	INFO 	Using renderer 'Apple M4' for graphics
+24.9341 	INFO 	OpenGL version supported by driver is 2..
+24.9638 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x16facd7b0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x16facd750>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x16fc9ffd0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([4480, 2520]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+24.9639 	EXP 	window1: backgroundImage = ''
+24.9639 	EXP 	window1: backgroundFit = 'none'
+25.1957 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+25.1957 	EXP 	window1: recordFrameIntervals = False
+25.3494 	EXP 	window1: recordFrameIntervals = True
+25.6858 	WARNING 	t of last frame was 25.18ms (=1/39)
+25.8342 	WARNING 	t of last frame was 23.70ms (=1/42)
+25.9928 	EXP 	Screen (0) actual frame rate measured at 81.29Hz
+25.9928 	EXP 	window1: recordFrameIntervals = False
+26.4845 	INFO 	keyboard.Keyboard is using ptb backend.
+26.4846 	EXP 	final_project: status = STARTED
+26.5169 	INFO 	saved data to /Users/annami/Downloads/Group 1-group1/data/AnnaGorman_final_project_2026-11-20_14h07.48.372.psydat
+26.5171 	INFO 	saved data to '/Users/annami/Downloads/Group 1-group1/data/AnnaGorman_final_project_2026-11-20_14h07.48.372.csv'
+26.5207 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
